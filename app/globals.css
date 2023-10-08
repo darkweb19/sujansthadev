@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--foreground-rgb: 255, 255, 255;
+    --black : 0 , 0 , 0
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
+}
+
+/* for no scrollbar  */
+@layer utilities {
+    @variants responsive {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+    }
+  }
+
+body {
+  font-size: large;
+	color: rgb(var(--black));
+  /* background-image: linear-gradient(to left top, #c7c3f4, #c6c7f4, #c5cbf4, #c6cff3, #c7d3f2, #bcccf2, #b0c4f2, #a4bdf2, #8ba8f2, #7792f1, #667bed, #5c63e7);	 */
+  background: linear-gradient(to left top, #edecf8, #e7e7f7, #dfe2f6, #d8ddf5, #cfd9f4, #c6d3f4, #bdcdf4, #b3c7f4, #aabdf4, #a3b3f3, #9da9f2, #999ef0);
+
+}
+
+ .gradient-text {
+    background-image: linear-gradient(to right , #f4f3f5 0%, rgba(160,169,227,0.88) 38%, rgba(148,139,222,0.95) 70%, #6942f0 97%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
