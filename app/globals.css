@@ -37,13 +37,13 @@ body {
   font-size: large;
 	color: rgb(var(--black));
   /* background-image: linear-gradient(to left top, #c7c3f4, #c6c7f4, #c5cbf4, #c6cff3, #c7d3f2, #bcccf2, #b0c4f2, #a4bdf2, #8ba8f2, #7792f1, #667bed, #5c63e7);	 */
-  background: linear-gradient(to left top, #edecf8, #e7e7f7, #dfe2f6, #d8ddf5, #cfd9f4, #c6d3f4, #bdcdf4, #b3c7f4, #aabdf4, #a3b3f3, #9da9f2, #999ef0);
+  /* background: linear-gradient(to left top, #edecf8, #e7e7f7, #dfe2f6, #d8ddf5, #cfd9f4, #c6d3f4, #bdcdf4, #b3c7f4, #aabdf4, #a3b3f3, #9da9f2, #999ef0); */
+  background-image: linear-gradient(to left top, #d6d3f4, #e0d4f2, #e9d5ef, #f0d6ec, #f6d8e9, #f5d1e5, #f4cae2, #f3c3de, #e6b2df, #d3a4e4, #b599ea, #8b91f1);
 
 }
 
  .gradient-text {
-    background-image: linear-gradient(to right , #f4f3f5 0%, rgba(160,169,227,0.88) 38%, rgba(148,139,222,0.95) 70%, #6942f0 97%);
-    -webkit-background-clip: text;
+    background: -webkit-linear-gradient(0deg, #9538df 22%, #1293af 50%, #af6b12 84%);
     background-clip: text;
     color: transparent;
   }

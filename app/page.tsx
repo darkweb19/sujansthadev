@@ -9,7 +9,7 @@ export default function Homes() {
 		setLoading(true);
 		setTimeout(() => {
 			setLoading(false);
-		}, 1800);
+		}, 900);
 	}, []);
 
 	return (
