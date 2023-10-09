@@ -14,9 +14,9 @@ export default function AboutPage() {
 						{" "}
 						Deerwalk Institute{" "}
 					</a>{" "}
-					. At the same time , I am pursuing by Bachelor's degree in
-					Computer Science from St Lawrence College which is
-					affiliated to{" "}
+					. At the same time , I am pursuing by Bachelor&apos;s degree
+					in Computer Science from St Lawrence College which is
+					affiliated to
 					<a
 						href="https://tu.edu.np/"
 						className="font-semibold text-blue-500"
