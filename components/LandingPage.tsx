@@ -2,6 +2,7 @@ import Navigations from "@/components/rightNavs/Navigations";
 import SocialLinks from "@/components/rightNavs/SocialLinks";
 import HomePage from "./middle/HomePage";
 import AboutPage from "./middle/AboutPage";
+import BorderLined from "./middle/BorderLined";
 
 export default function LandingPage() {
 	return (
@@ -14,11 +15,7 @@ export default function LandingPage() {
 				{/* about page  */}
 				<div className="w-full h-screen">
 					{/* border underlined  */}
-					<div className="flex justify-between items-center p-2 text-2xl font-medium">
-						<h1>/statement</h1>
-						<div className="border border-red-400 w-2/5"></div>
-						<div className=" w-2/5"></div>
-					</div>
+					<BorderLined title={"statement"} />
 
 					{/* about page  */}
 					<AboutPage />
