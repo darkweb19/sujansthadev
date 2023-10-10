@@ -15,6 +15,7 @@ const config: Config = {
 			},
 			boxShadow: {
 				"4xl": "rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px",
+				"5xl": "rgba(0, 0, 0, 0.45) -1rem 25px 20px -20px",
 			},
 		},
 	},

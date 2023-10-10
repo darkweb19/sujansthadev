@@ -42,6 +42,33 @@ body {
 
 }
 
+
+.card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 350px;
+  width: 400px;
+  min-width:250px ;
+  padding:  1.5rem;
+  border-radius: 16px;
+  background-color: #e0d4f2;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-1rem); 
+   
+}
+.card:hover~.card{
+  transform: translateX(130px);
+}
+
+.card:not(:first-child){
+  margin-left: -130px;
+}
+
+
  .gradient-text {
     background: -webkit-linear-gradient(0deg, #9538df 22%, #1293af 50%, #af6b12 84%);
     background-clip: text;

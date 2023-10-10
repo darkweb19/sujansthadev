@@ -3,6 +3,7 @@ import SocialLinks from "@/components/rightNavs/SocialLinks";
 import HomePage from "./middle/HomePage";
 import AboutPage from "./middle/AboutPage";
 import BorderLined from "./middle/BorderLined";
+import Creations from "./middle/Creations";
 
 export default function LandingPage() {
 	return (
@@ -13,12 +14,17 @@ export default function LandingPage() {
 				<HomePage />
 
 				{/* about page  */}
-				<div className="w-full h-screen">
-					{/* border underlined  */}
+				<div className="w-full h-4/5">
 					<BorderLined title={"statement"} />
-
-					{/* about page  */}
 					<AboutPage />
+				</div>
+
+				{/* personal creations  */}
+				<div className=" w-full p-2 h-screen">
+					<BorderLined title={"creations"} />
+					<div className="w-full overflow-scroll no-scrollbar">
+						<Creations />
+					</div>
 				</div>
 			</div>
 
