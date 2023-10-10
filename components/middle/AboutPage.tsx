@@ -25,7 +25,7 @@ export default function AboutPage() {
 						Tribhuwan University.
 					</a>{" "}
 				</p>
-				<div className="border-width px-1 ">
+				<div className="border w-full px-1 ">
 					<p className="font-medium text-lg">
 						Technologies I have been working with
 					</p>
@@ -42,7 +42,7 @@ export default function AboutPage() {
 			</div>
 			<Image
 				src={mine}
-				className="rounded-xl shadow-4xl  sm:block h-auto w-auto"
+				className="rounded-xl shadow-4xl  sm:block "
 				alt="My Pic"
 				height={250}
 				width={250}

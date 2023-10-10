@@ -14,12 +14,13 @@ export default function LandingPage() {
 				<HomePage />
 
 				{/* about page  */}
-				<div className="w-full h-4/5">
+				<div className="w-full h-fit">
 					<BorderLined title={"statement"} />
 					<AboutPage />
 				</div>
 
 				{/* personal creations  */}
+
 				<div className=" w-full p-2 h-screen">
 					<BorderLined title={"creations"} />
 					<div className="w-full overflow-scroll no-scrollbar">
