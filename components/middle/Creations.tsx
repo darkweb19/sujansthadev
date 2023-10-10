@@ -1,9 +1,9 @@
 export default function Creations() {
 	return (
 		// card list
-		<div className=" h-fit w-full flex p-2">
+		<div className=" h-fit w-full flex p-2 ">
 			{/* card  */}
-			<article className="card shadow-5xl">
+			<article className="card shadow-5xl " >
 				{/* card header  */}
 				<header className="">
 					<p>title</p>
@@ -13,7 +13,7 @@ export default function Creations() {
 			<article className="card shadow-5xl">
 				{/* card header  */}
 				<header className="">
-					<p>title</p>
+					<p>title </p>
 					<h2>Card trick</h2>
 				</header>
 			</article>
@@ -39,7 +39,7 @@ export default function Creations() {
 					<h2>Card trick</h2>
 				</header>
 			</article>
-			<article className="card shadow-5xl">
+			<article className="card shadow-5xl ">
 				{/* card header  */}
 				<header className="">
 					<p>title</p>
