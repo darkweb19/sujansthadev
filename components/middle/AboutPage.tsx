@@ -5,7 +5,7 @@ export default function AboutPage() {
 	return (
 		<div className=" p-1 w-full flex flex-col sm:flex-row gap-1 items-center justify-around ">
 			<div className="h-3/4 w-full sm:w-3/6">
-				<p className="p-4 sm:p-3 sm:text-lg font-medium text-slate-800 text-base text-justify">
+				<p className="p-3 sm:p-3 sm:text-lg font-medium text-slate-800 text-base text-justify">
 					I have completed my bootcamp course in the MERN stack from{" "}
 					<a
 						className="font-semibold  text-blue-500 "
@@ -25,7 +25,7 @@ export default function AboutPage() {
 						Tribhuwan University.
 					</a>{" "}
 				</p>
-				<div className="border-width 0px ">
+				<div className="border-width px-1 ">
 					<p className="font-medium text-lg">
 						Technologies I have been working with
 					</p>
