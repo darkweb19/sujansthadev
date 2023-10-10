@@ -1,7 +1,7 @@
 export default function Creations() {
 	return (
 		// card list
-		<div className=" h-fit w-full flex p-8">
+		<div className=" h-fit w-full flex p-2">
 			{/* card  */}
 			<article className="card shadow-5xl">
 				{/* card header  */}
