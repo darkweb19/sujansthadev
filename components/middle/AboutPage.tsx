@@ -42,7 +42,7 @@ export default function AboutPage() {
 			</div>
 			<Image
 				src={mine}
-				className="rounded-xl shadow-4xl  sm:block "
+				className="rounded-xl shadow-4xl  sm:block sm:h-auto sm:w-auto"
 				alt="My Pic"
 				height={250}
 				width={250}
