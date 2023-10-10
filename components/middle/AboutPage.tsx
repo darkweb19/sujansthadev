@@ -25,7 +25,7 @@ export default function AboutPage() {
 						Tribhuwan University.
 					</a>{" "}
 				</p>
-				<div className="border px-3 ">
+				<div className="border-width 0px ">
 					<p className="font-medium text-lg">
 						Technologies I have been working with
 					</p>
