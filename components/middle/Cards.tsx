@@ -50,9 +50,10 @@ export default function Cards({
 									| ReactPortal
 									| PromiseLikeOfReactNode
 									| null
-									| undefined
+									| undefined,
+								i: number
 							) => (
-								<li>{tech}</li>
+								<li key={i}>{tech}</li>
 							)
 						)}
 					</ul>
