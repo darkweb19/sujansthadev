@@ -20,8 +20,7 @@ export default function LandingPage() {
 				</div>
 
 				{/* personal creations  */}
-
-				<div className=" w-full p-2 h-screen">
+				<div className=" w-full p-2 h-fit mt-10">
 					<BorderLined title={"creations"} />
 					<div className="w-full overflow-scroll no-scrollbar">
 						<Creations />

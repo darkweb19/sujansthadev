@@ -25,11 +25,11 @@ export default function AboutPage() {
 						Tribhuwan University.
 					</a>{" "}
 				</p>
-				<div className="border w-full px-1 ">
-					<p className="font-medium text-lg">
+				<div className="w-full px-3 ">
+					<p className="font-medium text-lg sm:font-medium sm:text-lg">
 						Technologies I have been working with
 					</p>
-					<ul className="text-base font-medium  px-4 list-disc">
+					<ul className="text-sm font-medium sm:text-base sm:font-medium  px-4 list-disc">
 						<li>TypeScript</li>
 						<li>Node Js</li>
 						<li>React Js</li>
@@ -42,7 +42,7 @@ export default function AboutPage() {
 			</div>
 			<Image
 				src={mine}
-				className="rounded-xl shadow-4xl  sm:block "
+				className="rounded-xl shadow-4xl  sm:block sm:h-auto sm:w-auto"
 				alt="My Pic"
 				height={250}
 				width={250}
