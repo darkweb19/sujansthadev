@@ -1,11 +1,14 @@
 export default function Cards() {
 	return (
-		<article className="card shadow-5xl w-[250px] h-[280px] sm:w-[400px] sm:h-[350px]">
+		<article className="card shadow-5xl w-[250px] h-[280px] sm:w-[400px] sm:h-[350px] ">
 			{/* card header  */}
-			<header className="">
+			<header className="text-purple-900">
 				<h1>Title</h1>
-				<h3>Card trick</h3>
+				<h3 >Card trick</h3>
 			</header>
 		</article>
 	);
 }
+
+
+
