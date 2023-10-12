@@ -9,6 +9,7 @@ export default function LandingPage({
 	children: React.ReactNode;
 }) {
 	const [loading, setLoading] = useState(true);
+
 	useEffect(() => {
 		setLoading(true);
 		setTimeout(() => {
@@ -19,7 +20,7 @@ export default function LandingPage({
 	return (
 		<>
 			{loading && <Loadings loading={loading} />}
-			{children}
+			<div>{children}</div>
 		</>
 	);
 }
