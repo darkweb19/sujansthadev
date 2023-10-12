@@ -5,7 +5,6 @@ import AboutPage from "@/components/middle/AboutPage";
 import BorderLined from "@/components/middle/BorderLined";
 import Creations from "@/components/middle/Creations";
 // import { motion, useInView } from "framer-motion";
-// import { useEffect, useRef } from "react";
 
 export default function AllContent() {
 	// const ref = useRef(null);
@@ -48,6 +47,7 @@ export default function AllContent() {
 			<div className=" sm:col-span-2  p-2 ">
 				<div className=" h-4/5 w-full flex flex-col items-center justify-between ">
 					<SocialLinks />
+
 					<Navigations />
 				</div>
 			</div>
