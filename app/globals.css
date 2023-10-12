@@ -66,6 +66,16 @@ body {
   margin-left: -130px;
 }
 
+.gmail{
+
+  transition: all .4s;
+}
+
+.gmail:hover{
+  cursor: pointer;
+  scale: 1.2;
+
+}
 
  .gradient-text {
     background: -webkit-linear-gradient(0deg, #9538df 22%, #1293af 50%, #af6b12 84%);

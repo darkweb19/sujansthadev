@@ -1,6 +1,14 @@
+"use client";
+import Lottie from "lottie-react";
 import Typing from "./Typing";
+import gmailData from "@/public/assets/gmail.json";
 
 export default function HomePage() {
+	//for sending mail to me
+	function changeMailIcon() {
+		window.location.href = "mailto:sujansthadev@gmail.com";
+	}
+
 	return (
 		<div className=" flex items-center w-full h-full">
 			<div className=" flex flex-col justify-center  items-center h-2/4 ">
@@ -18,6 +26,14 @@ export default function HomePage() {
 							Artificial Intelligence, IOT and everything in
 							between
 						</p>
+					</div>
+
+					{/* gmail animation  */}
+					<div className="gmail w-[15%] sm:w-[11%]">
+						<Lottie
+							animationData={gmailData}
+							onClick={() => changeMailIcon()}
+						/>
 					</div>
 				</div>
 			</div>
