@@ -31,7 +31,6 @@ export default function LandingPage() {
 			<div className=" sm:col-span-2  p-2 ">
 				<div className=" h-4/5 w-full flex flex-col items-center justify-between ">
 					<SocialLinks />
-
 					<Navigations />
 				</div>
 			</div>
