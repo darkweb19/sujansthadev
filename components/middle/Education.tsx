@@ -44,9 +44,9 @@ export default function Education() {
               </div>
               <div className="vertical-line  ml-10 mb-10">
               <div className="college w-2/3 ml-10 mb-10">
-                <h4>{item.levels}</h4>
-                <h5>{item.place}</h5>
-                <p>{item.desc}</p>
+                <h4 className="mb-2">{item.levels}</h4>
+                <h5 className="mb-2">{item.place}</h5>
+                <p className="mb-2"> {item.desc}</p>
               </div>
             </div>
             </div>
