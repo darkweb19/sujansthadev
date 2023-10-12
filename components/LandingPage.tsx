@@ -18,9 +18,6 @@ export default function LandingPage({
 	}, []);
 
 	return (
-		<>
-			{loading && <Loadings loading={loading} />}
-			<div>{children}</div>
-		</>
+		<>{loading ? <Loadings loading={loading} /> : <div>{children}</div>}</>
 	);
 }
