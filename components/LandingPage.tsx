@@ -1,39 +1,25 @@
-import Navigations from "@/components/rightNavs/Navigations";
-import SocialLinks from "@/components/rightNavs/SocialLinks";
-import HomePage from "./middle/HomePage";
-import AboutPage from "./middle/AboutPage";
-import BorderLined from "./middle/BorderLined";
-import Creations from "./middle/Creations";
+"use client";
+import React from "react";
+import Loadings from "@/components/Loadings";
+import { useEffect, useState } from "react";
 
-export default function LandingPage() {
+export default function LandingPage({
+	children,
+}: {
+	children: React.ReactNode;
+}) {
+	const [loading, setLoading] = useState(true);
+	useEffect(() => {
+		setLoading(true);
+		setTimeout(() => {
+			setLoading(false);
+		}, 900);
+	}, []);
+
 	return (
-		<div className="h-screen w-screen flex flex-col gap-2 sm:grid sm:grid-cols-11">
-			<div className=" sm:col-span-2 "></div>
-			<div className=" w-full sm:col-span-7 overflow-scroll  no-scrollbar scroll-smooth">
-				{/* first homepage  */}
-				<HomePage />
-
-				{/* about page  */}
-				<div className="w-full h-fit">
-					<BorderLined title={"statement"} />
-					<AboutPage />
-				</div>
-
-				{/* personal creations  */}
-				<div className=" w-full p-2 h-fit mt-10">
-					<BorderLined title={"creations"} />
-					<div className="w-full overflow-scroll no-scrollbar">
-						<Creations />
-					</div>
-				</div>
-			</div>
-
-			<div className=" sm:col-span-2  p-2 ">
-				<div className=" h-4/5 w-full flex flex-col items-center justify-between ">
-					<SocialLinks />
-					<Navigations />
-				</div>
-			</div>
-		</div>
+		<>
+			{loading && <Loadings loading={loading} />}
+			{children}
+		</>
 	);
 }
