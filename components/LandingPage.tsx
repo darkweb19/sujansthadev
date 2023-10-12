@@ -4,6 +4,7 @@ import HomePage from "./middle/HomePage";
 import AboutPage from "./middle/AboutPage";
 import BorderLined from "./middle/BorderLined";
 import Creations from "./middle/Creations";
+import Education from "./middle/Education";
 
 export default function LandingPage() {
 	return (
@@ -25,6 +26,13 @@ export default function LandingPage() {
 					<div className="w-full overflow-scroll no-scrollbar">
 						<Creations />
 					</div>
+				</div>
+				{/* Academic */}
+				<div className=" w-full p-2 h-screen mt-10 "  >
+				<BorderLined title={"Academics"} />
+				<div >
+					<Education/>
+				</div>
 				</div>
 			</div>
 

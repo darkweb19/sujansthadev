@@ -15,7 +15,7 @@ export default function Creations() {
 				}}
 			/>
 			<Cards
-				title="React-Porfolio"
+				title="React-Portfolio"
 				content="Explore My React Portfolio made with plain react-app."
 				techStack={["React JS"]}
 				links={{
@@ -43,7 +43,7 @@ export default function Creations() {
 			/>
 			<Cards
 				title="BookStore-Backend"
-				content="The Backend Part of a FullStack MERN project handeling the CRUD operation for Book Management"
+				content="The Backend Part of a FullStack MERN project handling the CRUD operation for Book Management"
 				techStack={["Node, ", "Express, ", "MongoDb, ", "REST"]}
 				links={{
 					github: "https://github.com/darkweb19/BookStore-Backend",
@@ -58,7 +58,17 @@ export default function Creations() {
 					github: "https://github.com/darkweb19/discord-bot-chatgpt",
 					share: "https://darkweb19.github.io/react-portfolio/",
 				}}
+
+			
 			/>
 		</div>
 	);
 }
+
+
+
+
+   
+
+
+
