@@ -14,7 +14,7 @@ export default function AllContent() {
 				<HomePage />
 
 				{/* about page  */}
-				<div id="about" className="w-full  h-screen]">
+				<div id="about" className="w-full  h-fit">
 					<BorderLined title={"statement"} />
 					<AboutPage />
 				</div>

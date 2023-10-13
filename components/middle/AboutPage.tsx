@@ -14,10 +14,10 @@ export default function AboutPage() {
 		"PostgreSQL",
 	];
 	return (
-		<div className=" p-2 w-full flex flex-col sm:flex-col md:flex-col lg:flex-row gap-2 items-center justify-around">
-			<div className="h-3/4 w-full sm:w-5/6">
+		<div className=" p-2 w-full flex flex-col sm:flex-col md:flex-col lg:flex-row gap-1 items-start justify-around">
+			<div className="h-3/4 w-full sm:w-5/6 md:w-3/6">
 				<FadeInSection delay={100}>
-					<p className="p-3 sm:p-3 w-5/6  sm:text-lg font-medium text-slate-800 text-base text-justify">
+					<p className="p-3 sm:p-3 w-full sm:text-lg font-medium text-slate-800 text-base text-justify">
 						I have completed my bootcamp course in the MERN stack
 						from{" "}
 						<a
@@ -61,7 +61,7 @@ export default function AboutPage() {
 
 			<Image
 				src={mine}
-				className="rounded-xl shadow-4xl  sm:h-auto sm:w-auto"
+				className="rounded-xl shadow-4xl sm:block sm:h-auto sm:w-auto"
 				alt="My Pic"
 				height={250}
 				width={250}
