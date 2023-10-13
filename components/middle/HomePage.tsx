@@ -30,7 +30,7 @@ export default function HomePage() {
 								I am a Software Engineer and a student from
 								Nepal. I have a keen interest in Full-Stack
 								Development, Artificial Intelligence, IOT and
-								everything in between
+								everything in between.
 							</p>
 						</div>
 					</FadeInSection>
