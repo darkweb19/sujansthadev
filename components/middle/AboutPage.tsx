@@ -39,10 +39,10 @@ export default function AboutPage() {
 						</a>{" "}
 					</p>
 					<div className="w-full px-3 ">
-						<p className="font-medium text-lg sm:font-medium sm:text-lg">
+						<p className="font-medium text-lg sm:font-medium sm:text-xl">
 							Technologies I have been working with
 						</p>
-						<ul className="text-sm font-medium sm:text-base sm:font-medium list-none">
+						<ul className="text-sm py-1 font-medium sm:text-base sm:font-medium list-none">
 							{tech.map((tech, i) => (
 								<FadeInSection key={i} delay={(i + 1) * 100}>
 									<li
