@@ -2,16 +2,25 @@ import Image from "next/image";
 import mine from "@/public/assets/mine.jpeg";
 import FadeInSection from "./FadeInSection";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
+import {
+	TbBrandTypescript,
+	TbBrandNextjs,
+	TbBrandNodejs,
+	TbBrandMongodb,
+	TbBrandGraphql,
+} from "react-icons/tb";
+import { SiReact } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 export default function AboutPage() {
 	const tech = [
-		"TypeScript",
-		"React Js",
-		"Next JS",
-		"Node",
-		"MongoDb",
-		"Graphql",
-		"PostgreSQL",
+		{ name: "Next JS ", icons: <TbBrandNextjs /> },
+		{ name: "TypeScript", icons: <TbBrandTypescript /> },
+		{ name: "React Js ", icons: <SiReact /> },
+		{ name: "Node", icons: <TbBrandNodejs /> },
+		{ name: "MongoDb", icons: <TbBrandMongodb /> },
+		{ name: "Graphql", icons: <TbBrandGraphql /> },
+		{ name: "PostgreSQL", icons: <BiLogoPostgresql /> },
 	];
 	return (
 		<div className=" p-2 w-full flex flex-col sm:flex-col md:flex-col lg:flex-row gap-1 items-start justify-around">
@@ -28,8 +37,8 @@ export default function AboutPage() {
 							Deerwalk Institute{" "}
 						</a>{" "}
 						. At the same time , I am pursuing by Bachelor&apos;s
-						degree in Computer Science from St Lawrence College
-						which is affiliated to
+						degree in Computer Science from St Lawrence College,
+						affiliated to
 						<a
 							href="https://tu.edu.np/"
 							className="font-semibold text-blue-500"
@@ -40,17 +49,20 @@ export default function AboutPage() {
 					</p>
 					<div className="w-full px-3 ">
 						<p className="font-medium text-lg sm:font-medium sm:text-xl">
-							Technologies I have been working with
+							Technologies I have been working with&#58;
 						</p>
 						<ul className="text-sm py-1 font-medium sm:text-base sm:font-medium list-none">
 							{tech.map((tech, i) => (
 								<FadeInSection key={i} delay={(i + 1) * 100}>
 									<li
-										className="flex items-center gap-1"
+										className="flex items-center gap-1 h-fit"
 										key={i}
 									>
 										<IoIosArrowDroprightCircle />
-										{tech}
+										{tech.name}
+										<span className="text-2xl md:text-3xl py-[1px] px-[3px] text-center text-gray-700">
+											{tech.icons}
+										</span>
 									</li>
 								</FadeInSection>
 							))}
