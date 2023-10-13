@@ -13,7 +13,7 @@ export default function Creations() {
 			},
 		},
 		{
-			title: "React-Porfolio",
+			title: "React-Portfolio",
 			content: "Explore My React Portfolio made with plain react-app.",
 			techStack: ["React JS"],
 			links: {
@@ -44,7 +44,7 @@ export default function Creations() {
 		{
 			title: "Discord-Bot-AI",
 			content:
-				"A Discord bot which generates human like text powered with OpenAi ChatGpt 3.5 API",
+				"A Discord bot which generates human like text powered with OpenAi's ChatGpt 3.5 API",
 			techStack: ["Node Js , ", "JavaScript"],
 			links: {
 				github: "https://github.com/darkweb19/discord-bot-chatgpt",

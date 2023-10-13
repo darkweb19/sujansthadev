@@ -60,7 +60,7 @@ export default function AboutPage() {
 									>
 										<IoIosArrowDroprightCircle />
 										{tech.name}
-										<span className="text-2xl md:text-3xl py-[1px] px-[3px] text-center text-gray-800">
+										<span className="text-2xl md:text-3xl py-[1px] px-[3px] text-center text-gray-700">
 											{tech.icons}
 										</span>
 									</li>
