@@ -13,10 +13,10 @@ export default function AboutPage() {
 		"PostgreSQL",
 	];
 	return (
-		<div className=" p-1 w-full flex flex-col sm:flex-row gap-1 items-center justify-around ">
-			<div className="h-3/4 w-full sm:w-3/6">
+		<div className=" p-1 w-full flex flex-col sm:flex-col md:flex-col lg:flex-row gap-2 items-center justify-around ">
+			<div className="h-3/4 w-full sm:w-5/6">
 				<FadeInSection delay={100}>
-					<p className="p-3 sm:p-3 sm:text-lg font-medium text-slate-800 text-base text-justify">
+					<p className="p-3 sm:p-3 w-5/6  sm:text-lg font-medium text-slate-800 text-base text-justify">
 						I have completed my bootcamp course in the MERN stack
 						from{" "}
 						<a
