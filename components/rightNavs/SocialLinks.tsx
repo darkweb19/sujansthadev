@@ -1,4 +1,5 @@
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
 
 export default function SocialLinks() {
 	return (
@@ -22,7 +23,7 @@ export default function SocialLinks() {
 						href="https://www.instagram.com/sujansthaa/"
 						target="__blank"
 					>
-						<FaInstagram />
+						<BsInstagram />
 					</a>
 				</li>
 			</ul>

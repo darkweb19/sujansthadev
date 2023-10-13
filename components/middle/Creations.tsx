@@ -28,7 +28,7 @@ export default function Creations() {
 			techStack: ["Next JS v13 ,", "TypeScript"],
 			links: {
 				github: "https://github.com/darkweb19/threads-client",
-				share: "https://darkweb19.github.io/react-portfolio/",
+				share: "",
 			},
 		},
 		{
@@ -48,7 +48,7 @@ export default function Creations() {
 			techStack: ["Node Js , ", "JavaScript"],
 			links: {
 				github: "https://github.com/darkweb19/discord-bot-chatgpt",
-				share: "https://darkweb19.github.io/react-portfolio/",
+				share: "",
 			},
 		},
 	];
