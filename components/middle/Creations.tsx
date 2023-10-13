@@ -5,7 +5,7 @@ export default function Creations() {
 		{
 			title: "ChatGpt Web App",
 			content:
-				"Welcome to the ChatGPT Clone App repository! This is a simplified version of the ChatGPT application that allows users to interact with a GPT-3.5 powered chatbot.",
+				"A ChatGPT Clone App repository! This is a simplified version of the ChatGPT application  with a GPT-3.5 powered chatbot.",
 			techStack: ["JavaScript, ", "NodeJs, ", "React"],
 			links: {
 				github: "https://github.com/darkweb19/ChatGpt-App",
@@ -24,7 +24,7 @@ export default function Creations() {
 		{
 			title: "Threads-Clone",
 			content:
-				"A frontend design of Threads made with Next Js, understanding a brief about App Router and File based routing in Next JS 13v",
+				"A frontend design of Threads made with Next Js, understanding a brief about App Router in Next JS 13v",
 			techStack: ["Next JS v13 ,", "TypeScript"],
 			links: {
 				github: "https://github.com/darkweb19/threads-client",
@@ -55,10 +55,10 @@ export default function Creations() {
 
 	return (
 		// card list
-		<div className=" h-fit w-full flex p-3">
+		<div className="h-fit w-full flex p-3">
 			{/* card  */}
 			{data.map((datas, i) => (
-				<Cards key={i} data={datas} />
+				<Cards key={i} data={datas} delay={i * 100} />
 			))}
 		</div>
 	);
