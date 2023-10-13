@@ -1,6 +1,7 @@
 import Image from "next/image";
 import mine from "@/public/assets/mine.jpeg";
 import FadeInSection from "./FadeInSection";
+import { IoIosArrowDroprightCircle } from "react-icons/io";
 
 export default function AboutPage() {
 	const tech = [
@@ -13,7 +14,7 @@ export default function AboutPage() {
 		"PostgreSQL",
 	];
 	return (
-		<div className=" p-1 w-full flex flex-col sm:flex-col md:flex-col lg:flex-row gap-2 items-center justify-around ">
+		<div className=" p-2 w-full flex flex-col sm:flex-col md:flex-col lg:flex-row gap-2 items-center justify-around">
 			<div className="h-3/4 w-full sm:w-5/6">
 				<FadeInSection delay={100}>
 					<p className="p-3 sm:p-3 w-5/6  sm:text-lg font-medium text-slate-800 text-base text-justify">
@@ -41,19 +42,26 @@ export default function AboutPage() {
 						<p className="font-medium text-lg sm:font-medium sm:text-lg">
 							Technologies I have been working with
 						</p>
-						<ul className="text-sm font-medium sm:text-base sm:font-medium  px-4 list-disc">
+						<ul className="text-sm font-medium sm:text-base sm:font-medium list-none">
 							{tech.map((tech, i) => (
 								<FadeInSection key={i} delay={(i + 1) * 100}>
-									<li key={i}>{tech}</li>
+									<li
+										className="flex items-center gap-1"
+										key={i}
+									>
+										<IoIosArrowDroprightCircle />
+										{tech}
+									</li>
 								</FadeInSection>
 							))}
 						</ul>
 					</div>
 				</FadeInSection>
 			</div>
+
 			<Image
 				src={mine}
-				className="rounded-xl shadow-4xl  sm:block sm:h-auto sm:w-auto"
+				className="rounded-xl shadow-4xl  sm:h-auto sm:w-auto"
 				alt="My Pic"
 				height={250}
 				width={250}
