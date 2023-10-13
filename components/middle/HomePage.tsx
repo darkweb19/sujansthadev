@@ -12,16 +12,20 @@ export default function HomePage() {
 
 	return (
 		<div className=" flex items-center w-full h-full">
-			<div className=" flex flex-col justify-center  items-center h-2/4 ">
-				<FadeInSection delay={100}>
-					<div className="w-4/5">
-						<p className="text-3xl sm:text-5xl text-start font-bold gradient-text ">
+			<div className=" flex flex-col  justify-center sm:items-center h-2/4 ">
+				<div className="w-4/5 ml-10 sm:ml-0 flex flex-col justify-center items-start">
+					<FadeInSection delay={200}>
+						<p className="text-3xl p-1 sm:text-5xl font-bold gradient-text ">
 							HELLO WORLD
 						</p>
-						<div className="flex  sm:p-1 text-2xl sm:text-3xl font-semibold text-slate-600">
+					</FadeInSection>
+					<FadeInSection delay={500}>
+						<div className="flex text-center p-2 sm:p-1 text-2xl sm:text-3xl font-semibold text-slate-600">
 							<Typing />
 						</div>
-						<div className=" p-1  w-4/5 text-slate-800">
+					</FadeInSection>
+					<FadeInSection delay={700}>
+						<div className=" p-2  w-4/5 text-slate-800">
 							<p className="text-justify font-medium text-base sm:text-lg">
 								I am a Software Engineer and a student from
 								Nepal. I have a keen interest in Full-Stack
@@ -29,16 +33,18 @@ export default function HomePage() {
 								everything in between
 							</p>
 						</div>
+					</FadeInSection>
 
-						{/* gmail animation  */}
+					{/* gmail animation  */}
+					<FadeInSection delay={900}>
 						<div className="gmail w-[15%] sm:w-[11%]">
 							<Lottie
 								animationData={gmailData}
 								onClick={() => changeMailIcon()}
 							/>
 						</div>
-					</div>
-				</FadeInSection>
+					</FadeInSection>
+				</div>
 			</div>
 		</div>
 	);

@@ -23,7 +23,7 @@ export default function FadeInSection({
 	}, []);
 	return (
 		<div
-			className={`w-fit fade-in-section ${isVisible ? "is-visible" : ""}`}
+			className={`fade-in-section h-fit ${isVisible && "is-visible"}`}
 			ref={ref}
 			style={{ transitionDelay: `${delay}ms` }}
 		>

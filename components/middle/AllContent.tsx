@@ -14,21 +14,24 @@ export default function AllContent() {
 				<HomePage />
 
 				{/* about page  */}
-				<div className="w-full h-fit">
+				<div
+					id="about"
+					className="w-full h-fit sm:h-fit md:h-fit lg:h-[90vh]"
+				>
 					<BorderLined title={"statement"} />
 					<AboutPage />
 				</div>
 
 				{/* personal creations  */}
-				<div className=" w-full p-2 h-fit mt-10">
+				<div id="creation" className=" w-full p-2  h-screen ">
 					<BorderLined title={"creations"} />
-					<div className="w-full overflow-scroll no-scrollbar">
+					<div className="w-full  h-1/2 flex flex-col gap-4 overflow-y-scroll no-scrollbar">
 						<Creations />
 					</div>
 				</div>
 			</div>
 
-			<div className=" sm:col-span-2  p-2 ">
+			<div className=" sm:col-span-2 mt-10 p-2 ">
 				<div className=" h-4/5 w-full flex flex-col items-center justify-between ">
 					<SocialLinks />
 
