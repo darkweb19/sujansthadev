@@ -45,7 +45,7 @@ export default function Acamdemics() {
 				</div>
 			</FadeInSection>
 
-			<FadeInSection delay={600}>
+			<FadeInSection delay={900}>
 				<div className="   flex flex-grow gap-2 justify-center items-center p-2 mt-5">
 					<div className="w-1/4 h-full flex justify-start items-center text-base font-medium text-slate-800">
 						July 2020 - Current
