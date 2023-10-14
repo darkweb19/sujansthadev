@@ -4,6 +4,7 @@ import HomePage from "@/components/middle/HomePage";
 import AboutPage from "@/components/middle/AboutPage";
 import BorderLined from "@/components/middle/BorderLined";
 import Creations from "@/components/middle/Creations";
+import Acamdemics from "./Academics";
 
 export default function AllContent() {
 	return (
@@ -28,6 +29,12 @@ export default function AllContent() {
 					<div className="w-full  h-1/2 flex flex-col gap-4 overflow-y-scroll no-scrollbar">
 						<Creations />
 					</div>
+				</div>
+
+				{/* academics  */}
+				<div className="w-full p-2 h-screen">
+					<BorderLined title="academics" />
+					<Acamdemics />
 				</div>
 			</div>
 
