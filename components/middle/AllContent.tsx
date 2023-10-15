@@ -30,13 +30,12 @@ export default function AllContent() {
 				</div>
 
 				{/* academics  */}
-				<div id="academics" className="w-full p-2 h-screen">
+				<div id="academics" className="w-full p-2 h-fit sm:h-screen">
 					<BorderLined title="academics" />
 					<Acamdemics />
 				</div>
 
 				{/* Footer and Copyrights  */}
-
 				<Copyrights />
 			</div>
 
