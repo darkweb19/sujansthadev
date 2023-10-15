@@ -18,7 +18,7 @@ export default function Navigations() {
 				</FadeInSection>
 				<FadeInSection delay={1700}>
 					<li className="cursor-pointer hover:text-gray-500">
-						<Link href="#creation">/academics</Link>
+						<Link href="#academics">/academics</Link>
 					</li>
 				</FadeInSection>
 			</ul>

@@ -15,16 +15,13 @@ export default function AllContent() {
 				<HomePage />
 
 				{/* about page  */}
-				<div
-					id="about"
-					className="w-full h-fit sm:h-fit md:h-fit lg:h-[90vh]"
-				>
+				<div id="about" className="w-full h-fit sm:h-fit md:h-fit ">
 					<BorderLined title={"statement"} />
 					<AboutPage />
 				</div>
 
 				{/* personal creations  */}
-				<div id="creation" className=" w-full p-2  h-screen ">
+				<div id="creation" className=" w-full p-2  h-screen mt-10 ">
 					<BorderLined title={"creations"} />
 					<div className="w-full  h-1/2 flex flex-col gap-4 overflow-y-scroll no-scrollbar">
 						<Creations />
@@ -32,7 +29,7 @@ export default function AllContent() {
 				</div>
 
 				{/* academics  */}
-				<div className="w-full p-2 h-screen">
+				<div id="academics" className="w-full p-2 h-screen">
 					<BorderLined title="academics" />
 					<Acamdemics />
 				</div>

@@ -27,7 +27,7 @@ export default function Cards({
 					<h1 className="font-semibold py-1 sm:p-1 text-base sm:text-lg">
 						{data.title}
 					</h1>
-					<div className="py-0 sm:py-2 h-[150px] md:h-[150px]">
+					<div className="py-0 sm:py-2 h-[130px] md:h-[150px]">
 						<p className="font-medium text-justify text-sm text-gray-700 py-1 h-fit w-full sm:text-sm">
 							{data.content}
 						</p>
@@ -39,7 +39,7 @@ export default function Cards({
 							))}
 						</ul>
 					</div>
-					<div className="flex gap-4 w-full h-fit p-2 mt-2 text-2xl justify-start">
+					<div className="flex gap-4 w-full mt-1 h-fit md:mt-2 md:p-2 text-xl justify-start md:text-2xl">
 						<Link
 							href={data.links.github}
 							className="hover:text-gray-600"

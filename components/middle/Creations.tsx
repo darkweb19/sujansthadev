@@ -58,7 +58,7 @@ export default function Creations() {
 		<div className="h-fit w-full flex p-3">
 			{/* card  */}
 			{data.map((datas, i) => (
-				<Cards key={i} data={datas} delay={i * 100} />
+				<Cards key={i} data={datas} delay={i * 300} />
 			))}
 		</div>
 	);
