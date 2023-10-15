@@ -5,8 +5,11 @@ import AboutPage from "@/components/middle/AboutPage";
 import BorderLined from "@/components/middle/BorderLined";
 import Creations from "@/components/middle/Creations";
 import Acamdemics from "./Academics";
+import { BiCopyright } from "react-icons/bi";
 
 export default function AllContent() {
+	const date = new Date();
+
 	return (
 		<div className="h-screen w-screen flex flex-col gap-2 sm:grid sm:grid-cols-11">
 			<div className=" sm:col-span-2 "></div>
@@ -32,6 +35,18 @@ export default function AllContent() {
 				<div id="academics" className="w-full p-2 h-screen">
 					<BorderLined title="academics" />
 					<Acamdemics />
+				</div>
+
+				{/* Footer and Copyrights  */}
+				<div className="h-fit p-1 border-black flex flex-col items-center justify-center gap-1 text-sm font-medium text-slate-700">
+					<p>Made with Next Js by Sujan Shrestha </p>
+					<p className="flex items-center gap-1">
+						All Rights Reserved.{`${" "} ${date.getFullYear()}`}
+						<p className="text-base font-bold">
+							{" "}
+							<BiCopyright />{" "}
+						</p>
+					</p>
 				</div>
 			</div>
 

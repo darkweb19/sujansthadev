@@ -33,7 +33,7 @@ export default function Acamdemics() {
 	return (
 		<div className="w-full h-fit p-3 mt-3">
 			{data.map((datas, i) => (
-				<FadeInSection key={i} delay={300}>
+				<FadeInSection key={i} delay={datas.delay}>
 					<div className="flex flex-grow gap-2 justify-center items-center p-1 mt-5">
 						<div className="w-1/4 h-full flex justify-start items-start text-base font-medium text-slate-800">
 							{datas.date}
