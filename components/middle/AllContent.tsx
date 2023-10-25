@@ -16,7 +16,10 @@ export default function AllContent() {
 				<HomePage />
 
 				{/* about page  */}
-				<div id="about" className="w-full h-fit sm:h-fit md:h-fit ">
+				<div
+					id="about"
+					className="w-full h-fit sm:h-fit md:h-fit lg:h-screen"
+				>
 					<BorderLined title={"statement"} />
 					<AboutPage />
 				</div>
