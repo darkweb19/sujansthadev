@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
+import { SiLinktree } from "react-icons/si";
 
 export default function SocialLinks() {
 	return (
@@ -24,6 +25,11 @@ export default function SocialLinks() {
 						target="__blank"
 					>
 						<BsInstagram />
+					</a>
+				</li>
+				<li className="cursor-pointer hover:text-slate-600 hover:scale-125 duration-150">
+					<a href="https://linktr.ee/sujansthadev" target="__blank">
+						<SiLinktree />
 					</a>
 				</li>
 			</ul>
