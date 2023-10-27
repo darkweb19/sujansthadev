@@ -4,10 +4,10 @@ export default function Acamdemics() {
 	//data variable
 	const data = [
 		{
-			date: "March 2006 - April 2018",
+			date: "Marchs 2006 - April 2018",
 			delay: 300,
 			title: "Primary Schooling",
-			schoolName: "Himalayan Pyramid Higher Secondary School , Birgunj",
+			schoolName: "Little Flower Secondary School , Birgunj",
 			content:
 				"Successfully passed Secondary Education Examination SEE held by Ministry of Education , Nepal with Grade Point Average of 3.35.",
 		},
@@ -15,7 +15,7 @@ export default function Acamdemics() {
 		{
 			date: "July 2018 - March 2020",
 			delay: 600,
-			title: "Imtermediate in Science",
+			title: "Intermediate in Science",
 			schoolName: "Himalayan Pyramid Higher Secondary School , Birgunj",
 			content:
 				"Successfully passed Higher Secondary Education Examination held by NEB , Nepal with Grade Point Average of 3.19.",

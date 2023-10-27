@@ -13,14 +13,6 @@ export default function SocialLinks() {
 				</li>
 				<li className="cursor-pointer hover:text-slate-600 hover:scale-125 duration-150">
 					<a
-						href="https://www.linkedin.com/in/sujan-shrestha3220/"
-						target="__blank"
-					>
-						<FaLinkedin />
-					</a>
-				</li>
-				<li className="cursor-pointer hover:text-slate-600 hover:scale-125 duration-150">
-					<a
 						href="https://www.instagram.com/sujansthaa/"
 						target="__blank"
 					>
