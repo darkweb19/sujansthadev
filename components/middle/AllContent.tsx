@@ -4,8 +4,8 @@ import HomePage from "@/components/middle/HomePage";
 import AboutPage from "@/components/middle/AboutPage";
 import BorderLined from "@/components/middle/BorderLined";
 import Creations from "@/components/middle/Creations";
-import Acamdemics from "./Academics";
 import Copyrights from "./Copyright";
+import Academics from "./Academics";
 
 export default function AllContent() {
 	return (
@@ -35,7 +35,7 @@ export default function AllContent() {
 				{/* academics  */}
 				<div id="academics" className="w-full p-2 h-fit sm:h-screen">
 					<BorderLined title="academics" />
-					<Acamdemics />
+					<Academics />
 				</div>
 
 				{/* Footer and Copyrights  */}

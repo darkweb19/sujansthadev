@@ -1,10 +1,10 @@
 import FadeInSection from "./FadeInSection";
 
-export default function Acamdemics() {
+export default function Academics() {
 	//data variable
 	const data = [
 		{
-			date: "Marchs 2006 - April 2018",
+			date: "March 2006 - April 2018",
 			delay: 300,
 			title: "Primary Schooling",
 			schoolName: "Little Flower Secondary School , Birgunj",
