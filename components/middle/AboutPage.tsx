@@ -1,5 +1,5 @@
 import Image from "next/image";
-import mine from "@/public/assets/mine.jpeg";
+import mine from "@/app/opengraph-image.jpeg";
 import FadeInSection from "./FadeInSection";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import {
