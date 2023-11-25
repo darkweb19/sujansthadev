@@ -21,6 +21,11 @@ export default function Navigations() {
 						<Link href="#academics">/academics</Link>
 					</li>
 				</FadeInSection>
+				<FadeInSection delay={1900}>
+					<li className="cursor-pointer hover:text-gray-500">
+						<Link href="/notes">/notes</Link>
+					</li>
+				</FadeInSection>
 			</ul>
 		</div>
 	);
