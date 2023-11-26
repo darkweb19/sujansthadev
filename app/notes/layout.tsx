@@ -7,6 +7,7 @@ import {
 	Ubuntu,
 	Rubik,
 } from "next/font/google";
+
 import { Providers } from "../providers";
 
 export const metadata: Metadata = {
@@ -26,7 +27,7 @@ export const playpenSans = Playpen_Sans({ subsets: ["latin"] });
 
 export const ubuntu = Ubuntu({
 	subsets: ["latin"],
-	weight: "700",
+	weight: "500",
 });
 
 const inter = Inter({ subsets: ["latin"] });
