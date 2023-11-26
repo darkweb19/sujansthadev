@@ -59,7 +59,7 @@ export default function CardsUi() {
 	return (
 		<div className="gap-2 grid grid-cols-2 sm:grid-cols-4 mt-3">
 			{list.map((item, index) => (
-				<Link href={`notes${item.link}`}>
+				<Link key={index} href={`notes${item.link}`}>
 					<Card
 						shadow="sm"
 						key={index}
