@@ -1,19 +1,58 @@
-import chatgpt from "@/public/assets/chatgpt.png";
-import Image from "next/image";
+import { Button } from "@nextui-org/button";
+import { Divider } from "@nextui-org/divider";
+import { lilitaFont, playpenSans, ubuntu } from "./layout";
+import Link from "next/link";
+import CardsUi from "@/components/Notes/Carding";
+
 export default function Notes() {
 	return (
-		<div className="h-screen w-full  overflow-scroll scroll-smooth ">
-			<div className="h-60  border mt-14 p-5 flex flex-col justify-center items-center">
-				<h1 className="text-3xl text-gray-800">What is programming?</h1>
-				<p className="border w-2/5 text-justify p-2 text-gray-800 text-lg font-normal">
-					Well , in short , the process of building a piece of
-					computer program to solve a specific or a set of problems.
-				</p>
+		<div className="h-fit w-full scroll-smooth">
+			<div className="mt-20 h-80 flex flex-col justify-center items-center">
+				<h1
+					className={`${lilitaFont.className} text-4xl text-gray-700 font-normal`}
+				>
+					Memorizing snippets
+				</h1>
+				<h2
+					className={`${playpenSans.className} text-2xl  text-light-green  font-medium`}
+				>
+					can be tedious while learning to{" "}
+					<span
+						className={`${ubuntu.className} text-dark-green text-3xl font-semibold`}
+					>
+						CODE.
+					</span>{" "}
+				</h2>
+				<div className=" h-14 w-1/4 flex items-center justify-center gap-2">
+					<Button
+						radius="lg"
+						className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-slate-white font-medium shadow-lg"
+					>
+						<Link href="/">Begin Your Journey</Link>
+					</Button>
+					<Button
+						radius="lg"
+						className="bg-black text-slate-white font-medium shadow-lg"
+					>
+						<Link href="/">Tech Stacks</Link>
+					</Button>
+				</div>
 			</div>
-			<div className="h-60 border">
-				<h1>Learn web development with Notes</h1>
-				<p>By Sujan Shrestha</p>
+			<Divider className="my-4" />
+
+			<div className="flex flex-col mt-6 items-center justify-center h-3/6 p-2">
+				<h1
+					className={`${ubuntu.className} text-3xl text-gray-700 text-center font-medium`}
+				>
+					Explore Programming Languages
+				</h1>
+
+				<div className="  w-5/6  h-fit p-3">
+					<CardsUi />
+				</div>
 			</div>
+
+			<div className="h-screen"></div>
 		</div>
 	);
 }
