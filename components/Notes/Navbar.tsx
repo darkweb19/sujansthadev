@@ -1,10 +1,20 @@
 import Image from "next/image";
 import mine from "../../public/assets/logo.png";
 import Link from "next/link";
-export default function Navbar() {
+import { ubuntu } from "@/app/notes/layout";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
+import {
+	Navbar,
+	NavbarBrand,
+	NavbarContent,
+	NavbarItem,
+} from "@nextui-org/navbar";
+
+export default function NavBar() {
 	return (
-		<nav>
-			<div className=" h-14 w-full rounded-sm flex items-center justify-around backdrop-blur-lg fixed top-0 left-0 z-10">
+		<Navbar isBordered>
+			<NavbarBrand>
 				<Image
 					className="rounded-lg"
 					src={mine}
@@ -12,28 +22,34 @@ export default function Navbar() {
 					width="80"
 					alt="logo"
 				/>
-				<ul className=" h-full flex items-center justify-evenly gap-2 font-medium w-3/6">
-					<Link
-						className="p-2 rounded-md hover:bg-red-300 duration-300"
-						href="/"
-					>
-						Home
+			</NavbarBrand>
+			<NavbarContent className="hidden sm:flex gap-4" justify="center">
+				<NavbarItem className={ubuntu.className}>
+					<Link href="/">/Home</Link>
+				</NavbarItem>
+				<NavbarItem>
+					<Link className={ubuntu.className} href="#">
+						/Blog
 					</Link>
-
-					<Link
-						className="p-2 rounded-md hover:bg-red-300 duration-300"
-						href="#"
-					>
-						Blog
+				</NavbarItem>
+				<NavbarItem>
+					<Link className={ubuntu.className} href="/notes">
+						/Notes
 					</Link>
-					<Link
-						className="p-2 rounded-md hover:bg-red-300 duration-300"
-						href="#"
-					>
-						Blog
+				</NavbarItem>
+			</NavbarContent>
+			<NavbarContent justify="end">
+				<NavbarItem className="hidden lg:flex text-2xl">
+					<Link href="https://github.com/darkweb19">
+						<FaGithub />
 					</Link>
-				</ul>
-			</div>
-		</nav>
+				</NavbarItem>
+				<NavbarItem className="text-2xl">
+					<Link href="https://www.linkedin.com/in/sujan-shrestha3220/">
+						<FaLinkedin />
+					</Link>
+				</NavbarItem>
+			</NavbarContent>
+		</Navbar>
 	);
 }
