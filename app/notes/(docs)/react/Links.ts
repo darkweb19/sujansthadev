@@ -8,3 +8,7 @@ export const reactLinks = [
 		link_title: "Introduction of React",
 	},
 ];
+
+export const mainPageLink = {
+	link: "/notes/react",
+};
