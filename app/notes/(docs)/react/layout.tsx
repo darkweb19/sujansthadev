@@ -11,7 +11,6 @@ export default function ReactLayout({
 	children: React.ReactNode;
 }) {
 	const pathname = usePathname();
-	console.log(pathname);
 	return (
 		<section className={`${lato.className} font-medium h-[90vh]`}>
 			<div className=" w-full h-full flex border  ">
