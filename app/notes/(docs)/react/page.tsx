@@ -6,6 +6,7 @@ import react from "@/public/assets/reactImage.png";
 import { FaReact } from "react-icons/fa";
 import { Button } from "@nextui-org/button";
 import Link from "next/link";
+import { RiNotionLine } from "react-icons/ri";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -56,16 +57,31 @@ export default function ReactPage() {
 							with an ease.
 						</p>
 
-						<div className=" h-fit w-full text-left px-6 pt-2">
+						<div className=" h-fit w-full flex gap-4 items-center justify-start px-6 pt-2">
 							<Link
 								href="https://react.dev/learn"
 								target="_blank"
 							>
 								<Button
 									radius="md"
-									className="bg-gradient-to-tr from-blue-500  text-lg font-medium to-blue-600 text-white shadow-lg"
+									className="bg-gradient-to-tr from-[#139CC7]  text-lg font-medium to-blue-400 text-white shadow-lg"
 								>
 									Get Started
+								</Button>
+							</Link>
+							<Link
+								href="https://darkweb19.notion.site/React-Js-28dcf08255c9475f842d20c67abb5368?pvs=4"
+								target="_blank"
+								className="mt"
+							>
+								<Button
+									radius="md"
+									className="bg-gradient-to-tr from-black  text-lg font-medium to-yello-600 text-white shadow-lg"
+								>
+									<span className="text-xl">
+										<RiNotionLine />
+									</span>
+									Notion
 								</Button>
 							</Link>
 						</div>

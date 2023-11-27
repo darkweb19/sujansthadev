@@ -6,6 +6,6 @@ export async function generateMetadata(): Promise<Metadata> {
 		description: "Notes of React js including some snippets",
 	};
 }
-export default function intoReact() {
+export default function reactJSX() {
 	return <div>About React JSx</div>;
 }
