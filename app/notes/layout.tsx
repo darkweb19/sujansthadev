@@ -10,12 +10,6 @@ import {
 
 import { Providers } from "../providers";
 
-export const metadata: Metadata = {
-	title: "Coding Notes",
-	description: "A passionate full-stack web developer from Nepal.",
-	metadataBase: new URL("https://sujansthadev.com.np"),
-};
-
 export const rubik = Rubik({ subsets: ["latin"] });
 
 export const lilitaFont = Lilita_One({
