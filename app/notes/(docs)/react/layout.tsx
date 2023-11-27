@@ -46,8 +46,6 @@ export default function ReactLayout({
 							<div className="border h-80"></div>
 							<div className="border h-80"></div>
 							<div className="border h-80"></div>
-							<div className="border h-80"></div>
-							<div className="border h-80"></div>
 						</ul>
 					</ScrollShadow>
 				</div>

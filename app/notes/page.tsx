@@ -35,7 +35,7 @@ export default function Notes() {
 						radius="lg"
 						className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-slate-white font-medium shadow-lg"
 					>
-						<Link href="/">Begin Your Journey</Link>
+						<Link href="#journey">Begin Your Journey</Link>
 					</Button>
 					<Button
 						radius="lg"
@@ -47,7 +47,10 @@ export default function Notes() {
 			</div>
 			<Divider className="my-4" />
 
-			<div className="flex flex-col mt-6 items-center justify-center h-3/6 p-2">
+			<div
+				id="journey"
+				className="flex flex-col mt-6 items-center justify-center h-3/6 p-2"
+			>
 				<h1
 					className={`${ubuntu.className} text-3xl text-gray-700 text-center font-medium`}
 				>

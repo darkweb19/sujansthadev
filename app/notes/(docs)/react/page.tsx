@@ -16,7 +16,20 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function ReactPage() {
 	return (
-		<div className="flex flex-col gap-5">
+		<div className="flex flex-col gap-1">
+			<div className="border flex px-4  justify-between items-center">
+				<Link href="#">
+					<Button radius="sm" isDisabled color="primary">
+						Prev
+					</Button>
+				</Link>
+
+				<Link href="/notes/react/setup">
+					<Button radius="sm" color="primary">
+						Next
+					</Button>
+				</Link>
+			</div>
 			<div className="border w-full flex justify-around h-fit p-2">
 				<div className="flex flex-col justify-evenly">
 					<h1

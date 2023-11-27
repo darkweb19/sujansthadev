@@ -4,8 +4,8 @@ export const reactLinks = [
 		link_title: "Setting up react",
 	},
 	{
-		links: "/notes/react/intro",
-		link_title: "Introduction of React",
+		links: "/notes/react/react-jsx",
+		link_title: "React JSX",
 	},
 ];
 
