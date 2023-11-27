@@ -42,15 +42,20 @@ export default function NavBar() {
 			</NavbarBrand>
 			<NavbarContent className="hidden sm:flex gap-4" justify="center">
 				<NavbarItem className={ubuntu.className}>
-					<Link href="/">/Home</Link>
+					<Link className={`${ubuntu.className} text-lg`} href="/">
+						/Home
+					</Link>
 				</NavbarItem>
 				<NavbarItem>
-					<Link className={ubuntu.className} href="#">
+					<Link className={`${ubuntu.className} text-lg`} href="#">
 						/Blog
 					</Link>
 				</NavbarItem>
 				<NavbarItem>
-					<Link className={ubuntu.className} href="/notes">
+					<Link
+						className={`${ubuntu.className} text-lg`}
+						href="/notes"
+					>
 						/Notes
 					</Link>
 				</NavbarItem>
@@ -76,12 +81,9 @@ export default function NavBar() {
 				</NavbarItem>
 				<NavbarMenu>
 					{menuItems.map((item, index) => (
-						<NavbarMenuItem
-							className="border border-black"
-							key={`${item}-${index}`}
-						>
+						<NavbarMenuItem key={`${item}-${index}`}>
 							<Link
-								className="w-full border border-black"
+								className={`${ubuntu.className} w-full`}
 								href={item.link}
 							>
 								{item.title}
