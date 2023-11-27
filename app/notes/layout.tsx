@@ -28,7 +28,7 @@ export const ubuntu = Ubuntu({
 	weight: ["300", "400"],
 });
 
-const inter = Inter({ subsets: ["latin"] });
+export const inter = Inter({ subsets: ["latin"] });
 
 export default function Layout({ children }: { children: React.ReactNode }) {
 	return (

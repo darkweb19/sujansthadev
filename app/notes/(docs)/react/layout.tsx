@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { lato } from "../../layout";
-import { reactLinks } from "./Links";
+import { reactLinks, mainPageLink } from "./Links";
 import { usePathname } from "next/navigation";
 import { ScrollShadow } from "@nextui-org/scroll-shadow";
 
@@ -18,7 +18,15 @@ export default function ReactLayout({
 				<div className="h-full w-1/5 border-r-2 border-slate-black p-2 overflow-scroll scroll-smooth">
 					<ScrollShadow className="w-full h-full">
 						<h1 className="text-xl font-medium">
-							<Link href="/notes/react">Introduction</Link>
+							<Link
+								className={`${
+									pathname === mainPageLink.link &&
+									"underline underline-offset-2 duration-200 text-slate-600"
+								}`}
+								href={mainPageLink.link}
+							>
+								Introduction
+							</Link>
 						</h1>
 						<ul className=" w-full  px-3">
 							{reactLinks.map((item, ind) => (
@@ -26,7 +34,7 @@ export default function ReactLayout({
 									<Link
 										className={`${
 											pathname === item.links &&
-											"underline underline-offset-2 duration-200"
+											"underline underline-offset-2 duration-200 text-slate-600"
 										} `}
 										href={item.links}
 									>
@@ -45,7 +53,6 @@ export default function ReactLayout({
 				</div>
 				<div className="border-r-2 border-slate-black p-2  w-4/5 h-[90vh] overflow-scroll scroll-smooth">
 					{children}
-					<div className="border border-black h-96"></div>
 				</div>
 			</div>
 			<div></div>
