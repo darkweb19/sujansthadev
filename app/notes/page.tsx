@@ -3,6 +3,13 @@ import { Divider } from "@nextui-org/divider";
 import { lilitaFont, playpenSans, ubuntu } from "./layout";
 import Link from "next/link";
 import CardsUi from "@/components/Notes/Carding";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Coding Notes",
+	description: "A passionate full-stack web developer from Nepal.",
+	metadataBase: new URL("https://sujansthadev.com.np"),
+};
 
 export default function Notes() {
 	return (
