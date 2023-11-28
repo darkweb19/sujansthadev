@@ -5,57 +5,59 @@ import { redirect } from "next/navigation";
 import { FaCss3, FaHtml5, FaJsSquare, FaPython, FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { TbBrandCpp, TbBrandCupra } from "react-icons/tb";
+
+export const list = [
+	{
+		title: "React Js",
+		icon: <FaReact />,
+		link: "/react",
+		price: "$5.50",
+	},
+	{
+		title: "HTML5",
+		icon: <FaHtml5 />,
+		link: "/html",
+		price: "$3.00",
+	},
+	{
+		title: "CSS3",
+		icon: <FaCss3 />,
+		link: "/css",
+		price: "$10.00",
+	},
+	{
+		title: "JavaScript",
+		icon: <FaJsSquare />,
+		link: "/js",
+		price: "$5.30",
+	},
+	{
+		title: "Next Js",
+		icon: <SiNextdotjs />,
+		link: "/next",
+		price: "$15.70",
+	},
+	{
+		title: "Python",
+		icon: <FaPython />,
+		link: "/python",
+		price: "$8.00",
+	},
+	{
+		title: "C++",
+		icon: <TbBrandCpp />,
+		link: "/cpp",
+		price: "$7.50",
+	},
+	{
+		title: "Watermelon",
+		icon: <TbBrandCupra />,
+		link: "/nothing",
+		price: "$12.20",
+	},
+];
+
 export default function CardsUi() {
-	const list = [
-		{
-			title: "React Js",
-			icon: <FaReact />,
-			link: "/react",
-			price: "$5.50",
-		},
-		{
-			title: "HTML5",
-			icon: <FaHtml5 />,
-			link: "/html",
-			price: "$3.00",
-		},
-		{
-			title: "CSS3",
-			icon: <FaCss3 />,
-			link: "/css",
-			price: "$10.00",
-		},
-		{
-			title: "JavaScript",
-			icon: <FaJsSquare />,
-			link: "/js",
-			price: "$5.30",
-		},
-		{
-			title: "Next Js",
-			icon: <SiNextdotjs />,
-			link: "/next",
-			price: "$15.70",
-		},
-		{
-			title: "Python",
-			icon: <FaPython />,
-			link: "/python",
-			price: "$8.00",
-		},
-		{
-			title: "C++",
-			icon: <TbBrandCpp />,
-			link: "/cpp",
-			price: "$7.50",
-		},
-		{
-			title: "Watermelon",
-			icon: <TbBrandCupra />,
-			link: "/nothing",
-			price: "$12.20",
-		},
-	];
 	return (
 		<div className="gap-2 grid grid-cols-2 sm:grid-cols-4 mt-3">
 			{list.map((item, index) => (
