@@ -55,7 +55,7 @@ export default function reactJSX() {
 							JSX allows you to write HTML-like code in your
 							JavaScript files, making it more readable and
 							concise when defining the structure of your UI
-							components. Here's an example of JSX:
+							components. Here&apos;s an example of JSX:
 						</p>
 
 						<Code
@@ -84,7 +84,7 @@ export default function reactJSX() {
 							className="bg-slate-black text-light-white mt-2 p-2 w-fit flex flex-col relative left-7"
 							size="md"
 						>
-							<span>const name = 'Sujan Shrestha'</span>
+							<span>const name = &apos;Sujan Shrestha&apos;</span>
 							<span>
 								const element=&lt;h1&gt; Hello,&#123;name&#125;
 								&lt;/h1&gt;;
@@ -141,7 +141,7 @@ export default function reactJSX() {
 								response.potentiallyMaliciousInput;
 							</span>
 							<span className="text-slate-400">
-								// This is safe:
+								&#47;&#47; This is safe:
 							</span>
 							<span>
 								const
