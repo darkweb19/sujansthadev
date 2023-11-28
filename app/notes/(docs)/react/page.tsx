@@ -7,6 +7,7 @@ import { FaReact } from "react-icons/fa";
 import { Button } from "@nextui-org/button";
 import Link from "next/link";
 import { RiNotionLine } from "react-icons/ri";
+import TopNavButtons from "@/components/Notes/TopNavButtons";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -18,19 +19,11 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function ReactPage() {
 	return (
 		<div className="flex flex-col gap-1">
-			<div className="border flex px-4  justify-between items-center">
-				<Link href="#">
-					<Button radius="sm" isDisabled color="primary">
-						Prev
-					</Button>
-				</Link>
-
-				<Link href="/notes/react/setup">
-					<Button radius="sm" color="primary">
-						Next
-					</Button>
-				</Link>
-			</div>
+			<TopNavButtons
+				nextLink="/notes/react/setup"
+				prevLink="#"
+				prevdisabled={true}
+			/>
 			<div className="border w-full flex justify-around h-fit p-2">
 				<div className="flex flex-col justify-evenly">
 					<h1
@@ -38,7 +31,7 @@ export default function ReactPage() {
 					>
 						React Home
 					</h1>
-					<div className="border w-5/6 h-fit ">
+					<div className="border p-3 w-11/12 h-fit ">
 						<h1
 							className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
 						>

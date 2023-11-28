@@ -1,11 +1,10 @@
 import { lilitaFont, ubuntu, inter } from "@/app/notes/layout";
-import DangerNote from "@/components/Notes/DangerNote";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import WarningNote from "@/components/Notes/WarninNote";
 import { Code } from "@nextui-org/code";
-import { Snippet } from "@nextui-org/snippet";
 import type { Metadata } from "next";
 import Link from "next/link";
+
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -14,20 +13,21 @@ export async function generateMetadata(): Promise<Metadata> {
 		description: "Notes of React js including some snippets",
 	};
 }
-export default function reactJSX() {
+export default function ReactJSX() {
 	return (
 		<div className="flex flex-col gap-1">
 			<TopNavButtons nextLink="#" prevLink="/notes/react/setup" />
-			<div className="border w-full flex justify-around h-fit p-2">
-				<div className="flex flex-col justify-evenly">
+
+			<div className="w-full flex justify-around h-fit p-2">
+				<div className="flexflex-col justify-evenly">
 					<h1
-						className={`${lilitaFont.className} text-4xl text-gray-700`}
+						className={`${lilitaFont.className} text-4xl px-3 md:p-0 text-gray-700`}
 					>
 						React JSX
 					</h1>
-					<div className="border w-5/6 h-fit ">
+					<div className="border p-3 w-11/12 h-fit ">
 						<h1
-							className={`${ubuntu.className} text-3xl font-medium text-slate-black mt-4`}
+							className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
 						>
 							What is JSX?
 						</h1>
@@ -41,21 +41,14 @@ export default function reactJSX() {
 							appearance to HTML, hence provides a way to easily
 							write HTML in react.
 						</p>
-						<h1
-							className={`${ubuntu.className} text-3xl font-medium text-slate-black mt-4`}
-						>
-							Why to use JSX?
-						</h1>
 						<p
-							className={`${inter.className} flex gap-1 text-lg text-justify`}
+							className={`${inter.className} flex gap-1 pl-7 text-lg text-justify`}
 						>
-							<span className="border py-1 h-fit text-xl">
-								<IoIosArrowDroprightCircle />
-							</span>
-							JSX allows you to write HTML-like code in your
-							JavaScript files, making it more readable and
-							concise when defining the structure of your UI
-							components. Here&apos;s an example of JSX:
+							React doesn&apos;t require using JSX, but most
+							people find it helpful as a visual aid when working
+							with UI inside the JavaScript code. It also allows
+							React to show more useful error and warning
+							messages.
 						</p>
 
 						<Code

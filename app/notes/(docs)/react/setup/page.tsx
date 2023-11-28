@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
-import { Button } from "@nextui-org/button";
-import Link from "next/link";
 import { Snippet } from "@nextui-org/snippet";
 import SuccessNote from "@/components/Notes/SuccessNote";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
@@ -21,16 +19,16 @@ export default function SetUp() {
 				nextLink="/notes/react/react-jsx"
 				prevLink="/notes/react/"
 			/>
-			<div className="border w-full flex justify-around h-fit p-2">
+			<div className="w-full flex justify-around h-fit p-2">
 				<div className="flex flex-col justify-evenly">
 					<h1
 						className={`${lilitaFont.className} text-4xl text-gray-700`}
 					>
 						React Setup
 					</h1>
-					<div className="border w-5/6 h-fit ">
+					<div className="border p-3 w-11/12 h-fit ">
 						<h1
-							className={`${ubuntu.className} text-3xl font-medium text-slate-black mt-4`}
+							className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
 						>
 							Setting up React
 						</h1>
