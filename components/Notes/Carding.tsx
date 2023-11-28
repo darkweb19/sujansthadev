@@ -2,7 +2,14 @@
 import { Card, CardBody, CardFooter } from "@nextui-org/card";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import { FaCss3, FaHtml5, FaJsSquare, FaPython, FaReact } from "react-icons/fa";
+import {
+	FaCss3,
+	FaGithub,
+	FaHtml5,
+	FaJsSquare,
+	FaPython,
+	FaReact,
+} from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { TbBrandCpp, TbBrandCupra } from "react-icons/tb";
 
@@ -11,49 +18,49 @@ export const list = [
 		title: "React Js",
 		icon: <FaReact />,
 		link: "/react",
-		price: "$5.50",
+		price: ".jsx | .tsx",
 	},
 	{
 		title: "HTML5",
 		icon: <FaHtml5 />,
 		link: "/html",
-		price: "$3.00",
+		price: ".html",
 	},
 	{
 		title: "CSS3",
 		icon: <FaCss3 />,
 		link: "/css",
-		price: "$10.00",
+		price: ".css",
 	},
 	{
 		title: "JavaScript",
 		icon: <FaJsSquare />,
 		link: "/js",
-		price: "$5.30",
+		price: ".js | .ts",
 	},
 	{
 		title: "Next Js",
 		icon: <SiNextdotjs />,
 		link: "/next",
-		price: "$15.70",
+		price: ".jsx | .tsx",
 	},
 	{
 		title: "Python",
 		icon: <FaPython />,
 		link: "/python",
-		price: "$8.00",
+		price: ".py",
 	},
 	{
 		title: "C++",
 		icon: <TbBrandCpp />,
 		link: "/cpp",
-		price: "$7.50",
+		price: ".cpp",
 	},
 	{
-		title: "Watermelon",
-		icon: <TbBrandCupra />,
-		link: "/nothing",
-		price: "$12.20",
+		title: "git",
+		icon: <FaGithub />,
+		link: "/git",
+		price: ".git",
 	},
 ];
 

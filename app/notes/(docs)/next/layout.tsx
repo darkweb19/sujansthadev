@@ -5,6 +5,7 @@ import { nextLinks, mainPageLink } from "./Links";
 import { usePathname } from "next/navigation";
 import { ScrollShadow } from "@nextui-org/scroll-shadow";
 import { IoMdArrowDropright } from "react-icons/io";
+import RightAsideTab from "@/components/Notes/RightAsideTabs";
 
 export default function NextLayout({
 	children,
@@ -15,7 +16,7 @@ export default function NextLayout({
 	return (
 		<section className={`${lato.className} font-medium h-[90vh]`}>
 			<div className=" w-full h-full flex border  ">
-				<div className="h-full w-1/5 border-r-2 border-slate-black py-2 overflow-scroll scroll-smooth hidden md:block">
+				<div className="h-full w-2/12 border-r-2 border-slate-black py-2 overflow-scroll scroll-smooth hidden md:block">
 					<ScrollShadow className="w-full h-full">
 						<h1 className="text-2xl text-start p-2 font-medium">
 							<Link
@@ -55,11 +56,11 @@ export default function NextLayout({
 						</ul>
 					</ScrollShadow>
 				</div>
-				<div className="border-r-2 border-slate-black p-2 w-full md:w-4/5 h-[90vh] overflow-scroll scroll-smooth">
+				<div className="border-r-2 border-slate-black p-2 w-full lg:w-9/12 h-[90vh] overflow-scroll scroll-smooth">
 					{children}
 				</div>
+				<RightAsideTab />
 			</div>
-			<div></div>
 		</section>
 	);
 }
