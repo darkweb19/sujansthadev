@@ -15,10 +15,11 @@ export default function docsLayout({
 		<section>
 			<div className="hidden md:block border-b-2 border-violet-400">
 				<ul className="flex gap-4 items-center justify-center">
-					{list.map((links) => (
+					{list.map((links, index) => (
 						<Link
 							href={`/notes${links.link}`}
 							className={`${playpenSans.className} text-xl font-normal`}
+							key={index}
 						>
 							<li
 								className={`${
