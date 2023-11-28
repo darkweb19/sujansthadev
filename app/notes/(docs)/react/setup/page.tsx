@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { inter, lilitaFont, ubuntu, playpenSans } from "@/app/notes/layout";
+import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
 import { Button } from "@nextui-org/button";
 import Link from "next/link";
 import { Snippet } from "@nextui-org/snippet";
 import SuccessNote from "@/components/Notes/SuccessNote";
+import TopNavButtons from "@/components/Notes/TopNavButtons";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -16,19 +17,10 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function SetUp() {
 	return (
 		<div className="flex flex-col gap-1">
-			<div className="border flex px-4  justify-between items-center">
-				<Link href="/notes/react">
-					<Button radius="sm" color="primary">
-						Prev
-					</Button>
-				</Link>
-
-				<Link href="/notes/react/react-jsx">
-					<Button radius="sm" color="primary">
-						Next
-					</Button>
-				</Link>
-			</div>
+			<TopNavButtons
+				nextLink="/notes/react/react-jsx"
+				prevLink="/notes/react/"
+			/>
 			<div className="border w-full flex justify-around h-fit p-2">
 				<div className="flex flex-col justify-evenly">
 					<h1
@@ -126,19 +118,11 @@ export default function SetUp() {
 					</div>
 				</div>
 			</div>
-			<div className="border flex px-4  justify-between items-center">
-				<Link href="/notes/react">
-					<Button radius="sm" color="primary">
-						Prev
-					</Button>
-				</Link>
 
-				<Link href="/notes/react/react-jsx">
-					<Button radius="sm" color="primary">
-						Next
-					</Button>
-				</Link>
-			</div>
+			<TopNavButtons
+				nextLink="/notes/react/react-jsx"
+				prevLink="/notes/react/"
+			/>
 		</div>
 	);
 }
