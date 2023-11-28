@@ -4,6 +4,9 @@ import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
 import { Snippet } from "@nextui-org/snippet";
 import SuccessNote from "@/components/Notes/SuccessNote";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
+import { Code } from "@nextui-org/code";
+import WarningNote from "@/components/Notes/WarninNote";
+import { FaCircle } from "react-icons/fa";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -16,8 +19,8 @@ export default function ReactProps() {
 	return (
 		<div className="flex flex-col gap-1">
 			<TopNavButtons
-				nextLink="/notes/react/react-jsx"
-				prevLink="/notes/react/"
+				nextLink="/notes/react/components"
+				prevLink="/notes/react/react-jsx"
 			/>
 			<div className="w-full flex justify-around h-fit p-2">
 				<div className="flex flex-col justify-evenly">
@@ -30,7 +33,7 @@ export default function ReactProps() {
 						<h1
 							className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
 						>
-							Setting up React
+							React Props
 						</h1>
 						<p
 							className={`${inter.className} flex gap-1 text-lg text-justify`}
@@ -38,88 +41,79 @@ export default function ReactProps() {
 							<span className="border py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
 							</span>
-							Open your terminal to create your application. Run
-							this command to create a React application named
-							my-react-app:
+							In React, "props" is short for "properties," and it
+							refers to a mechanism for passing data from one
+							component to another. Props are a way to send
+							information from a parent component to a child
+							component.
 						</p>
 
-						<Snippet
-							className="bg-slate-black text-light-white mt-2 p-2 relative left-7"
+						<Code
+							className="bg-slate-black text-light-white mt-2 p-2 flex flex-col relative left-7"
 							size="md"
 						>
-							npx create-react-app@latest my-react-app
-						</Snippet>
+							<span>function Welcome(props) &#123;</span>
+							<span>
+								return &lt;h1&gt; Hello, &#123;props.name&#125;!
+								&lt;/h1&gt;;
+							</span>
+						</Code>
 						<h1
 							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
 						>
-							Creating in current directory
+							Inside Component
+						</h1>
+
+						<Code
+							className="bg-slate-black text-light-white mt-2 p-2 relative left-7"
+							size="md"
+						>
+							<span>
+								&lt;Welcome name=&#34;Sujan&#34; &#47;&gt;
+							</span>
+						</Code>
+						<WarningNote content="Always start component names with a capital letter." />
+
+						<h1
+							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
+						>
+							Internal React Flow
 						</h1>
 						<p
 							className={`${inter.className} flex gap-1 mt-2 text-lg text-justify`}
 						>
-							<span className="border py-1 h-fit text-xl">
-								<IoIosArrowDroprightCircle />
+							<span className="border py-1 h-fit text-sm">
+								<FaCircle />
 							</span>
-							Open your terminal in the directory you would like
-							to create your application. Run this command to
-							create a React application:
+							React calls the {`Welcome`} component with
+							&#123;name: &#34;Sujan&#34; &#125; as the props
 						</p>
-						<Snippet
-							className="bg-slate-black text-light-white mt-2 p-2 relative left-7"
-							size="md"
-						>
-							npx create-react-app@latest .
-						</Snippet>
-						<p
-							className={`${inter.className}  text-lg p-2 mt-2 text-justify`}
-						>
-							In this case , every file will be placed in the
-							current directory.
-						</p>
-						<SuccessNote content="When choosing folder name, make sure there are no spaces or capital letters because of npm naming restrictions." />
-						<h1
-							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
-						>
-							Development Server
-						</h1>
 						<p
 							className={`${inter.className} flex gap-1 mt-2 text-lg text-justify`}
 						>
-							<span className="border py-1 h-fit text-xl">
-								<IoIosArrowDroprightCircle />
+							<span className="border py-1 h-fit text-sm">
+								<FaCircle />
 							</span>
-							Once base application is created, if folder
-							specified you just have to enter the folder. You can
-							use this command to enter:
+							Our Welcome component returns a{" "}
+							{`<h1>Hello, Sujan!</h1>`}
+							element as the result
 						</p>
-						<Snippet
-							className="bg-slate-black text-light-white  p-2 relative left-7"
-							size="md"
-						>
-							cd my-react-app
-						</Snippet>
 						<p
-							className={`${inter.className} flex gap-1 text-lg mt-2 text-justify`}
+							className={`${inter.className} flex gap-1 mt-2 text-lg text-justify`}
 						>
-							<span className="border py-1 h-fit text-xl">
-								<IoIosArrowDroprightCircle />
+							<span className="border py-1 h-fit text-sm">
+								<FaCircle />
 							</span>
-							Then just start up the application with this
-							command:
+							React DOM efficiently updates the DOM to match
+							{`<h1>Hello, Sujan</h1>!`}.
 						</p>
-						<Snippet
-							className="bg-slate-black text-light-white p-2 relative left-7"
-							size="md"
-						>
-							npm start
-						</Snippet>
 					</div>
 				</div>
 			</div>
 
 			<TopNavButtons
-				nextLink="/notes/react/react-jsx"
-				prevLink="/notes/react/"
+				nextLink="/notes/react/components"
+				prevLink="/notes/react/react-jsx"
 			/>
 		</div>
 	);
