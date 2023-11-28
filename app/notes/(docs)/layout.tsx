@@ -1,10 +1,10 @@
 "use client";
 import { list } from "@/components/Notes/Carding";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { playpenSans } from "../layout";
+import { usePathname } from "next/navigation";
 
-export default function docsLayout({
+export default function DocsLayout({
 	children,
 }: {
 	children: React.ReactNode;
