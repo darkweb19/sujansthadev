@@ -4,6 +4,7 @@ import WarningNote from "@/components/Notes/WarninNote";
 import { Code } from "@nextui-org/code";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { FaCircle } from "react-icons/fa";
 
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 
@@ -77,6 +78,17 @@ export default function ReactJSX() {
 							className="bg-slate-black text-light-white mt-2 p-2 w-fit flex flex-col relative left-7"
 							size="md"
 						>
+							<div className="text-xs flex gap-1 m-1">
+								<span className="text-[#FE5F57]">
+									<FaCircle />
+								</span>
+								<span className="text-[#FEBC2E]">
+									<FaCircle />
+								</span>
+								<span className="text-[#28C840]">
+									<FaCircle />
+								</span>
+							</div>
 							<span>const name = &apos;Sujan Shrestha&apos;</span>
 							<span>
 								const element=&lt;h1&gt; Hello,&#123;name&#125;
@@ -128,6 +140,17 @@ export default function ReactJSX() {
 							className="bg-slate-black text-light-white mt-2 p-2 w-fit flex flex-col relative left-7"
 							size="md"
 						>
+							<div className="text-xs flex gap-1 m-1">
+								<span className="text-[#FE5F57]">
+									<FaCircle />
+								</span>
+								<span className="text-[#FEBC2E]">
+									<FaCircle />
+								</span>
+								<span className="text-[#28C840]">
+									<FaCircle />
+								</span>
+							</div>
 							<span>
 								{" "}
 								const title =

@@ -8,6 +8,10 @@ export const reactLinks = [
 		link_title: "React JSX",
 	},
 	{
+		links: "/notes/react/components",
+		link_title: "React Components",
+	},
+	{
 		links: "/notes/react/props",
 		link_title: "React Props",
 	},
