@@ -7,6 +7,10 @@ export const reactLinks = [
 		links: "/notes/react/react-jsx",
 		link_title: "React JSX",
 	},
+	{
+		links: "/notes/react/props",
+		link_title: "React Props",
+	},
 ];
 
 export const mainPageLink = {
