@@ -41,9 +41,9 @@ export default function ReactProps() {
 							<span className="border py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
 							</span>
-							In React, "props" is short for "properties," and it
-							refers to a mechanism for passing data from one
-							component to another. Props are a way to send
+							In React, {`"props"`} is short for {`"properties,"`}
+							and it refers to a mechanism for passing data from
+							one component to another. Props are a way to send
 							information from a parent component to a child
 							component.
 						</p>
