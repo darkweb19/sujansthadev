@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
-import { Snippet } from "@nextui-org/snippet";
-import SuccessNote from "@/components/Notes/SuccessNote";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import { Code } from "@nextui-org/code";
 import WarningNote from "@/components/Notes/WarninNote";
@@ -19,8 +17,8 @@ export default function ReactProps() {
 	return (
 		<div className="flex flex-col gap-1">
 			<TopNavButtons
-				nextLink="/notes/react/components"
-				prevLink="/notes/react/react-jsx"
+				nextLink="/notes/react/#"
+				prevLink="/notes/react/components"
 			/>
 			<div className="w-full flex justify-around h-fit p-2">
 				<div className="flex flex-col justify-evenly">
@@ -52,6 +50,17 @@ export default function ReactProps() {
 							className="bg-slate-black text-light-white mt-2 p-2 flex flex-col relative left-7"
 							size="md"
 						>
+							<div className="text-xs flex gap-1 m-1">
+								<span className="text-[#FE5F57]">
+									<FaCircle />
+								</span>
+								<span className="text-[#FEBC2E]">
+									<FaCircle />
+								</span>
+								<span className="text-[#28C840]">
+									<FaCircle />
+								</span>
+							</div>
 							<span>function Welcome(props) &#123;</span>
 							<span>
 								return &lt;h1&gt; Hello, &#123;props.name&#125;!
@@ -112,8 +121,8 @@ export default function ReactProps() {
 			</div>
 
 			<TopNavButtons
-				nextLink="/notes/react/components"
-				prevLink="/notes/react/react-jsx"
+				nextLink="/notes/react/#"
+				prevLink="/notes/react/components"
 			/>
 		</div>
 	);
