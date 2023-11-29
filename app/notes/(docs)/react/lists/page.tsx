@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
-import { Snippet } from "@nextui-org/snippet";
-import SuccessNote from "@/components/Notes/SuccessNote";
+import { inter, lilitaFont } from "@/app/notes/layout";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
+import { FaCircle } from "react-icons/fa";
+import { Code } from "@nextui-org/code";
+import React from "react";
+import WarningNote from "@/components/Notes/WarninNote";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -16,110 +18,87 @@ export default function ReactLists() {
 	return (
 		<div className="flex flex-col gap-1">
 			<TopNavButtons
-				nextLink="/notes/react/react-jsx"
-				prevLink="/notes/react/"
+				nextLink="/notes/react/#"
+				prevLink="/notes/react/conditionals"
 			/>
+
 			<div className="w-full flex justify-around h-fit p-2">
 				<div className="flex flex-col justify-evenly">
 					<h1
 						className={`${lilitaFont.className} text-4xl text-gray-700`}
 					>
-						React Setup
+						React Lists
 					</h1>
 					<div className="border p-3 w-11/12 h-fit ">
-						<h1
-							className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
-						>
-							Setting up React
-						</h1>
 						<p
 							className={`${inter.className} flex gap-1 text-lg text-justify`}
 						>
 							<span className="border py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
 							</span>
-							Open your terminal to create your application. Run
-							this command to create a React application named
-							my-react-app:
+							In React, a list is a way to render multiple
+							components or elements dynamically based on an array
+							of data. Lists are a common pattern in web
+							development, and React provides a convenient way to
+							work with them.
 						</p>
-
-						<Snippet
-							className="bg-slate-black text-light-white mt-2 p-2 relative left-7"
-							size="md"
-						>
-							npx create-react-app@latest my-react-app
-						</Snippet>
-						<h1
-							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
-						>
-							Creating in current directory
-						</h1>
 						<p
-							className={`${inter.className} flex gap-1 mt-2 text-lg text-justify`}
+							className={`${inter.className} pl-6 text-lg text-justify`}
 						>
-							<span className="border py-1 h-fit text-xl">
-								<IoIosArrowDroprightCircle />
-							</span>
-							Open your terminal in the directory you would like
-							to create your application. Run this command to
-							create a React application:
+							To render a list of elements in React, you typically
+							map over an array of data and create React elements
+							for each item in the array
 						</p>
-						<Snippet
-							className="bg-slate-black text-light-white mt-2 p-2 relative left-7"
+						<Code
+							className="bg-slate-black text-light-white p-3 flex flex-col relative left-7"
 							size="md"
 						>
-							npx create-react-app@latest .
-						</Snippet>
+							<div className="text-xs flex gap-1 m-1">
+								<span className="text-[#FE5F57]">
+									<FaCircle />
+								</span>
+								<span className="text-[#FEBC2E]">
+									<FaCircle />
+								</span>
+								<span className="text-[#28C840]">
+									<FaCircle />
+								</span>
+							</div>
+							<span>{`import React from 'react';`} </span>
+							<span className="mt-2">{`export const MyList = () => {`}</span>
+							<span className="relative left-4">
+								{`const data = ['Code', 'JavaScript', 'React' , 'Next']; `}
+							</span>
+							<span className="relative mt-1 left-9">{` return (`}</span>
+							<span className="relative left-14">{`</ul>`}</span>
+							<span className="relative left-16">
+								{`{data.map((item, index) => (`}
+							</span>
+							<span className="relative left-20">
+								{`<li key={index}>{item}</li>`}
+							</span>
+							<span className="relative left-16">{`))}`}</span>
+							<span className="relative left-14">{`  </ul>`}</span>
+
+							<span className="relative left-9">{`  );`}</span>
+							<span>{`};`}</span>
+						</Code>
 						<p
 							className={`${inter.className}  text-lg p-2 mt-2 text-justify`}
 						>
-							In this case , every file will be placed in the
-							current directory.
+							This is a basic example, and you can apply more
+							complex logic when rendering each item in the list
+							based on your specific requirements.
 						</p>
-						<SuccessNote content="When choosing folder name, make sure there are no spaces or capital letters because of npm naming restrictions." />
-						<h1
-							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
-						>
-							Development Server
-						</h1>
-						<p
-							className={`${inter.className} flex gap-1 mt-2 text-lg text-justify`}
-						>
-							<span className="border py-1 h-fit text-xl">
-								<IoIosArrowDroprightCircle />
-							</span>
-							Once base application is created, if folder
-							specified you just have to enter the folder. You can
-							use this command to enter:
-						</p>
-						<Snippet
-							className="bg-slate-black text-light-white  p-2 relative left-7"
-							size="md"
-						>
-							cd my-react-app
-						</Snippet>
-						<p
-							className={`${inter.className} flex gap-1 text-lg mt-2 text-justify`}
-						>
-							<span className="border py-1 h-fit text-xl">
-								<IoIosArrowDroprightCircle />
-							</span>
-							Then just start up the application with this
-							command:
-						</p>
-						<Snippet
-							className="bg-slate-black text-light-white p-2 relative left-7"
-							size="md"
-						>
-							npm start
-						</Snippet>
+
+						<WarningNote content="React provides a key prop for each element in a list to help with efficient rendering. The key prop is used to uniquely identify each item in the list." />
 					</div>
 				</div>
 			</div>
 
 			<TopNavButtons
-				nextLink="/notes/react/react-jsx"
-				prevLink="/notes/react/"
+				nextLink="/notes/react/#"
+				prevLink="/notes/react/conditionals"
 			/>
 		</div>
 	);
