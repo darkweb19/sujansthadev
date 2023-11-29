@@ -92,8 +92,8 @@ export default function ReactHooks() {
 								<FaCircle />
 							</span>
 							Hooks can only be called at the top level of a
-							component, meaning it can't be called from inside a
-							block, i.e. {`{}`}.
+							component, meaning it can&apos;t be called from
+							inside a block, i.e. {`{}`}.
 						</p>
 
 						<WarningNote content="React provides a few built-in Hooks like useState. You can also create your own Hooks to reuse stateful behavior between different components. " />
