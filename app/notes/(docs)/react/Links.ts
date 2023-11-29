@@ -25,6 +25,37 @@ export const reactLinks = [
 	},
 ];
 
-export const mainPageLink = {
+export const introLink = {
 	link: "/notes/react",
 };
+
+export const hookLink = {
+	link: "/notes/react/hooks",
+};
+
+export const reactLinksHooks = [
+	{
+		links: "/notes/react/useState",
+		link_title: "React useState Hook",
+	},
+	{
+		links: "/notes/react/useEffect",
+		link_title: "React useEffect Hook",
+	},
+	{
+		links: "/notes/react/useRef",
+		link_title: "React useRef Hook",
+	},
+	{
+		links: "/notes/react/useContext",
+		link_title: "React useContext",
+	},
+	{
+		links: "/notes/react/useCallback",
+		link_title: "React useCallback ",
+	},
+	{
+		links: "/notes/react/useMemo",
+		link_title: "React useMemo Hook",
+	},
+];

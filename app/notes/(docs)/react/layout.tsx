@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { lato } from "../../layout";
-import { reactLinks, mainPageLink } from "./Links";
+import { reactLinks, introLink, reactLinksHooks, hookLink } from "./Links";
 import { usePathname } from "next/navigation";
 import { ScrollShadow } from "@nextui-org/scroll-shadow";
 import { IoMdArrowDropright } from "react-icons/io";
@@ -21,10 +21,10 @@ export default function ReactLayout({
 						<h1 className="text-2xl text-start p-2 font-medium">
 							<Link
 								className={`${
-									pathname === mainPageLink.link &&
+									pathname === introLink.link &&
 									"underline underline-offset-2 duration-200 text-slate-600"
 								}`}
-								href={mainPageLink.link}
+								href={introLink.link}
 							>
 								Introduction
 							</Link>
@@ -50,9 +50,39 @@ export default function ReactLayout({
 									</Link>
 								</li>
 							))}
-							<div className="border h-80"></div>
-							<div className="border h-80"></div>
-							<div className="border h-80"></div>
+						</ul>
+						<h1 className="text-2xl text-start p-2 font-medium">
+							<Link
+								className={`${
+									pathname === hookLink.link &&
+									"underline underline-offset-2 duration-200 text-slate-600"
+								}  font-medium`}
+								href={hookLink.link}
+							>
+								React Hooks
+							</Link>
+						</h1>
+						<ul className=" w-full px-1 ">
+							{reactLinksHooks.map((item, ind) => (
+								<li
+									key={ind}
+									className="px-2 flex items-center justify-start"
+								>
+									<span className=" h-fit w-fit text-2xl">
+										<IoMdArrowDropright />
+									</span>
+									<Link
+										className={`${
+											pathname === item.links &&
+											"underline font-medium underline-offset-2 duration-200 text-slate-600"
+										} text-lg font-semibold`}
+										href={item.links}
+									>
+										{" "}
+										{item.link_title}{" "}
+									</Link>
+								</li>
+							))}
 						</ul>
 					</ScrollShadow>
 				</div>

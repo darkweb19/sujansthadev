@@ -18,7 +18,7 @@ export default function ReactLists() {
 	return (
 		<div className="flex flex-col gap-1">
 			<TopNavButtons
-				nextLink="/notes/react/#"
+				nextLink="/notes/react/hooks"
 				prevLink="/notes/react/conditionals"
 			/>
 
@@ -97,7 +97,7 @@ export default function ReactLists() {
 			</div>
 
 			<TopNavButtons
-				nextLink="/notes/react/#"
+				nextLink="/notes/react/hooks"
 				prevLink="/notes/react/conditionals"
 			/>
 		</div>
