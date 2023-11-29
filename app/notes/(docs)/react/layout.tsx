@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { lato } from "../../layout";
+import { lato, ubuntu } from "../../layout";
 import { reactLinks, introLink, reactLinksHooks, hookLink } from "./Links";
 import { usePathname } from "next/navigation";
 import { ScrollShadow } from "@nextui-org/scroll-shadow";
@@ -18,12 +18,12 @@ export default function ReactLayout({
 			<div className=" w-full h-full flex border  ">
 				<div className="h-full w-2/12 border-r-2 border-slate-black py-2 overflow-scroll scroll-smooth hidden md:block">
 					<ScrollShadow className="w-full h-full">
-						<h1 className="text-2xl text-start p-2 font-medium">
+						<h1 className="text-2xl text-start p-2 ">
 							<Link
 								className={`${
 									pathname === introLink.link &&
 									"underline underline-offset-2 duration-200 text-slate-600"
-								}`}
+								} font-semibold ${ubuntu.className}`}
 								href={introLink.link}
 							>
 								Introduction
@@ -42,7 +42,7 @@ export default function ReactLayout({
 										className={`${
 											pathname === item.links &&
 											"underline underline-offset-2 duration-200 text-slate-600"
-										} text-lg `}
+										} text-lg font-semibold`}
 										href={item.links}
 									>
 										{" "}
@@ -51,12 +51,12 @@ export default function ReactLayout({
 								</li>
 							))}
 						</ul>
-						<h1 className="text-2xl text-start p-2 font-medium">
+						<h1 className="text-2xl text-start p-2">
 							<Link
 								className={`${
 									pathname === hookLink.link &&
 									"underline underline-offset-2 duration-200 text-slate-600"
-								}  font-medium`}
+								}  font-semibold ${ubuntu.className}`}
 								href={hookLink.link}
 							>
 								React Hooks
