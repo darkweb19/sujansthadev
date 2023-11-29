@@ -15,6 +15,10 @@ export const reactLinks = [
 		links: "/notes/react/props",
 		link_title: "React Props",
 	},
+	{
+		links: "/notes/react/conditionals",
+		link_title: "React Conditionals",
+	},
 ];
 
 export const mainPageLink = {
