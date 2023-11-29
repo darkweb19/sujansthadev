@@ -1,4 +1,3 @@
-import { Button } from "@nextui-org/button";
 import Link from "next/link";
 
 export default function TopNavButtons({
@@ -14,16 +13,22 @@ export default function TopNavButtons({
 }) {
 	return (
 		<div className="border flex px-4 justify-between items-center">
-			<Link href={prevLink}>
-				<Button isDisabled={prevdisabled} radius="sm" color="primary">
-					Prev
-				</Button>
+			<Link
+				className={`${
+					prevdisabled && "bg-[#7397E3]"
+				} px-4 py-1 text-slate-white bg-[#0956EB] rounded-lg`}
+				href={prevLink}
+			>
+				Prev
 			</Link>
 
-			<Link href={nextLink}>
-				<Button isDisabled={nextdisabled} radius="sm" color="primary">
-					Next
-				</Button>
+			<Link
+				className={`${
+					nextdisabled && "bg-[#7397E3]"
+				} px-4 py-1 text-slate-white bg-[#0956EB] rounded-lg`}
+				href={nextLink}
+			>
+				Next
 			</Link>
 		</div>
 	);

@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
-import { Snippet } from "@nextui-org/snippet";
-import SuccessNote from "@/components/Notes/SuccessNote";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
+import { FaCircle } from "react-icons/fa";
+import WarningNote from "@/components/Notes/WarninNote";
+import Link from "next/link";
+import { Button } from "@nextui-org/button";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -16,9 +18,10 @@ export default function ReactHooks() {
 	return (
 		<div className="flex flex-col gap-1">
 			<TopNavButtons
-				nextLink="/notes/react/react-jsx"
-				prevLink="/notes/react/"
+				nextLink="/notes/react/useState"
+				prevLink="/notes/react/lists"
 			/>
+
 			<div className="w-full flex justify-around h-fit p-2">
 				<div className="flex flex-col justify-evenly">
 					<h1
@@ -38,88 +41,114 @@ export default function ReactHooks() {
 							<span className="border py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
 							</span>
-							Open your terminal to create your application. Run
-							this command to create a React application named
-							my-react-app:
+							Hooks are functions that let you “hook into” React
+							state and lifecycle features from function
+							components..They let you use state and other React
+							features without writing a class.
 						</p>
 
-						<Snippet
-							className="bg-slate-black text-light-white mt-2 p-2 relative left-7"
-							size="md"
-						>
-							npx create-react-app@latest my-react-app
-						</Snippet>
 						<h1
 							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
 						>
-							Creating in current directory
+							Things to know before using hooks in :
 						</h1>
 						<p
-							className={`${inter.className} flex gap-1 mt-2 text-lg text-justify`}
+							className={`${inter.className}text-xl font-medium flex items-center gap-1 py-1 px-5  text-justify`}
 						>
-							<span className="border py-1 h-fit text-xl">
-								<IoIosArrowDroprightCircle />
+							<span className="border py-1 h-fit text-xs">
+								<FaCircle />
 							</span>
-							Open your terminal in the directory you would like
-							to create your application. Run this command to
-							create a React application:
+							You must import hook first
 						</p>
-						<Snippet
-							className="bg-slate-black text-light-white mt-2 p-2 relative left-7"
-							size="md"
-						>
-							npx create-react-app@latest .
-						</Snippet>
 						<p
-							className={`${inter.className}  text-lg p-2 mt-2 text-justify`}
+							className={`${inter.className}text-xl font-medium flex items-center gap-1 py-1 px-5  text-justify`}
 						>
-							In this case , every file will be placed in the
-							current directory.
+							<span className="border py-1 h-fit text-xs">
+								<FaCircle />
+							</span>
+							Import it from React.
 						</p>
-						<SuccessNote content="When choosing folder name, make sure there are no spaces or capital letters because of npm naming restrictions." />
+						<p
+							className={`${inter.className}text-xl font-medium flex items-center gap-1 py-1 px-5  text-justify`}
+						>
+							<span className="border py-1 h-fit text-xs">
+								<FaCircle />
+							</span>
+							Hooks can only be called in React Function
+							Components.
+						</p>
+						<p
+							className={`${inter.className}text-xl font-medium flex items-center gap-1 py-1 px-5  text-justify`}
+						>
+							<span className="border py-1 h-fit text-xs">
+								<FaCircle />
+							</span>
+							Hooks cannot be conditional
+						</p>
+						<p
+							className={`${inter.className}text-xl font-medium flex items-center gap-1 py-1 px-5  text-justify`}
+						>
+							<span className="border py-1 h-fit text-xs">
+								<FaCircle />
+							</span>
+							Hooks can only be called at the top level of a
+							component, meaning it can't be called from inside a
+							block, i.e. {`{}`}.
+						</p>
+
+						<WarningNote content="React provides a few built-in Hooks like useState. You can also create your own Hooks to reuse stateful behavior between different components. " />
 						<h1
 							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
 						>
-							Development Server
+							The most commonly used hooks are :
 						</h1>
+
 						<p
-							className={`${inter.className} flex gap-1 mt-2 text-lg text-justify`}
+							className={`${inter.className}text-xl font-medium flex items-center gap-1 px-5  text-justify`}
 						>
-							<span className="border py-1 h-fit text-xl">
-								<IoIosArrowDroprightCircle />
+							<span className="border h-fit font-semibold text-base">
+								1.
 							</span>
-							Once base application is created, if folder
-							specified you just have to enter the folder. You can
-							use this command to enter:
+							<Link
+								className="text-blue-500"
+								href="/notes/react/useState"
+							>
+								useState Hook
+							</Link>
 						</p>
-						<Snippet
-							className="bg-slate-black text-light-white  p-2 relative left-7"
-							size="md"
-						>
-							cd my-react-app
-						</Snippet>
 						<p
-							className={`${inter.className} flex gap-1 text-lg mt-2 text-justify`}
+							className={`${inter.className}text-xl font-medium flex items-center gap-1 px-5  text-justify`}
 						>
-							<span className="border py-1 h-fit text-xl">
-								<IoIosArrowDroprightCircle />
+							<span className="border  h-fit font-semibold text-base">
+								2.
 							</span>
-							Then just start up the application with this
-							command:
+							<Link
+								className="text-blue-500"
+								href="/notes/react/useEffect"
+							>
+								useEffect Hook
+							</Link>
 						</p>
-						<Snippet
-							className="bg-slate-black text-light-white p-2 relative left-7"
-							size="md"
+						<p
+							className={`${inter.className}text-xl font-medium flex items-center gap-1 px-5  text-justify`}
 						>
-							npm start
-						</Snippet>
+							<span className="border h-fit font-semibold text-base">
+								3.
+							</span>
+							<Link
+								className="text-blue-500"
+								href="/notes/react/useRef"
+							>
+								useRef Hook
+							</Link>
+						</p>
 					</div>
 				</div>
 			</div>
 
 			<TopNavButtons
-				nextLink="/notes/react/react-jsx"
-				prevLink="/notes/react/"
+				nextLink="/notes/react/useState"
+				prevLink="/notes/react/lists"
 			/>
 		</div>
 	);

@@ -17,7 +17,10 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function ReactJSX() {
 	return (
 		<div className="flex flex-col gap-1">
-			<TopNavButtons nextLink="#" prevLink="/notes/react/setup" />
+			<TopNavButtons
+				nextLink="/notes/react/components"
+				prevLink="/notes/react/setup"
+			/>
 
 			<div className="w-full flex justify-around h-fit p-2">
 				<div className="flexflex-col justify-evenly">

@@ -18,7 +18,7 @@ export default function ConditionalPage() {
 		<div className="flex flex-col gap-1">
 			<TopNavButtons
 				prevLink="/notes/react/react-jsx"
-				nextLink="/notes/react/props/lists"
+				nextLink="/notes/react/lists"
 			/>
 			<div className="w-full flex justify-around h-fit p-2">
 				<div className="flex flex-col justify-evenly">
@@ -201,7 +201,7 @@ export default function ConditionalPage() {
 			</div>
 			<TopNavButtons
 				prevLink="/notes/react/react-jsx"
-				nextLink="/notes/react/props/lists"
+				nextLink="/notes/react/lists"
 			/>
 		</div>
 	);

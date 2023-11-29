@@ -17,7 +17,7 @@ export default function ReactProps() {
 	return (
 		<div className="flex flex-col gap-1">
 			<TopNavButtons
-				nextLink="/notes/react/#"
+				nextLink="/notes/react/conditionals"
 				prevLink="/notes/react/components"
 			/>
 			<div className="w-full flex justify-around h-fit p-2">
@@ -121,8 +121,8 @@ export default function ReactProps() {
 			</div>
 
 			<TopNavButtons
-				nextLink="/notes/react/#"
-				prevLink="/notes/react/components"
+				nextLink="/notes/react/conditionals"
+				prevLink="/notes/react/props"
 			/>
 		</div>
 	);
