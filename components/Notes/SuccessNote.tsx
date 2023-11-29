@@ -8,7 +8,7 @@ export default function SuccessNote({ content }: { content: string }) {
 				<RiVerifiedBadgeFill />
 			</div>
 			<p className={`${inter.className} `}>
-				<span className="font-bold">NOTE</span> : {content}
+				<span className="font-bold">Tip</span> : {content}
 			</p>
 		</div>
 	);
