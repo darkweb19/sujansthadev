@@ -42,8 +42,8 @@ export default function ConditionalPage() {
 							In React.js, conditional rendering is a common
 							practice where you render different content or
 							components based on certain conditions. This is
-							achieved using JavaScript's conditional statements
-							and expressions.
+							achieved using JavaScript&apos;s conditional
+							statements and expressions.
 						</p>
 
 						<h1
