@@ -27,7 +27,7 @@ export default function ReactProps() {
 					>
 						React Setup
 					</h1>
-					<div className="border p-3 w-11/12 h-fit ">
+					<div className="border pl-4 sm:pl-1 p-3 w-11/12 h-fit ">
 						<h1
 							className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
 						>

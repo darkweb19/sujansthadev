@@ -23,7 +23,7 @@ export default function ReactJSX() {
 			/>
 
 			<div className="w-full flex justify-around h-fit p-2">
-				<div className="flexflex-col justify-evenly">
+				<div className="flexflex-col pl-4 sm:pl-1 justify-evenly">
 					<h1
 						className={`${lilitaFont.className} text-4xl px-3 md:p-0 text-gray-700`}
 					>

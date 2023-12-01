@@ -22,7 +22,7 @@ export default function SetUp() {
 				prevLink="/notes/react/"
 			/>
 			<div className="w-full flex justify-around h-fit p-2">
-				<div className="flex flex-col justify-evenly">
+				<div className="flex flex-col pl-4 sm:pl-1 justify-evenly">
 					<h1
 						className={`${lilitaFont.className} text-4xl text-gray-700`}
 					>
