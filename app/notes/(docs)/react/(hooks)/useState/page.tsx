@@ -4,6 +4,8 @@ import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
 import { Snippet } from "@nextui-org/snippet";
 import SuccessNote from "@/components/Notes/SuccessNote";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
+import { Code } from "@nextui-org/react";
+import { FaCircle } from "react-icons/fa";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -38,21 +40,87 @@ export default function SetUp() {
 							<span className="border py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
 							</span>
-							Open your terminal to create your application. Run
-							this command to create a React application named
-							my-react-app:
+							useState in react helps to manage the states over
+							the application.
+						</p>
+						<h1
+							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
+						>
+							Importing useState
+						</h1>
+						<p
+							className={`${inter.className} flex gap-1 mt-2 text-lg text-justify`}
+						>
+							<span className="border py-1 h-fit text-xl">
+								<IoIosArrowDroprightCircle />
+							</span>
+							To use useState , we have to import it firsts :
+						</p>
+						<Code
+							className="bg-slate-black text-light-white p-3 flex flex-col relative left-7"
+							size="md"
+						>
+							<div className="text-xs flex gap-1 m-1">
+								<span className="text-[#FE5F57]">
+									<FaCircle />
+								</span>
+								<span className="text-[#FEBC2E]">
+									<FaCircle />
+								</span>
+								<span className="text-[#28C840]">
+									<FaCircle />
+								</span>
+							</div>
+							<span>{`import {useState} from 'react';`} </span>
+						</Code>
+						<h1
+							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
+						>
+							Initilizing useStates
+						</h1>
+						<p
+							className={`${inter.className} flex gap-1 mt-2 text-lg text-justify`}
+						>
+							<span className="border py-1 h-fit text-xl">
+								<IoIosArrowDroprightCircle />
+							</span>
+							You can initialize state like this:
+						</p>
+						<Code
+							className="bg-slate-black text-light-white p-3 flex flex-col relative left-7"
+							size="md"
+						>
+							<div className="text-xs flex gap-1 m-1">
+								<span className="text-[#FE5F57]">
+									<FaCircle />
+								</span>
+								<span className="text-[#FEBC2E]">
+									<FaCircle />
+								</span>
+								<span className="text-[#28C840]">
+									<FaCircle />
+								</span>
+							</div>
+							<span>{`import {useState} from 'react';`} </span>
+							<span>{`const App = () => {`} </span>
+							<span className="relative left-7">{`const [cound, setCount] = useState(0)`}</span>
+							<span>{`};`}</span>
+						</Code>
+						<p
+							className={`${inter.className} flex gap-1 pl-6 text-lg mt-2 text-justify`}
+						>
+							useState takes initial state as argument and gives a
+							state and a function(setCount in this case) to
+							update that state as we can't directly change/update
+							a state. Also, these state names are just like
+							variables, hence you can name them anything you
+							like.
 						</p>
 
-						<Snippet
-							className="bg-slate-black text-light-white mt-2 p-2 relative left-7"
-							size="md"
-						>
-							npx create-react-app@latest my-react-app
-						</Snippet>
 						<h1
 							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
 						>
-							Creating in current directory
+							Reading useStates
 						</h1>
 						<p
 							className={`${inter.className} flex gap-1 mt-2 text-lg text-justify`}
@@ -60,27 +128,48 @@ export default function SetUp() {
 							<span className="border py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
 							</span>
-							Open your terminal in the directory you would like
-							to create your application. Run this command to
-							create a React application:
+							We can read and display the value that are present
+							in the states :
 						</p>
-						<Snippet
-							className="bg-slate-black text-light-white mt-2 p-2 relative left-7"
+						<Code
+							className="bg-slate-black text-light-white p-3 flex flex-col relative left-7"
 							size="md"
 						>
-							npx create-react-app@latest .
-						</Snippet>
+							<div className="text-xs flex gap-1 m-1">
+								<span className="text-[#FE5F57]">
+									<FaCircle />
+								</span>
+								<span className="text-[#FEBC2E]">
+									<FaCircle />
+								</span>
+								<span className="text-[#28C840]">
+									<FaCircle />
+								</span>
+							</div>
+							<span>{`import {useState} from 'react';`} </span>
+							<span>{`const App = () => {`} </span>
+							<span className="relative left-7">{`const [cound, setCount] = useState(0)`}</span>
+							<span className="relative left-11">{`return (`}</span>
+							<span className="relative left-14">{`<div> `}</span>
+							<span className="relative left-20">{`Hello , count value is {count}`}</span>
+							<span className="relative left-14">{`</div> `}</span>
+							<span className="relative left-11">{`);`}</span>
+							<span>{`};`}</span>
+							<span>{`export default App;`}</span>
+						</Code>
 						<p
-							className={`${inter.className}  text-lg p-2 mt-2 text-justify`}
+							className={`${inter.className} flex gap-1 pl-6 text-lg mt-2 text-justify`}
 						>
-							In this case , every file will be placed in the
-							current directory.
+							As mentioned earlier, it returns a state and a
+							function to change/update that state. Hence,
+							everything is stored in name. We can read states
+							just like variables:
 						</p>
-						<SuccessNote content="When choosing folder name, make sure there are no spaces or capital letters because of npm naming restrictions." />
+
 						<h1
 							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
 						>
-							Development Server
+							Updating a State
 						</h1>
 						<p
 							className={`${inter.className} flex gap-1 mt-2 text-lg text-justify`}
@@ -88,31 +177,43 @@ export default function SetUp() {
 							<span className="border py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
 							</span>
-							Once base application is created, if folder
-							specified you just have to enter the folder. You can
-							use this command to enter:
+							To update state we use the function it returns to
+							update state, in this case: setCount. State can be
+							updated like this:
 						</p>
-						<Snippet
-							className="bg-slate-black text-light-white  p-2 relative left-7"
+						<Code
+							className="bg-slate-black text-light-white p-3 flex flex-col relative left-7"
 							size="md"
 						>
-							cd my-react-app
-						</Snippet>
+							<div className="text-xs flex gap-1 m-1">
+								<span className="text-[#FE5F57]">
+									<FaCircle />
+								</span>
+								<span className="text-[#FEBC2E]">
+									<FaCircle />
+								</span>
+								<span className="text-[#28C840]">
+									<FaCircle />
+								</span>
+							</div>
+							<span>{`import {useState} from 'react';`} </span>
+							<span>{`const App = () => {`} </span>
+							<span className="relative left-7">{`const [cound, setCount] = useState(0)`}</span>
+							<span className="relative left-7">{`setCount(4);`}</span>
+							<span className="relative left-11">{`return (`}</span>
+							<span className="relative left-14">{`<div> `}</span>
+							<span className="relative left-20">{`Hello , count value is {count}`}</span>
+							<span className="relative left-14">{`</div> `}</span>
+							<span className="relative left-11">{`);`}</span>
+							<span>{`};`}</span>
+							<span>{`export default App;`}</span>
+						</Code>
 						<p
-							className={`${inter.className} flex gap-1 text-lg mt-2 text-justify`}
+							className={`${inter.className} flex gap-1 text-lg pl-6 mt-2 text-justify`}
 						>
-							<span className="border py-1 h-fit text-xl">
-								<IoIosArrowDroprightCircle />
-							</span>
-							Then just start up the application with this
-							command:
+							Here , the new value of count will be set to 4.
+							Initially , the value of count was 0 , by default.
 						</p>
-						<Snippet
-							className="bg-slate-black text-light-white p-2 relative left-7"
-							size="md"
-						>
-							npm start
-						</Snippet>
 					</div>
 				</div>
 			</div>
