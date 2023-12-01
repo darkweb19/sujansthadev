@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
-import { Snippet } from "@nextui-org/snippet";
 import SuccessNote from "@/components/Notes/SuccessNote";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
+import { Code } from "@nextui-org/react";
+import { FaCircle } from "react-icons/fa";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -38,81 +39,50 @@ export default function SetUp() {
 							<span className="border py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
 							</span>
-							Open your terminal to create your application. Run
-							this command to create a React application named
-							my-react-app:
+							The Effect Hook lets you perform side effects in
+							function components:
 						</p>
-
-						<Snippet
-							className="bg-slate-black text-light-white mt-2 p-2 relative left-7"
+						<p
+							className={`${inter.className} pl-7  text-lg text-justify`}
+						>
+							Data fetching, setting up a subscription, and
+							manually changing the DOM in React components are
+							all examples of side effects. Whether or not
+							you&apos;re used to calling these operations “side
+							effects” {`(or just “effects”)`}, you&apos;ve likely
+							performed them in your components before.
+						</p>
+						<Code
+							className="bg-slate-black text-light-white p-3 flex flex-col relative left-7"
 							size="md"
 						>
-							npx create-react-app@latest my-react-app
-						</Snippet>
-						<h1
-							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
-						>
-							Creating in current directory
-						</h1>
-						<p
-							className={`${inter.className} flex gap-1 mt-2 text-lg text-justify`}
-						>
-							<span className="border py-1 h-fit text-xl">
-								<IoIosArrowDroprightCircle />
-							</span>
-							Open your terminal in the directory you would like
-							to create your application. Run this command to
-							create a React application:
-						</p>
-						<Snippet
-							className="bg-slate-black text-light-white mt-2 p-2 relative left-7"
-							size="md"
-						>
-							npx create-react-app@latest .
-						</Snippet>
-						<p
-							className={`${inter.className}  text-lg p-2 mt-2 text-justify`}
-						>
-							In this case , every file will be placed in the
-							current directory.
-						</p>
-						<SuccessNote content="When choosing folder name, make sure there are no spaces or capital letters because of npm naming restrictions." />
-						<h1
-							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
-						>
-							Development Server
-						</h1>
-						<p
-							className={`${inter.className} flex gap-1 mt-2 text-lg text-justify`}
-						>
-							<span className="border py-1 h-fit text-xl">
-								<IoIosArrowDroprightCircle />
-							</span>
-							Once base application is created, if folder
-							specified you just have to enter the folder. You can
-							use this command to enter:
-						</p>
-						<Snippet
-							className="bg-slate-black text-light-white  p-2 relative left-7"
-							size="md"
-						>
-							cd my-react-app
-						</Snippet>
-						<p
-							className={`${inter.className} flex gap-1 text-lg mt-2 text-justify`}
-						>
-							<span className="border py-1 h-fit text-xl">
-								<IoIosArrowDroprightCircle />
-							</span>
-							Then just start up the application with this
-							command:
-						</p>
-						<Snippet
-							className="bg-slate-black text-light-white p-2 relative left-7"
-							size="md"
-						>
-							npm start
-						</Snippet>
+							<div className="text-xs flex gap-1 m-1">
+								<span className="text-[#FE5F57]">
+									<FaCircle />
+								</span>
+								<span className="text-[#FEBC2E]">
+									<FaCircle />
+								</span>
+								<span className="text-[#28C840]">
+									<FaCircle />
+								</span>
+							</div>
+							<span>{`import {useState} from 'react';`} </span>
+							<span>{`const App = () => {`} </span>
+							<span className="relative left-7">{`const [count, setCount] = useState(0)`}</span>
+							<span className="relative left-7">{`useEffect(() => {`}</span>
+							<span className="relative left-11">{` setTimeout(() => {`}</span>
+							<span className="relative left-16">{`   setCount((count) => count + 1);`}</span>
+							<span className="relative left-11">{`      }, 1000);`}</span>
+							<span className="relative left-7">{`  });`}</span>
+							<span className="relative left-11">{`return (`}</span>
+							<span className="relative left-14">{`<div> `}</span>
+							<span className="relative left-20">{`Hello , count value is {count}`}</span>
+							<span className="relative left-14">{`</div> `}</span>
+							<span className="relative left-11">{`);`}</span>
+							<span>{`};`}</span>
+							<span>{`export default App;`}</span>
+						</Code>
 					</div>
 				</div>
 			</div>

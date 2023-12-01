@@ -214,6 +214,22 @@ export default function SetUp() {
 							Here , the new value of count will be set to 4.
 							Initially , the value of count was 0 , by default.
 						</p>
+
+						<h1
+							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
+						>
+							States Datatypes
+						</h1>
+						<p
+							className={`${inter.className} flex gap-1 mt-2 text-lg text-justify`}
+						>
+							<span className="border py-1 h-fit text-xl">
+								<IoIosArrowDroprightCircle />
+							</span>
+							Like any other variables in js , state can hold any
+							datatypes like string, integers, booleans, arrays,
+							object in arrays, arrays in object etc.
+						</p>
 					</div>
 				</div>
 			</div>
