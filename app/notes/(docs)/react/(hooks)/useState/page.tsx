@@ -111,10 +111,10 @@ export default function SetUp() {
 						>
 							useState takes initial state as argument and gives a
 							state and a function(setCount in this case) to
-							update that state as we can't directly change/update
-							a state. Also, these state names are just like
-							variables, hence you can name them anything you
-							like.
+							update that state as we can&apos;t directly
+							change/update a state. Also, these state names are
+							just like variables, hence you can name them
+							anything you like.
 						</p>
 
 						<h1
