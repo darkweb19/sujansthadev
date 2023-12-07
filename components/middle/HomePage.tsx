@@ -16,7 +16,7 @@ export default function HomePage() {
 
 		const link = document.createElement("a");
 		link.href = fileUrl;
-		link.download = "downloaded-file.pdf";
+		link.target = "_blank";
 
 		document.body.appendChild(link);
 		link.click();
