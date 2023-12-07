@@ -6,24 +6,23 @@ import FadeInSection from "./FadeInSection";
 import { Playpen_Sans } from "next/font/google";
 import { Lilita_One } from "next/font/google";
 import { Button } from "@nextui-org/button";
-import Link from "next/link";
 export const ubuntu = Playpen_Sans({ subsets: ["latin"] });
 export const lilitaFont = Lilita_One({ weight: "400", subsets: ["latin"] });
 
 export default function HomePage() {
-	// const handleDownload = () => {
-	// 	const fileUrl =
-	// 		"https://drive.google.com/file/d/1lFIQCcL82ngtVHgp0W0cmNPnHSJ1smfl/view?usp=sharing";
+	const handleDownload = () => {
+		const fileUrl =
+			"https://drive.google.com/file/d/1lFIQCcL82ngtVHgp0W0cmNPnHSJ1smfl/view?usp=sharing";
 
-	// 	const link = document.createElement("a");
-	// 	link.href = fileUrl;
-	// 	link.download = "downloaded-file.pdf";
+		const link = document.createElement("a");
+		link.href = fileUrl;
+		link.download = "downloaded-file.pdf";
 
-	// 	document.body.appendChild(link);
-	// 	link.click();
+		document.body.appendChild(link);
+		link.click();
 
-	// 	document.body.removeChild(link);
-	// };
+		document.body.removeChild(link);
+	};
 
 	//for sending mail to me
 	function changeMailIcon() {
@@ -70,13 +69,12 @@ export default function HomePage() {
 									onClick={() => changeMailIcon()}
 								/>
 							</div>
-							<Button className="relative left-10 font-medium bg-gradient-to-tr from-pink-500 text-slate-white to-yellow-500 shadow-lg">
-								<Link
-									target="_blank"
-									href="https://drive.google.com/file/d/1lFIQCcL82ngtVHgp0W0cmNPnHSJ1smfl/view?usp=sharing"
-								>
-									Download CV
-								</Link>
+
+							<Button
+								onPress={handleDownload}
+								className="relative left-10 font-medium bg-gradient-to-tr from-pink-500 text-slate-white to-yellow-500 shadow-lg"
+							>
+								Download CV
 							</Button>
 						</div>
 					</FadeInSection>
