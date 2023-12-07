@@ -42,13 +42,7 @@ export default function AllContent() {
 				<Copyrights />
 			</div>
 
-			<div className="hidden sm:col-span-2 mt-10 p-2 ">
-				<div className=" h-4/5 w-full flex flex-col items-center justify-between ">
-					<SocialLinks />
-
-					<Navigations />
-				</div>
-			</div>
+			<div className="sm:col-span-2 mt-10 p-2 "></div>
 		</div>
 	);
 }

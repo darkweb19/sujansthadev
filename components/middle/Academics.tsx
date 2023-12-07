@@ -26,7 +26,7 @@ export default function Academics() {
 			title: "Bachelor's Degree",
 			schoolName: "St Lawrence College , Kathmandu",
 			content:
-				"Currently I am studying Bachelor's Degree in Computer Science and Infortmation Technology (CSIT) in Tribhuwan University.",
+				"Currently, I am studying Bachelor's Degree in Computer Science and Infortmation Technology (CSIT) in Tribhuwan University.",
 		},
 	];
 
