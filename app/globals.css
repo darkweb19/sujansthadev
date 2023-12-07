@@ -36,9 +36,8 @@
 body {
   font-size: large;
 	color: rgb(var(--black));
-  /* background-image: linear-gradient(to left top, #c7c3f4, #c6c7f4, #c5cbf4, #c6cff3, #c7d3f2, #bcccf2, #b0c4f2, #a4bdf2, #8ba8f2, #7792f1, #667bed, #5c63e7);	 */
-  /* background: linear-gradient(to left top, #edecf8, #e7e7f7, #dfe2f6, #d8ddf5, #cfd9f4, #c6d3f4, #bdcdf4, #b3c7f4, #aabdf4, #a3b3f3, #9da9f2, #999ef0); */
-  background-image: linear-gradient(to left top, #d6d3f4, #e0d4f2, #e9d5ef, #f0d6ec, #f6d8e9, #f5d1e5, #f4cae2, #f3c3de, #e6b2df, #d3a4e4, #b599ea, #8b91f1);
+  background-color: #EEE4E1;
+  /* background-image: linear-gradient(to left top, #d6d3f4, #e0d4f2, #e9d5ef, #f0d6ec, #f6d8e9, #f5d1e5, #f4cae2, #f3c3de, #e6b2df, #d3a4e4, #b599ea, #8b91f1); */
 
 }
 
@@ -50,7 +49,8 @@ body {
   margin-top: 10px;
   padding:  1rem;
   border-radius: 16px;
-  background-image: linear-gradient(to right, #fcddef, #fbdeee, #fadfee, #f9e1ed, #f8e2ed, #f8e4ed, #f7e5ee, #f7e7ee, #f8eaef, #f8edf1, #f8f1f3, #f8f4f5);
+  background-color: #EEEEEE;
+  /* background-image: linear-gradient(to right, #fcddef, #fbdeee, #fadfee, #f9e1ed, #f8e2ed, #f8e4ed, #f7e5ee, #f7e7ee, #f8eaef, #f8edf1, #f8f1f3, #f8f4f5); */
   transition: .3s;
 }
 
@@ -94,86 +94,4 @@ body {
 	opacity: 1;
 	transform: none;
 	visibility: visible;
-}
-
-/* loading animation  */
-.ring
-{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  width:150px;
-  height:150px;
-  border:3px solid #3c3c3c;
-  border-radius:50%;
-  text-align:center;
-  line-height:150px;
-  font-family:sans-serif;
-  font-size:20px;
-
-  letter-spacing:4px;
-  text-transform:uppercase;
-  text-shadow:0 0 10px #fff000;
-  box-shadow:0 0 20px rgba(0,0,0,.5);
-}
-.ring:before
-{
-  content:'';
-  position:absolute;
-  top:-3px;
-  left:-3px;
-  width:100%;
-  height:100%;
-  border:3px solid transparent;
-  border-top:3px solid #fff000;
-  border-right:3px solid #fff000;
-  border-radius:50%;
-  animation:animateC 2s linear infinite;
-}
-.ring span
-{
-  display:block;
-  position:absolute;
-  top:calc(50% - 2px);
-  left:50%;
-  width:50%;
-  height:4px;
-  background:transparent;
-  transform-origin:left;
-  animation:animate 2s linear infinite;
-}
-.ring span:before
-{
-  content:'';
-  position:absolute;
-  width:16px;
-  height:16px;
-  border-radius:50%;
-
-  top:-6px;
-  right:-8px;
-  box-shadow:0 0 20px #fff000;
-}
-@keyframes animateC
-{
-  0%
-  {
-    transform:rotate(0deg);
-  }
-  100%
-  {
-    transform:rotate(360deg);
-  }
-}
-@keyframes animate
-{
-  0%
-  {
-    transform:rotate(45deg);
-  }
-  100%
-  {
-    transform:rotate(405deg);
-  }
 }
