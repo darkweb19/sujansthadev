@@ -32,13 +32,8 @@ export const inter = Inter({ subsets: ["latin"] });
 
 export default function Layout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="en">
-			<body className={inter.className}>
-				<Providers>
-					<Navbar />
-					{children}{" "}
-				</Providers>
-			</body>
-		</html>
+		<section className={inter.className}>
+			<Providers>{children} </Providers>
+		</section>
 	);
 }
