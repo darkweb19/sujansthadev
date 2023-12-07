@@ -1,17 +1,13 @@
-import Navigations from "@/components/rightNavs/Navigations";
-import SocialLinks from "@/components/rightNavs/SocialLinks";
 import HomePage from "@/components/middle/HomePage";
 import AboutPage from "@/components/middle/AboutPage";
 import BorderLined from "@/components/middle/BorderLined";
 import Creations from "@/components/middle/Creations";
-import Copyrights from "./Copyright";
 import Academics from "./Academics";
 
 export default function AllContent() {
 	return (
-		<div className="h-screen w-screen flex flex-col gap-1 sm:grid sm:grid-cols-11">
-			<div className=" sm:col-span-2 "></div>
-			<div className=" w-full sm:col-span-7 overflow-scroll scroll-smooth no-scrollbar ">
+		<main className="h-fit w-screen px-10 md:pl-60">
+			<div className=" w-full ">
 				{/* first homepage  */}
 				<HomePage />
 
@@ -37,12 +33,7 @@ export default function AllContent() {
 					<BorderLined title="academics" />
 					<Academics />
 				</div>
-
-				{/* Footer and Copyrights  */}
-				<Copyrights />
 			</div>
-
-			<div className="sm:col-span-2 mt-10 p-2 "></div>
-		</div>
+		</main>
 	);
 }
