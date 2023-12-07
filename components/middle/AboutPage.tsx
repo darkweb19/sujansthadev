@@ -23,8 +23,8 @@ export default function AboutPage() {
 		{ name: "PostgreSQL", icons: <BiLogoPostgresql /> },
 	];
 	return (
-		<div className=" p-2 w-full flex flex-col sm:flex-col md:flex-col lg:flex-row gap-1 items-start justify-around">
-			<div className="h-3/4 w-full sm:w-5/6 md:w-3/6">
+		<div className="sm:pr-40 w-full flex flex-col sm:flex-col md:flex-col lg:flex-row gap-1 items-start justify-around">
+			<div className="h-3/4 w-full sm:w-5/6 md:w-5/6">
 				<FadeInSection delay={100}>
 					<p className="p-3 sm:p-3 w-full sm:text-lg font-medium text-slate-800 text-base text-justify">
 						I have completed my bootcamp course in the MERN stack
