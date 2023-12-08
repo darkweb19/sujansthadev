@@ -32,8 +32,8 @@ export default function HomePage() {
 
 	return (
 		<div className=" flex items-center w-full h-screen ">
-			<div className=" flex flex-col p-3 justify-start items-center sm:items-start h-2/4 ">
-				<div className="w-4/5 md:w-3/5 ml-10 sm:ml-0 flex flex-col justify-center items-start">
+			<div className=" flex flex-col justify-start items-center sm:items-start h-fit ">
+				<div className="w-[90%] md:w-3/5 flex flex-col justify-center items-start">
 					<FadeInSection delay={200}>
 						<p
 							className={`${lilitaFont.className} text-3xl  p-1 sm:text-5xl gradient-text`}
