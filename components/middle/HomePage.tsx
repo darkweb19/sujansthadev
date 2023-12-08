@@ -6,6 +6,7 @@ import FadeInSection from "./FadeInSection";
 import { Playpen_Sans } from "next/font/google";
 import { Lilita_One } from "next/font/google";
 import { Button } from "@nextui-org/button";
+
 export const ubuntu = Playpen_Sans({ subsets: ["latin"] });
 export const lilitaFont = Lilita_One({ weight: "400", subsets: ["latin"] });
 
@@ -31,8 +32,8 @@ export default function HomePage() {
 
 	return (
 		<div className=" flex items-center w-full h-screen ">
-			<div className=" flex flex-col justify-start items-center sm:items-center h-2/4 ">
-				<div className="w-4/5 ml-10 sm:ml-0 flex flex-col justify-center items-start">
+			<div className=" flex flex-col p-3 justify-start items-center sm:items-start h-2/4 ">
+				<div className="w-4/5 md:w-3/5 ml-10 sm:ml-0 flex flex-col justify-center items-start">
 					<FadeInSection delay={200}>
 						<p
 							className={`${lilitaFont.className} text-3xl  p-1 sm:text-5xl gradient-text`}
@@ -62,7 +63,7 @@ export default function HomePage() {
 
 					{/* gmail animation  */}
 					<FadeInSection delay={900}>
-						<div className="h-fit flex  items-center">
+						<div className="h-fit flex items-center">
 							<div className="gmail w-[15%] sm:w-[11%]">
 								<Lottie
 									animationData={gmailData}

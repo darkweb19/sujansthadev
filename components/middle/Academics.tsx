@@ -11,7 +11,6 @@ export default function Academics() {
 			content:
 				"Successfully passed Secondary Education Examination SEE held by Ministry of Education , Nepal with Grade Point Average of 3.35.",
 		},
-
 		{
 			date: "July 2018 - March 2020",
 			delay: 600,
