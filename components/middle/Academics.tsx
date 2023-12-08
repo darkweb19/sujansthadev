@@ -33,11 +33,11 @@ export default function Academics() {
 		<div className="w-full h-fit mb-3 p-0 sm:p-3 sm:mt-3">
 			{data.map((datas, i) => (
 				<FadeInSection key={i} delay={datas.delay}>
-					<div className="flex lg:w-5/6 flex-grow gap-2 justify-center items-center p-0 sm:p-1 mt-10">
+					<div className="flex lg:w-5/6 flex-grow gap-2 justify-center rounded-md bg-white items-center p-3 sm:p-5 mt-10">
 						<div className="w-1/4 h-full flex justify-start items-start text-base font-medium text-slate-800">
 							{datas.date}
 						</div>
-						<div className="w-3/4 h-full border-l-2 border-red-500 px-4 py-2 ">
+						<div className="w-3/4 h-full rounded-md border-l-5  bg-[#FEF2F1] border-[#FDB7B5] px-4 py-2 ">
 							<h1 className="text-start text-xl px-2 font-medium text-slate-700">
 								{datas.title}
 							</h1>
