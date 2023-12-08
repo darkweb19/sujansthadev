@@ -48,7 +48,7 @@ body {
   margin-top: 10px;
   padding:  1rem;
   border-radius: 16px;
-  background-color: #EEEEEE;
+  background-color: #F7F9FA;
   /* background-image: linear-gradient(to right, #fcddef, #fbdeee, #fadfee, #f9e1ed, #f8e2ed, #f8e4ed, #f7e5ee, #f7e7ee, #f8eaef, #f8edf1, #f8f1f3, #f8f4f5); */
   transition: .3s;
 }
