@@ -12,11 +12,9 @@ export const lilitaFont = Lilita_One({ weight: "400", subsets: ["latin"] });
 
 export default function HomePage() {
 	const handleDownload = () => {
-		const fileUrl =
-			"https://drive.google.com/file/d/1lFIQCcL82ngtVHgp0W0cmNPnHSJ1smfl/view?usp=sharing";
-
 		const link = document.createElement("a");
-		link.href = fileUrl;
+		link.href =
+			"https://drive.google.com/file/d/1lFIQCcL82ngtVHgp0W0cmNPnHSJ1smfl/view?usp=sharing";
 		link.target = "_blank";
 
 		document.body.appendChild(link);
