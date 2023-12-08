@@ -2,7 +2,6 @@
 import Image from "next/image";
 import mine from "../../public/assets/logo.png";
 import Link from "next/link";
-
 import { ubuntu } from "@/app/notes/layout";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiLinktree } from "react-icons/si";
@@ -17,6 +16,11 @@ import {
 } from "@nextui-org/navbar";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import {
+	introLink,
+	reactLinksHooks,
+	reactLinks,
+} from "@/app/notes/(docs)/react/Links";
 
 const menuItems = [
 	{ title: "/Home", link: "/" },
@@ -26,14 +30,18 @@ const menuItems = [
 
 export default function NavBar() {
 	const [isMenuOpen, setMenuOpen] = useState(false);
-
 	const pathname = usePathname();
-	console.log(pathname);
 
 	return (
-		<Navbar shouldHideOnScroll onMenuOpenChange={setMenuOpen}>
+		<Navbar
+			shouldHideOnScroll
+			onMenuOpenChange={setMenuOpen}
+			isMenuOpen={isMenuOpen}
+		>
 			<NavbarContent className="sm:hidden" justify="start">
-				<NavbarMenuToggle />
+				<NavbarMenuToggle
+					aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+				/>
 			</NavbarContent>
 			<NavbarBrand>
 				{" "}
@@ -113,17 +121,54 @@ export default function NavBar() {
 						<SiLinktree />
 					</Link>
 				</NavbarItem>
+
+				{/* this is for menu items  */}
 				<NavbarMenu>
 					{menuItems.map((item, index) => (
-						<NavbarMenuItem key={`${item}-${index}`}>
-							<Link
-								className={`${ubuntu.className} w-full`}
-								href={item.link}
-							>
-								{item.title}
-							</Link>
-						</NavbarMenuItem>
+						<>
+							<NavbarMenuItem key={`${item}-${index}`}>
+								<Link
+									onClick={() => setMenuOpen(false)}
+									className={`${ubuntu.className} w-full`}
+									href={item.link}
+								>
+									{item.title}
+								</Link>
+							</NavbarMenuItem>
+						</>
 					))}
+
+					<NavbarItem className="lg:flex text-2xl">
+						<Link href={introLink.link} target="_blank">
+							React Introduction
+						</Link>
+					</NavbarItem>
+
+					{/* for react s */}
+					{pathname.startsWith("/notes/react") &&
+						reactLinks.map((item, index) => (
+							<NavbarMenuItem key={`${item}-${index}`}>
+								<Link
+									onClick={() => setMenuOpen(false)}
+									className={`${ubuntu.className} w-full`}
+									href={item.links}
+								>
+									{item.link_title}
+								</Link>
+							</NavbarMenuItem>
+						))}
+					{pathname.startsWith("/notes/react") &&
+						reactLinksHooks.map((item, index) => (
+							<NavbarMenuItem key={`${item}-${index}`}>
+								<Link
+									onClick={() => setMenuOpen(false)}
+									className={`${ubuntu.className} w-full`}
+									href={item.links}
+								>
+									{item.link_title}
+								</Link>
+							</NavbarMenuItem>
+						))}
 				</NavbarMenu>
 			</NavbarContent>
 		</Navbar>
