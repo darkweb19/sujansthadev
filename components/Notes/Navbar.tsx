@@ -43,12 +43,37 @@ export default function NavBar() {
 			<NavbarContent className="hidden sm:flex gap-4" justify="center">
 				<NavbarItem className={ubuntu.className}>
 					<Link className={`${ubuntu.className} text-lg`} href="/">
-						/Home
+						/home
+					</Link>
+				</NavbarItem>
+
+				<NavbarItem>
+					<Link
+						className={`${ubuntu.className} text-lg`}
+						href="#statement"
+					>
+						/statement
+					</Link>
+				</NavbarItem>
+				<NavbarItem>
+					<Link
+						className={`${ubuntu.className} text-lg`}
+						href="#creations"
+					>
+						/creations
+					</Link>
+				</NavbarItem>
+				<NavbarItem>
+					<Link
+						className={`${ubuntu.className} text-lg`}
+						href="#academics"
+					>
+						/academics
 					</Link>
 				</NavbarItem>
 				<NavbarItem>
 					<Link className={`${ubuntu.className} text-lg`} href="#">
-						/Blog
+						/blog
 					</Link>
 				</NavbarItem>
 				<NavbarItem>
@@ -56,7 +81,7 @@ export default function NavBar() {
 						className={`${ubuntu.className} text-lg`}
 						href="/notes"
 					>
-						/Notes
+						/notes
 					</Link>
 				</NavbarItem>
 			</NavbarContent>
