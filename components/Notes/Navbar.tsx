@@ -2,6 +2,7 @@
 import Image from "next/image";
 import mine from "../../public/assets/logo.png";
 import Link from "next/link";
+
 import { ubuntu } from "@/app/notes/layout";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiLinktree } from "react-icons/si";
@@ -15,6 +16,7 @@ import {
 	NavbarMenuItem,
 } from "@nextui-org/navbar";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const menuItems = [
 	{ title: "/Home", link: "/" },
@@ -24,6 +26,9 @@ const menuItems = [
 
 export default function NavBar() {
 	const [isMenuOpen, setMenuOpen] = useState(false);
+
+	const pathname = usePathname();
+	console.log(pathname);
 
 	return (
 		<Navbar shouldHideOnScroll onMenuOpenChange={setMenuOpen}>
@@ -46,31 +51,35 @@ export default function NavBar() {
 						/home
 					</Link>
 				</NavbarItem>
+				{!pathname.startsWith("/notes") && (
+					<>
+						<NavbarItem>
+							<Link
+								className={`${ubuntu.className} text-lg`}
+								href="#statement"
+							>
+								/statement
+							</Link>
+						</NavbarItem>
+						<NavbarItem>
+							<Link
+								className={`${ubuntu.className} text-lg`}
+								href="#creations"
+							>
+								/creations
+							</Link>
+						</NavbarItem>
+						<NavbarItem>
+							<Link
+								className={`${ubuntu.className} text-lg`}
+								href="#academics"
+							>
+								/academics
+							</Link>
+						</NavbarItem>
+					</>
+				)}
 
-				<NavbarItem>
-					<Link
-						className={`${ubuntu.className} text-lg`}
-						href="#statement"
-					>
-						/statement
-					</Link>
-				</NavbarItem>
-				<NavbarItem>
-					<Link
-						className={`${ubuntu.className} text-lg`}
-						href="#creations"
-					>
-						/creations
-					</Link>
-				</NavbarItem>
-				<NavbarItem>
-					<Link
-						className={`${ubuntu.className} text-lg`}
-						href="#academics"
-					>
-						/academics
-					</Link>
-				</NavbarItem>
 				<NavbarItem>
 					<Link className={`${ubuntu.className} text-lg`} href="#">
 						/blog
