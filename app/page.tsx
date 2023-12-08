@@ -6,7 +6,7 @@ import Academics from "@/components/middle/Academics";
 
 export default function AllContent() {
 	return (
-		<main className="h-fit w-screen px-6 md:pl-60">
+		<main className="h-fit w-screen px-3 md:pl-60">
 			<div className=" w-full ">
 				{/* homepage  */}
 				<HomePage />
