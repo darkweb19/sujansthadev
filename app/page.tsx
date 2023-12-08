@@ -13,7 +13,7 @@ export default function AllContent() {
 
 				{/* about page  */}
 				<div
-					id="statment"
+					id="statement"
 					className="w-full h-fit sm:h-fit md:h-fit lg:h-screen"
 				>
 					<BorderLined title={"statement"} />
