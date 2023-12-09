@@ -138,13 +138,17 @@ export default function NavBar() {
 						</>
 					))}
 
-					<NavbarItem className="lg:flex text-2xl">
-						<Link href={introLink.link} target="_blank">
-							React Introduction
-						</Link>
-					</NavbarItem>
-
 					{/* for react s */}
+					{pathname.startsWith("/notes/react") && (
+						<NavbarItem className="lg:flex text-2xl">
+							<Link
+								href={introLink.link}
+								onClick={() => setMenuOpen(false)}
+							>
+								React Introduction
+							</Link>
+						</NavbarItem>
+					)}
 					{pathname.startsWith("/notes/react") &&
 						reactLinks.map((item, index) => (
 							<NavbarMenuItem key={`${item}-${index}`}>
