@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { inter, lilitaFont, playpenSans, ubuntu } from "@/app/notes/layout";
-import { Snippet } from "@nextui-org/snippet";
 import SuccessNote from "@/components/Notes/SuccessNote";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import { FaCircle } from "react-icons/fa";
-import Link from "next/link";
+
 import { Code } from "@nextui-org/react";
 import WarningNote from "@/components/Notes/WarninNote";
 
