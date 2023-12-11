@@ -28,6 +28,12 @@ const menuItems = [
 	{ title: "/Notes", link: "/notes" },
 ];
 
+const allReactLinks = [
+	{ links: introLink.link, link_title: "React Introduction" },
+	...reactLinks,
+	...reactLinksHooks,
+];
+
 export default function NavBar() {
 	const [isMenuOpen, setMenuOpen] = useState(false);
 	const pathname = usePathname();
@@ -139,37 +145,15 @@ export default function NavBar() {
 					))}
 
 					{/* for react s */}
-					{pathname.startsWith("/notes/react") && (
-						<NavbarItem className="lg:flex text-2xl">
-							<Link
-								href={introLink.link}
-								onClick={() => setMenuOpen(false)}
-							>
-								React Introduction
-							</Link>
-						</NavbarItem>
-					)}
 					{pathname.startsWith("/notes/react") &&
-						reactLinks.map((item, index) => (
-							<NavbarMenuItem key={`${item}-${index}`}>
+						allReactLinks.map((alLinks, index) => (
+							<NavbarMenuItem key={index}>
 								<Link
 									onClick={() => setMenuOpen(false)}
 									className={`${ubuntu.className} w-full`}
-									href={item.links}
+									href={alLinks.links}
 								>
-									{item.link_title}
-								</Link>
-							</NavbarMenuItem>
-						))}
-					{pathname.startsWith("/notes/react") &&
-						reactLinksHooks.map((item, index) => (
-							<NavbarMenuItem key={`${item}-${index}`}>
-								<Link
-									onClick={() => setMenuOpen(false)}
-									className={`${ubuntu.className} w-full`}
-									href={item.links}
-								>
-									{item.link_title}
+									/{alLinks.link_title}
 								</Link>
 							</NavbarMenuItem>
 						))}
