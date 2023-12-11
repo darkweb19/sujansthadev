@@ -24,7 +24,7 @@ export default function SetUp() {
 					<h1
 						className={`${lilitaFont.className} text-4xl text-gray-700`}
 					>
-						Use Callback Hook
+						Use Context Hook
 					</h1>
 					<div className="border p-3 w-11/12 h-fit ">
 						<p className={`${playpenSans.className}`}>
