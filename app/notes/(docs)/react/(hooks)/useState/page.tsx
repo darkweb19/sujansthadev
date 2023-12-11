@@ -18,8 +18,8 @@ export default function SetUp() {
 	return (
 		<div className="flex flex-col gap-1">
 			<TopNavButtons
-				nextLink="/notes/react/react-jsx"
-				prevLink="/notes/react/"
+				nextLink="/notes/react/useEffect"
+				prevLink="/notes/react/hooks"
 			/>
 			<div className="w-full flex justify-around h-fit p-2">
 				<div className="flex flex-col pl-4 sm:pl-1 justify-evenly">
@@ -235,8 +235,8 @@ export default function SetUp() {
 			</div>
 
 			<TopNavButtons
-				nextLink="/notes/react/react-jsx"
-				prevLink="/notes/react/"
+				nextLink="/notes/react/useEffect"
+				prevLink="/notes/react/hooks"
 			/>
 		</div>
 	);
