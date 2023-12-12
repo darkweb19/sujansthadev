@@ -10,10 +10,12 @@ interface codePreviewProps {
 
 const CodePreview: React.FC<codePreviewProps> = ({ code }) => {
 	const { copy, copyToClipboard } = useCopy();
+
+
 	return (
-		<div className="text-xl rounded-lg border border-white h-fit w-full bg-[#171717]">
-			<div className="text-xs flex justify-between  m-1">
-				<div className=" flex  gap-1">
+		<div className="text-xl rounded-lg  h-fit w-full bg-[#171717]">
+			<div className="text-xs flex relative top-3 left-1 justify-between items-center  m-1">
+				<div className=" flex justify-center  gap-1">
 					<span className="text-[#FE5F57]">
 						<FaCircle />
 					</span>
@@ -25,10 +27,10 @@ const CodePreview: React.FC<codePreviewProps> = ({ code }) => {
 					</span>
 				</div>
 				<button
-					className="text-light-white"
+					className="text-light-white text-sm relative right-2"
 					onClick={() => copyToClipboard(code)}
 				>
-					copy
+					{copy ? "copied" : "copy"}
 				</button>
 			</div>
 			<SyntaxHighlighter
