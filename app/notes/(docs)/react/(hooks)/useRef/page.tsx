@@ -4,9 +4,9 @@ import { inter, lilitaFont, playpenSans, ubuntu } from "@/app/notes/layout";
 import SuccessNote from "@/components/Notes/SuccessNote";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import { FaCircle } from "react-icons/fa";
-
-import { Code } from "@nextui-org/react";
 import WarningNote from "@/components/Notes/WarninNote";
+import CodePreview from "@/components/Notes/CodePreview";
+import { domCode, prevCode } from "./code";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -36,6 +36,7 @@ export default function SetUp() {
 						>
 							What are useRef Hooks in React?
 						</h1>
+
 						<p
 							className={`${inter.className} flex gap-1 text-lg text-justify`}
 						>
@@ -72,41 +73,7 @@ export default function SetUp() {
 								you can use useRef to directly reference an
 								element within your component.
 							</p>
-
-							<Code
-								className="bg-slate-black text-light-white p-3 mt-2 flex flex-col "
-								size="md"
-							>
-								<div className="text-xs flex gap-1 m-1">
-									<span className="text-[#FE5F57]">
-										<FaCircle />
-									</span>
-									<span className="text-[#FEBC2E]">
-										<FaCircle />
-									</span>
-									<span className="text-[#28C840]">
-										<FaCircle />
-									</span>
-								</div>
-								<span>
-									{`import {useRef ,useState} from 'react';`}{" "}
-								</span>
-								<span className="mt-2">
-									{`const App = () => {`}{" "}
-								</span>
-								<span className="relative left-7">
-									{`const inputRef = useRef();`}
-								</span>
-								<span className="relative left-7">{`useEffect(() => {`}</span>
-								<span className="hidden md:inline relative left-7 text-gray-400">{`//Focus on the input element when the component mounts`}</span>
-								<span className="inline md:hidden relative left-7 text-gray-400">{`//Focus on the input element when the`}</span>
-								<span className="inline md:hidden relative left-11 text-gray-400">{`component mounts`}</span>
-								<span className="relative left-11">{`     inputRef.current.focus();`}</span>
-								<span className="relative left-7">{`  },[]);`}</span>
-								<span className="relative left-7 mt-3">{`return <input ref={inputRef} />;`}</span>
-								<span>{`};`}</span>
-								<span>{`export default App;`}</span>
-							</Code>
+							<CodePreview code={`${domCode}`} />
 							<p
 								className={`${inter.className} flex gap-1 mt-4 items-center text-xl text-justify`}
 							>
@@ -125,42 +92,7 @@ export default function SetUp() {
 								when you need to keep track of previous values
 								without triggering unnecessary renders.
 							</p>
-							<Code
-								className="bg-slate-black text-light-white p-3 mt-2 flex flex-col "
-								size="md"
-							>
-								<div className="text-xs flex gap-1 m-1">
-									<span className="text-[#FE5F57]">
-										<FaCircle />
-									</span>
-									<span className="text-[#FEBC2E]">
-										<FaCircle />
-									</span>
-									<span className="text-[#28C840]">
-										<FaCircle />
-									</span>
-								</div>
-								<span>
-									{`import {useRef ,useEffect} from 'react';`}{" "}
-								</span>
-								<span className="mt-2">
-									{`const PrevValueApp = ({ value }) => {`}{" "}
-								</span>
-								<span className="relative left-7">
-									{`const prevValueRef = useRef();`}
-								</span>
-								<span className="relative mt-2 left-7">{`useEffect(() => {`}</span>
-								<span className="relative left-11">{` prevValueRef.current = value;`}</span>
-								<span className="relative left-7">{`  },[value]);`}</span>
-								<span className="relative left-7 mt-3">{`return (`}</span>
-								<span className="relative left-12">{`<div>`}</span>
-								<span className="relative left-16">{` <p>Current Value: {value}</p>`}</span>
-								<span className="relative left-16">{` <p>Previous Value: {prevValueRef.current}</p>`}</span>
-								<span className="relative left-12">{`</div>`}</span>
-								<span className="relative left-7">{`);`}</span>
-								<span>{`};`}</span>
-								<span>{`export default PrevValueApp;`}</span>
-							</Code>
+							<CodePreview code={`${prevCode}`} />
 						</div>
 						<WarningNote content="Also, note that `useRef` is not limited to working with DOM elements; it can be used for any mutable value that you want to persist across renders without causing re-renders." />
 						<h1
