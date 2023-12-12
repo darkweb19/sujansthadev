@@ -4,6 +4,7 @@ import { inter, lilitaFont, playpenSans, ubuntu } from "@/app/notes/layout";
 import SuccessNote from "@/components/Notes/SuccessNote";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import { FaCircle } from "react-icons/fa";
+import { Code } from "@nextui-org/react";
 import WarningNote from "@/components/Notes/WarninNote";
 import CodePreview from "@/components/Notes/CodePreview";
 import { domCode, prevCode } from "./code";
@@ -24,7 +25,7 @@ export default function SetUp() {
 			/>
 
 			<div className="w-full flex justify-around h-fit p-2">
-				<div className="flex flex-col justify-evenly">
+				<div className="flex flex-col justify-evenly ">
 					<h1
 						className={`${lilitaFont.className} text-4xl text-gray-700`}
 					>
@@ -73,7 +74,9 @@ export default function SetUp() {
 								you can use useRef to directly reference an
 								element within your component.
 							</p>
+
 							<CodePreview code={`${domCode}`} />
+
 							<p
 								className={`${inter.className} flex gap-1 mt-4 items-center text-xl text-justify`}
 							>

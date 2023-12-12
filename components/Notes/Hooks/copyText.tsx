@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 const useCopy = () => {
 	const [copy, setCopy] = useState<Boolean>(false);
 	if (copy) {

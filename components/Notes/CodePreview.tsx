@@ -11,6 +11,7 @@ interface codePreviewProps {
 const CodePreview: React.FC<codePreviewProps> = ({ code }) => {
 	const { copy, copyToClipboard } = useCopy();
 
+
 	return (
 		<div className="text-xl rounded-lg  h-fit w-full bg-[#171717]">
 			<div className="text-xs flex relative top-3 left-1 justify-between items-center  m-1">
