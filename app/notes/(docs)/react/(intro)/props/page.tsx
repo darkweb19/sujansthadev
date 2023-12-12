@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
-import { Code } from "@nextui-org/code";
 import WarningNote from "@/components/Notes/WarninNote";
 import { FaCircle } from "react-icons/fa";
+import CodePreview from "@/components/Notes/CodePreview";
+import { propsCode } from "./code";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -46,41 +47,14 @@ export default function ReactProps() {
 							component.
 						</p>
 
-						<Code
-							className="bg-slate-black text-light-white mt-2 p-2 flex flex-col relative left-7"
-							size="md"
-						>
-							<div className="text-xs flex gap-1 m-1">
-								<span className="text-[#FE5F57]">
-									<FaCircle />
-								</span>
-								<span className="text-[#FEBC2E]">
-									<FaCircle />
-								</span>
-								<span className="text-[#28C840]">
-									<FaCircle />
-								</span>
-							</div>
-							<span>function Welcome(props) &#123;</span>
-							<span>
-								return &lt;h1&gt; Hello, &#123;props.name&#125;!
-								&lt;/h1&gt;;
-							</span>
-						</Code>
+						<CodePreview code={`${propsCode}`} />
 						<h1
 							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
 						>
 							Inside Component
 						</h1>
 
-						<Code
-							className="bg-slate-black text-light-white mt-2 p-2 relative left-7"
-							size="md"
-						>
-							<span>
-								&lt;Welcome name=&#34;Sujan&#34; &#47;&gt;
-							</span>
-						</Code>
+						<CodePreview code={`<Welcome name="Sujan" />`} />
 						<WarningNote content="Always start component names with a capital letter." />
 
 						<h1

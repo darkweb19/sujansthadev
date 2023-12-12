@@ -6,6 +6,8 @@ import { FaCircle } from "react-icons/fa";
 import { Code } from "@nextui-org/code";
 import React from "react";
 import WarningNote from "@/components/Notes/WarninNote";
+import CodePreview from "@/components/Notes/CodePreview";
+import { listCode } from "./code";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -49,40 +51,7 @@ export default function ReactLists() {
 							map over an array of data and create React elements
 							for each item in the array
 						</p>
-						<Code
-							className="bg-slate-black text-light-white p-3 flex flex-col relative left-7"
-							size="md"
-						>
-							<div className="text-xs flex gap-1 m-1">
-								<span className="text-[#FE5F57]">
-									<FaCircle />
-								</span>
-								<span className="text-[#FEBC2E]">
-									<FaCircle />
-								</span>
-								<span className="text-[#28C840]">
-									<FaCircle />
-								</span>
-							</div>
-							<span>{`import React from 'react';`} </span>
-							<span className="mt-2">{`export const MyList = () => {`}</span>
-							<span className="relative left-4">
-								{`const data = ['Code', 'JavaScript', 'React' , 'Next']; `}
-							</span>
-							<span className="relative mt-1 left-9">{` return (`}</span>
-							<span className="relative left-14">{`</ul>`}</span>
-							<span className="relative left-16">
-								{`{data.map((item, index) => (`}
-							</span>
-							<span className="relative left-20">
-								{`<li key={index}>{item}</li>`}
-							</span>
-							<span className="relative left-16">{`))}`}</span>
-							<span className="relative left-14">{`  </ul>`}</span>
-
-							<span className="relative left-9">{`  );`}</span>
-							<span>{`};`}</span>
-						</Code>
+						<CodePreview code={`${listCode}`} />
 						<p
 							className={`${inter.className}  text-lg p-2 mt-2 text-justify`}
 						>

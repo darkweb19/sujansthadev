@@ -5,6 +5,8 @@ import SuccessNote from "@/components/Notes/SuccessNote";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import { FaCircle } from "react-icons/fa";
 import { Code } from "@nextui-org/code";
+import CodePreview from "@/components/Notes/CodePreview";
+import { ifCode, logicalCode, ternaryCode } from "./code";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -59,42 +61,7 @@ export default function ConditionalPage() {
 							</span>
 							Using IF statements
 						</p>
-						<Code
-							className="bg-slate-black text-light-white p-3 flex flex-col relative left-7"
-							size="md"
-						>
-							<div className="text-xs flex gap-1 m-1">
-								<span className="text-[#FE5F57]">
-									<FaCircle />
-								</span>
-								<span className="text-[#FEBC2E]">
-									<FaCircle />
-								</span>
-								<span className="text-[#28C840]">
-									<FaCircle />
-								</span>
-							</div>
-							<span>{`import React from 'react';`} </span>
-							<span>
-								{`const MyComponent = ({ condition }) => {`}
-							</span>
-							<span className="relative left-4">
-								{`  if (condition) {`}
-							</span>
-							<span className="relative left-9">
-								{`   return <p>This is true!</p>;`}
-							</span>
-							<span className="relative left-14">
-								{`    } else {`}
-							</span>
-							<span className="relative left-20">
-								{`    return <p>This is false!</p>; `}
-							</span>
-							<span className="relative left-14">{`    }`}</span>
-							<span className="relative left-9">{`  }`}</span>
-							<span className="relative left-4">{` };`}</span>
-							<span>{`export default MyComponent;`}</span>
-						</Code>
+						<CodePreview code={`${ifCode}`} />
 						<p
 							className={`${inter.className} flex items-center mt-3 md:mt-3 gap-1 px-5 text-xl font-medium text-justify`}
 						>
@@ -114,42 +81,7 @@ export default function ConditionalPage() {
 								condition ? True : False
 							</Code>
 						</div>
-						<Code
-							className="bg-slate-black text-light-white p-3 mt-3 flex flex-col relative left-7"
-							size="md"
-						>
-							<div className="text-xs flex gap-1 m-1">
-								<span className="text-[#FE5F57]">
-									<FaCircle />
-								</span>
-								<span className="text-[#FEBC2E]">
-									<FaCircle />
-								</span>
-								<span className="text-[#28C840]">
-									<FaCircle />
-								</span>
-							</div>
-							<span>{`import React from 'react';`} </span>
-							<span>
-								{`const MyComponent = ({ condition }) => {`}
-							</span>
-							<span className="relative left-4">
-								{`  return (  `}
-							</span>
-							<span className="relative left-9">
-								{`    <div>;`}
-							</span>
-							<span className="relative left-14">
-								{` {condition ? <p>This is true!</p> : <p>This is false!</p>}`}
-							</span>
-							<span className="relative left-9">
-								{`    </div>`}
-							</span>
-							<span className="relative left-4">{`  );`}</span>
-							<span className="relative">{`  };`}</span>
-
-							<span>{`export default MyComponent;`}</span>
-						</Code>
+						<CodePreview code={`${ternaryCode}`} />
 						<p
 							className={`${inter.className} flex items-center text-xl font-medium gap-1 py-1 px-5  text-justify`}
 						>
@@ -158,42 +90,7 @@ export default function ConditionalPage() {
 							</span>
 							Using Logical && Operators
 						</p>
-						<Code
-							className="bg-slate-black text-light-white p-3 flex flex-col relative left-7"
-							size="md"
-						>
-							<div className="text-xs flex gap-1 m-1">
-								<span className="text-[#FE5F57]">
-									<FaCircle />
-								</span>
-								<span className="text-[#FEBC2E]">
-									<FaCircle />
-								</span>
-								<span className="text-[#28C840]">
-									<FaCircle />
-								</span>
-							</div>
-							<span>{`import React from 'react';`} </span>
-							<span>
-								{`const MyComponent = ({ condition }) => {`}
-							</span>
-							<span className="relative left-4">
-								{`  return (  `}
-							</span>
-							<span className="relative left-9">
-								{`    <div>;`}
-							</span>
-							<span className="relative left-14">
-								{`{condition && <p>This is true!</p>}`}
-							</span>
-							<span className="relative left-9">
-								{`    </div>`}
-							</span>
-							<span className="relative left-4">{`  );`}</span>
-							<span className="relative">{`  };`}</span>
-
-							<span>{`export default MyComponent;`}</span>
-						</Code>
+						<CodePreview code={`${logicalCode}`} />
 
 						<SuccessNote content="Choose the method that fits your specific use case and coding style. Conditional rendering is a powerful feature in React that allows you to create dynamic and responsive user interfaces." />
 					</div>

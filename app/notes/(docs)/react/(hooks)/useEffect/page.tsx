@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
-import SuccessNote from "@/components/Notes/SuccessNote";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
-import { Code } from "@nextui-org/react";
-import { FaCircle } from "react-icons/fa";
+import { useEffectCode } from "./code";
+import CodePreview from "@/components/Notes/CodePreview";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -52,37 +51,7 @@ export default function SetUp() {
 							effects” {`(or just “effects”)`}, you&apos;ve likely
 							performed them in your components before.
 						</p>
-						<Code
-							className="bg-slate-black text-light-white p-3 flex flex-col relative left-7"
-							size="md"
-						>
-							<div className="text-xs flex gap-1 m-1">
-								<span className="text-[#FE5F57]">
-									<FaCircle />
-								</span>
-								<span className="text-[#FEBC2E]">
-									<FaCircle />
-								</span>
-								<span className="text-[#28C840]">
-									<FaCircle />
-								</span>
-							</div>
-							<span>{`import {useState} from 'react';`} </span>
-							<span>{`const App = () => {`} </span>
-							<span className="relative left-7">{`const [count, setCount] = useState(0)`}</span>
-							<span className="relative left-7">{`useEffect(() => {`}</span>
-							<span className="relative left-11">{` setTimeout(() => {`}</span>
-							<span className="relative left-16">{`   setCount((count) => count + 1);`}</span>
-							<span className="relative left-11">{`      }, 1000);`}</span>
-							<span className="relative left-7">{`  });`}</span>
-							<span className="relative left-11">{`return (`}</span>
-							<span className="relative left-14">{`<div> `}</span>
-							<span className="relative left-20">{`Hello , count value is {count}`}</span>
-							<span className="relative left-14">{`</div> `}</span>
-							<span className="relative left-11">{`);`}</span>
-							<span>{`};`}</span>
-							<span>{`export default App;`}</span>
-						</Code>
+						<CodePreview code={`${useEffectCode}`} />
 					</div>
 				</div>
 			</div>
