@@ -1,4 +1,5 @@
 import { lilitaFont, ubuntu, inter } from "@/app/notes/layout";
+import CodePreview from "@/components/Notes/CodePreview";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import WarningNote from "@/components/Notes/WarninNote";
 import { Code } from "@nextui-org/code";
@@ -7,6 +8,7 @@ import Link from "next/link";
 import { FaCircle } from "react-icons/fa";
 
 import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { attackCode, elementCode, expressionCode } from "./code";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -54,14 +56,7 @@ export default function ReactJSX() {
 							React to show more useful error and warning
 							messages.
 						</p>
-
-						<Code
-							className="bg-slate-black text-light-white w-fit mt-2 p-2 relative left-7"
-							size="md"
-						>
-							const element = &lt;h1&gt; Hello, React!
-							&lt;/h1&gt;;
-						</Code>
+						<CodePreview code={`${elementCode}`} />
 						<h1
 							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
 						>
@@ -77,27 +72,7 @@ export default function ReactJSX() {
 							name and then use it inside JSX by wrapping it in
 							curly braces:
 						</p>
-						<Code
-							className="bg-slate-black text-light-white mt-2 p-2 w-fit flex flex-col relative left-7"
-							size="md"
-						>
-							<div className="text-xs flex gap-1 m-1">
-								<span className="text-[#FE5F57]">
-									<FaCircle />
-								</span>
-								<span className="text-[#FEBC2E]">
-									<FaCircle />
-								</span>
-								<span className="text-[#28C840]">
-									<FaCircle />
-								</span>
-							</div>
-							<span>const name = &apos;Sujan Shrestha&apos;</span>
-							<span>
-								const element=&lt;h1&gt; Hello,&#123;name&#125;
-								&lt;/h1&gt;;
-							</span>
-						</Code>
+						<CodePreview code={`${expressionCode}`} />
 
 						<p
 							className={`${inter.className}  text-lg p-2 mt-2 text-justify`}
@@ -139,34 +114,7 @@ export default function ReactJSX() {
 							to a string before being rendered. This helps
 							prevent XSS (cross-site-scripting) attacks.
 						</p>
-						<Code
-							className="bg-slate-black text-light-white mt-2 p-2 w-fit flex flex-col relative left-7"
-							size="md"
-						>
-							<div className="text-xs flex gap-1 m-1">
-								<span className="text-[#FE5F57]">
-									<FaCircle />
-								</span>
-								<span className="text-[#FEBC2E]">
-									<FaCircle />
-								</span>
-								<span className="text-[#28C840]">
-									<FaCircle />
-								</span>
-							</div>
-							<span>
-								{" "}
-								const title =
-								response.potentiallyMaliciousInput;
-							</span>
-							<span className="text-slate-400">
-								&#47;&#47; This is safe:
-							</span>
-							<span>
-								const
-								element=&lt;h1&gt;&#123;title&#125;&lt;/h1&gt;;
-							</span>
-						</Code>
+						<CodePreview code={`${attackCode}`} />
 
 						<p
 							className={`${inter.className} flex gap-1 text-lg mt-2 text-justify`}
