@@ -4,6 +4,8 @@ import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import { FaCircle } from "react-icons/fa";
 import { Code } from "@nextui-org/code";
+import CodePreview from "@/components/Notes/CodePreview";
+import { classCode, functionCode, reuseCode } from "./code";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -99,46 +101,7 @@ export default function ReactComponents() {
 							structure of a UI element in a React application.
 						</p>
 
-						<Code
-							className="bg-slate-black text-light-white p-3 flex flex-col relative left-7"
-							size="md"
-						>
-							<div className="text-xs flex gap-1 m-1">
-								<span className="text-[#FE5F57]">
-									<FaCircle />
-								</span>
-								<span className="text-[#FEBC2E]">
-									<FaCircle />
-								</span>
-								<span className="text-[#28C840]">
-									<FaCircle />
-								</span>
-							</div>
-							<span>
-								{`import React, { Component } from 'react';`}{" "}
-							</span>
-							<span>
-								{`class MyComponent extends Component {`}
-							</span>
-							<span className="relative left-4">
-								{`  render() {`}
-							</span>
-							<span className="relative left-9">
-								{`  return(`}
-							</span>
-							<span className="relative left-14">
-								{`  <div>`}
-							</span>
-							<span className="relative left-20">
-								{`  <p>This is a class-based component.</p> `}
-							</span>
-							<span className="relative left-14">
-								{`  </div>`}
-							</span>
-							<span className="relative left-9">{`  );`}</span>
-							<span className="relative left-4">{` }`}</span>
-							<span>{` }`}</span>
-						</Code>
+						<CodePreview code={`${classCode}`} />
 
 						<h1
 							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
@@ -160,39 +123,7 @@ export default function ReactComponents() {
 							need for classes.
 						</p>
 
-						<Code
-							className="bg-slate-black text-light-white p-3 flex flex-col relative left-7"
-							size="md"
-						>
-							<div className="text-xs flex gap-1 m-1">
-								<span className="text-[#FE5F57]">
-									<FaCircle />
-								</span>
-								<span className="text-[#FEBC2E]">
-									<FaCircle />
-								</span>
-								<span className="text-[#28C840]">
-									<FaCircle />
-								</span>
-							</div>
-							<span>{`import React from 'react';`} </span>
-							<span>{`function MyComponent() {`}</span>
-
-							<span className="relative left-9">
-								{`  return(`}
-							</span>
-							<span className="relative left-14">
-								{`  <div>`}
-							</span>
-							<span className="relative left-20">
-								{`  <p>This is a function-based component.</p> `}
-							</span>
-							<span className="relative left-14">
-								{`  </div>`}
-							</span>
-							<span className="relative left-9">{`  );`}</span>
-							<span className="relative left-4">{` }`}</span>
-						</Code>
+						<CodePreview code={`${functionCode}`} />
 
 						<h1
 							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
@@ -210,43 +141,7 @@ export default function ReactComponents() {
 							allowing us to import them from any file and use
 							them.
 						</p>
-						<Code
-							className="bg-slate-black text-light-white p-3 flex flex-col relative left-7"
-							size="md"
-						>
-							<div className="text-xs flex gap-1 m-1">
-								<span className="text-[#FE5F57]">
-									<FaCircle />
-								</span>
-								<span className="text-[#FEBC2E]">
-									<FaCircle />
-								</span>
-								<span className="text-[#28C840]">
-									<FaCircle />
-								</span>
-							</div>
-							<span>{`import React from 'react';`} </span>
-							<span>{`function MyComponent() {`}</span>
-
-							<span className="relative left-9">
-								{`  return(`}
-							</span>
-							<span className="relative left-14">
-								{`  <div>`}
-							</span>
-							<span className="relative left-20">
-								{`  <p>This is a function-based component.</p> `}
-							</span>
-							<span className="relative left-14">
-								{`  </div>`}
-							</span>
-							<span className="relative left-9">{`  );`}</span>
-							<span className="relative left-4">{` }`}</span>
-							<span className="bg-slate-700 p-1 rounded-lg">
-								{" "}
-								{`export default MyComponent;`}{" "}
-							</span>
-						</Code>
+						<CodePreview code={`${reuseCode}`} />
 					</div>
 				</div>
 			</div>
