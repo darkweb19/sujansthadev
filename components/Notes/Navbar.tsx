@@ -132,7 +132,7 @@ export default function NavBar() {
 				<NavbarMenu>
 					{menuItems.map((item, index) => (
 						<>
-							<NavbarMenuItem key={`${item}-${index}`}>
+							<NavbarMenuItem key={index}>
 								<Link
 									onClick={() => setMenuOpen(false)}
 									className={`${ubuntu.className} w-full`}
