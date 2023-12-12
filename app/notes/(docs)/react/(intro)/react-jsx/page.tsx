@@ -2,10 +2,8 @@ import { lilitaFont, ubuntu, inter } from "@/app/notes/layout";
 import CodePreview from "@/components/Notes/CodePreview";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import WarningNote from "@/components/Notes/WarninNote";
-import { Code } from "@nextui-org/code";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { FaCircle } from "react-icons/fa";
 
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { attackCode, elementCode, expressionCode } from "./code";

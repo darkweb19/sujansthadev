@@ -3,7 +3,6 @@ import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import { FaCircle } from "react-icons/fa";
-import { Code } from "@nextui-org/code";
 import CodePreview from "@/components/Notes/CodePreview";
 import { classCode, functionCode, reuseCode } from "./code";
 
