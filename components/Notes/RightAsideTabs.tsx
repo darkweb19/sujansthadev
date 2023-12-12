@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 export default function RightAsideTab() {
 	const pathname = usePathname();
 	return (
-		<div className="items-center h-full hidden lg:flex w-1/12">
+		<aside className="items-center h-full hidden lg:flex w-1/12">
 			<ul className=" text-start w-full px-6 py-1">
 				{list.map((links, index) => (
 					<Link
@@ -28,6 +28,6 @@ export default function RightAsideTab() {
 					</Link>
 				))}
 			</ul>
-		</div>
+		</aside>
 	);
 }

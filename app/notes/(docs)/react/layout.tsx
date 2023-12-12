@@ -17,7 +17,7 @@ export default function ReactLayout({
 		<section className={`${lato.className} font-medium h-[90vh]`}>
 			<div className=" w-full h-full flex border  ">
 				{/* this is left aside  */}
-				<div className="h-full w-2/12 border-r-1 border-slate-black py-2 overflow-scroll scroll-smooth hidden md:block">
+				<aside className="h-full w-2/12 border-r-1 border-slate-black py-2 overflow-scroll scroll-smooth hidden md:block">
 					<ScrollShadow className="w-full h-full">
 						<h1 className="text-2xl text-start p-2 ">
 							<Link
@@ -86,12 +86,12 @@ export default function ReactLayout({
 							))}
 						</ul>
 					</ScrollShadow>
-				</div>
+				</aside>
 
 				{/* this is main page of docs  */}
-				<div className="border-r-1 border-slate-black p-2 w-full lg:w-9/12 h-full overflow-scroll scroll-smooth">
+				<main className="border-r-1 border-slate-black p-2 w-full lg:w-9/12 h-full overflow-scroll scroll-smooth">
 					{children}
-				</div>
+				</main>
 				<RightAsideTab />
 			</div>
 		</section>
