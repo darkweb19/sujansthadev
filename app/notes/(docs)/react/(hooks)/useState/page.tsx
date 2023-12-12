@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
-import { Snippet } from "@nextui-org/snippet";
-import SuccessNote from "@/components/Notes/SuccessNote";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
-import { Code } from "@nextui-org/react";
-import { FaCircle } from "react-icons/fa";
+import CodePreview from "@/components/Notes/CodePreview";
+import { initializeCode, readStateCode, updateStateCode } from "./code";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -56,23 +54,7 @@ export default function SetUp() {
 							</span>
 							To use useState , we have to import it firsts :
 						</p>
-						<Code
-							className="bg-slate-black text-light-white p-3 flex flex-col relative left-7"
-							size="md"
-						>
-							<div className="text-xs flex gap-1 m-1">
-								<span className="text-[#FE5F57]">
-									<FaCircle />
-								</span>
-								<span className="text-[#FEBC2E]">
-									<FaCircle />
-								</span>
-								<span className="text-[#28C840]">
-									<FaCircle />
-								</span>
-							</div>
-							<span>{`import {useState} from 'react';`} </span>
-						</Code>
+						<CodePreview code="import {useState} from 'react';" />
 						<h1
 							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
 						>
@@ -86,26 +68,7 @@ export default function SetUp() {
 							</span>
 							You can initialize state like this:
 						</p>
-						<Code
-							className="bg-slate-black text-light-white p-3 flex flex-col relative left-7"
-							size="md"
-						>
-							<div className="text-xs flex gap-1 m-1">
-								<span className="text-[#FE5F57]">
-									<FaCircle />
-								</span>
-								<span className="text-[#FEBC2E]">
-									<FaCircle />
-								</span>
-								<span className="text-[#28C840]">
-									<FaCircle />
-								</span>
-							</div>
-							<span>{`import {useState} from 'react';`} </span>
-							<span>{`const App = () => {`} </span>
-							<span className="relative left-7">{`const [cound, setCount] = useState(0)`}</span>
-							<span>{`};`}</span>
-						</Code>
+						<CodePreview code={`${initializeCode}`} />
 						<p
 							className={`${inter.className} flex gap-1 pl-6 text-lg mt-2 text-justify`}
 						>
@@ -131,32 +94,7 @@ export default function SetUp() {
 							We can read and display the value that are present
 							in the states :
 						</p>
-						<Code
-							className="bg-slate-black text-light-white p-3 flex flex-col relative left-7"
-							size="md"
-						>
-							<div className="text-xs flex gap-1 m-1">
-								<span className="text-[#FE5F57]">
-									<FaCircle />
-								</span>
-								<span className="text-[#FEBC2E]">
-									<FaCircle />
-								</span>
-								<span className="text-[#28C840]">
-									<FaCircle />
-								</span>
-							</div>
-							<span>{`import {useState} from 'react';`} </span>
-							<span>{`const App = () => {`} </span>
-							<span className="relative left-7">{`const [cound, setCount] = useState(0)`}</span>
-							<span className="relative left-11">{`return (`}</span>
-							<span className="relative left-14">{`<div> `}</span>
-							<span className="relative left-20">{`Hello , count value is {count}`}</span>
-							<span className="relative left-14">{`</div> `}</span>
-							<span className="relative left-11">{`);`}</span>
-							<span>{`};`}</span>
-							<span>{`export default App;`}</span>
-						</Code>
+						<CodePreview code={`${readStateCode}`} />
 						<p
 							className={`${inter.className} flex gap-1 pl-6 text-lg mt-2 text-justify`}
 						>
@@ -181,33 +119,7 @@ export default function SetUp() {
 							update state, in this case: setCount. State can be
 							updated like this:
 						</p>
-						<Code
-							className="bg-slate-black text-light-white p-3 flex flex-col relative left-7"
-							size="md"
-						>
-							<div className="text-xs flex gap-1 m-1">
-								<span className="text-[#FE5F57]">
-									<FaCircle />
-								</span>
-								<span className="text-[#FEBC2E]">
-									<FaCircle />
-								</span>
-								<span className="text-[#28C840]">
-									<FaCircle />
-								</span>
-							</div>
-							<span>{`import {useState} from 'react';`} </span>
-							<span>{`const App = () => {`} </span>
-							<span className="relative left-7">{`const [cound, setCount] = useState(0)`}</span>
-							<span className="relative left-7">{`setCount(4);`}</span>
-							<span className="relative left-11">{`return (`}</span>
-							<span className="relative left-14">{`<div> `}</span>
-							<span className="relative left-20">{`Hello , count value is {count}`}</span>
-							<span className="relative left-14">{`</div> `}</span>
-							<span className="relative left-11">{`);`}</span>
-							<span>{`};`}</span>
-							<span>{`export default App;`}</span>
-						</Code>
+						<CodePreview code={`${updateStateCode}`} />
 						<p
 							className={`${inter.className} flex gap-1 text-lg pl-6 mt-2 text-justify`}
 						>
