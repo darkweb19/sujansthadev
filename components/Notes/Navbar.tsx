@@ -95,7 +95,10 @@ export default function NavBar() {
 				)}
 
 				<NavbarItem>
-					<Link className={`${ubuntu.className} text-lg`} href="#">
+					<Link
+						className={`${ubuntu.className} text-lg`}
+						href="/blog"
+					>
 						/blog
 					</Link>
 				</NavbarItem>
