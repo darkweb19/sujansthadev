@@ -42,9 +42,9 @@ export default function SetUp() {
 							function components: Data fetching, setting up a
 							subscription, and manually changing the DOM in React
 							components are all examples of side effects. Whether
-							or not you're used to calling these operations “side
-							effects” (or just “effects”), you've likely
-							performed them in your components before.
+							or not you&apos;re used to calling these operations
+							“side effects” (or just “effects”), you&apos;ve
+							likely performed them in your components before.
 						</p>
 						<div className="px-3">
 							<CodePreview code={`${useEffectCode}`} />
