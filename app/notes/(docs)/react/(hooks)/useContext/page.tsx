@@ -7,8 +7,9 @@ import { allTiedTogtherCode, consumeCode, providerCode } from "./code";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: "How to Set Up React | React JS",
-		description: "Notes of React js including some snippets",
+		title: "What is useContext Hook? | React JS",
+		description:
+			"Notes useContext hook in react with some code snippets to walk through.",
 	};
 }
 
