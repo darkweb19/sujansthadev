@@ -19,7 +19,7 @@ export default function ConditionalPage() {
 	return (
 		<div className="flex flex-col gap-1">
 			<TopNavButtons
-				prevLink="/notes/react/react-jsx"
+				prevLink="/notes/react/props"
 				nextLink="/notes/react/lists"
 			/>
 			<div className="border w-full">
@@ -93,7 +93,7 @@ export default function ConditionalPage() {
 			</div>
 
 			<TopNavButtons
-				prevLink="/notes/react/react-jsx"
+				prevLink="/notes/react/props"
 				nextLink="/notes/react/lists"
 			/>
 		</div>
