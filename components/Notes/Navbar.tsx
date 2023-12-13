@@ -65,34 +65,35 @@ export default function NavBar() {
 						/home
 					</Link>
 				</NavbarItem>
-				{!pathname.startsWith("/notes") && (
-					<>
-						<NavbarItem>
-							<Link
-								className={`${ubuntu.className} text-lg`}
-								href="#statement"
-							>
-								/statement
-							</Link>
-						</NavbarItem>
-						<NavbarItem>
-							<Link
-								className={`${ubuntu.className} text-lg`}
-								href="#creations"
-							>
-								/creations
-							</Link>
-						</NavbarItem>
-						<NavbarItem>
-							<Link
-								className={`${ubuntu.className} text-lg`}
-								href="#academics"
-							>
-								/academics
-							</Link>
-						</NavbarItem>
-					</>
-				)}
+				{!pathname.startsWith("/notes") &&
+					!pathname.startsWith("/convert") && (
+						<>
+							<NavbarItem>
+								<Link
+									className={`${ubuntu.className} text-lg`}
+									href="#statement"
+								>
+									/statement
+								</Link>
+							</NavbarItem>
+							<NavbarItem>
+								<Link
+									className={`${ubuntu.className} text-lg`}
+									href="#creations"
+								>
+									/creations
+								</Link>
+							</NavbarItem>
+							<NavbarItem>
+								<Link
+									className={`${ubuntu.className} text-lg`}
+									href="#academics"
+								>
+									/academics
+								</Link>
+							</NavbarItem>
+						</>
+					)}
 
 				<NavbarItem>
 					<Link
@@ -108,6 +109,14 @@ export default function NavBar() {
 						href="/notes"
 					>
 						/notes
+					</Link>
+				</NavbarItem>
+				<NavbarItem>
+					<Link
+						className={`${ubuntu.className} text-lg`}
+						href="/convert"
+					>
+						/convert
 					</Link>
 				</NavbarItem>
 			</NavbarContent>
