@@ -25,7 +25,7 @@ export default function ReactComponents() {
 					<h1
 						className={`${lilitaFont.className} text-4xl text-gray-700`}
 					>
-						useEffect Hook
+						React Components
 					</h1>
 					<div className="p-2 pl-4 sm:pr-10">
 						<h1
