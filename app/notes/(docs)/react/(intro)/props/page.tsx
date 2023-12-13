@@ -26,14 +26,9 @@ export default function ReactProps() {
 					<h1
 						className={`${lilitaFont.className} text-4xl text-gray-700`}
 					>
-						React Setup
+						React Props
 					</h1>
 					<div className="border pl-4 sm:pl-1 p-3 w-11/12 h-fit ">
-						<h1
-							className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
-						>
-							React Props
-						</h1>
 						<p
 							className={`${inter.className} flex gap-1 text-lg text-justify`}
 						>
