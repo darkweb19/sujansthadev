@@ -18,7 +18,7 @@ import TopNavButtons from "@/components/Notes/TopNavButtons";
 // }
 
 export default async function ReactPage() {
-	await new Promise((resolve) => setTimeout(resolve, 1000));
+	await new Promise((resolve) => setTimeout(resolve, 500));
 
 	return (
 		<div className="flex flex-col gap-1">
