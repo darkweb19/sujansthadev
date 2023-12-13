@@ -1,3 +1,4 @@
+"use client";
 import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { inter, lilitaFont, ubuntu, playpenSans } from "../../layout";
@@ -9,14 +10,16 @@ import Link from "next/link";
 import { RiNotionLine } from "react-icons/ri";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 
-export async function generateMetadata(): Promise<Metadata> {
-	return {
-		title: "React Js | Introduction ",
-		description: "Notes of React js including some snippets",
-	};
-}
+// export async function generateMetadata(): Promise<Metadata> {
+// 	return {
+// 		title: "React Js | Introduction ",
+// 		description: "Notes of React js including some snippets",
+// 	};
+// }
 
 export default async function ReactPage() {
+	await new Promise((resolve) => setTimeout(resolve, 3000));
+
 	return (
 		<div className="flex flex-col gap-1">
 			<TopNavButtons
