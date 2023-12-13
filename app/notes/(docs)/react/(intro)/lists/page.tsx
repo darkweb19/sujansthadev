@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { inter, lilitaFont } from "@/app/notes/layout";
+import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
-import { FaCircle } from "react-icons/fa";
-import { Code } from "@nextui-org/code";
+
 import React from "react";
 import WarningNote from "@/components/Notes/WarninNote";
 import CodePreview from "@/components/Notes/CodePreview";
@@ -23,15 +22,14 @@ export default function ReactLists() {
 				nextLink="/notes/react/hooks"
 				prevLink="/notes/react/conditionals"
 			/>
-
-			<div className="w-full flex justify-around h-fit p-2">
-				<div className="flex flex-col pl-4 sm:pl-1 justify-evenly">
+			<div className="border w-full">
+				<div>
 					<h1
 						className={`${lilitaFont.className} text-4xl text-gray-700`}
 					>
-						React Lists
+						React List
 					</h1>
-					<div className="border p-3 w-11/12 h-fit ">
+					<div className="p-2 pl-4 sm:pr-10">
 						<p
 							className={`${inter.className} flex gap-1 text-lg text-justify`}
 						>
@@ -59,7 +57,6 @@ export default function ReactLists() {
 							complex logic when rendering each item in the list
 							based on your specific requirements.
 						</p>
-
 						<WarningNote content="React provides a key prop for each element in a list to help with efficient rendering. The key prop is used to uniquely identify each item in the list." />
 					</div>
 				</div>

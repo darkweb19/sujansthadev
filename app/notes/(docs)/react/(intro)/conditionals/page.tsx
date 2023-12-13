@@ -22,14 +22,14 @@ export default function ConditionalPage() {
 				prevLink="/notes/react/react-jsx"
 				nextLink="/notes/react/lists"
 			/>
-			<div className="w-full flex justify-around h-fit p-2">
-				<div className="flex flex-col pl-4 sm:pl-1 justify-evenly">
+			<div className="border w-full">
+				<div>
 					<h1
 						className={`${lilitaFont.className} text-4xl text-gray-700`}
 					>
-						React Conditionals
+						React List
 					</h1>
-					<div className="border p-3 w-11/12 h-fit ">
+					<div className="p-2 pl-4 sm:pr-10">
 						<h1
 							className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
 						>
@@ -96,6 +96,7 @@ export default function ConditionalPage() {
 					</div>
 				</div>
 			</div>
+
 			<TopNavButtons
 				prevLink="/notes/react/react-jsx"
 				nextLink="/notes/react/lists"

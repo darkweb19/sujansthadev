@@ -19,14 +19,14 @@ export default function SetUp() {
 				nextLink="/notes/react/useEffect"
 				prevLink="/notes/react/hooks"
 			/>
-			<div className="w-full flex justify-around h-fit p-2">
-				<div className="flex flex-col pl-4 sm:pl-1 justify-evenly">
+			<div className="border w-full">
+				<div>
 					<h1
 						className={`${lilitaFont.className} text-4xl text-gray-700`}
 					>
-						useState Hook
+						useEffect Hook
 					</h1>
-					<div className="border p-3 w-11/12 h-fit ">
+					<div className="border pl-4 pt-1 w-full sm:w-11/12  h-fit ">
 						<h1
 							className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
 						>

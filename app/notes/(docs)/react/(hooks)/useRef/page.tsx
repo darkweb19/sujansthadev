@@ -22,23 +22,21 @@ export default function SetUp() {
 				nextLink="/notes/react/useContext"
 				prevLink="/notes/react/useEffect"
 			/>
-
-			<div className="w-full flex justify-around h-fit p-2">
-				<div className="flex flex-col justify-evenly">
+			<div className="border w-full">
+				<div className="">
 					<h1
 						className={`${lilitaFont.className} text-4xl text-gray-700`}
 					>
 						useRef Hook
 					</h1>
-					<div className="border p-3 w-11/12 h-fit ">
+					<div className="p-2 pl-3 sm:pr-10">
 						<h1
 							className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
 						>
 							What are useRef Hooks in React?
 						</h1>
-
 						<p
-							className={`${inter.className} flex gap-1 text-lg text-justify`}
+							className={`${inter.className} flex justify-center  text-justify px-1`}
 						>
 							<span className="border py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
@@ -48,32 +46,32 @@ export default function SetUp() {
 							also be used to access a DOM element directly.
 						</p>
 						<SuccessNote content="This means , value changed does not cause a re-render." />
-
-						<div className="p-2">
-							<h1
-								className={`${ubuntu.className} text-3xl mt-2 font-medium text-slate-black`}
+						<div className="px-3">
+							<h2
+								className={`${ubuntu.className} text-2xl mt-2 font-medium text-slate-black`}
 							>
 								The primary use cases for useRef includes:
-							</h1>
+							</h2>
 							<p
-								className={`${inter.className} flex mt-2 font-medium gap-1 items-center text-xl text-justify`}
+								className={`${ubuntu.className} flex mt-2 font-medium gap-1 items-center text-xl text-justify`}
 							>
 								<span className="border py-1 h-fit text-xs">
 									<FaCircle />
 								</span>
 								Accessing DOM elements
 							</p>
-							<p
-								className={`${inter.className} flex gap-1 mt-1 items-center text-lg text-justify`}
-							>
-								<span className="border py-1 h-fit text-xs"></span>
-								One of the most common use cases of `useRef` is
-								accessing DOM elements. Instead of using
-								document.getElementById or other DOM queries,
-								you can use useRef to directly reference an
-								element within your component.
-							</p>
-							<CodePreview code={`${domCode}`} />
+							<div className="px-4">
+								<p
+									className={`${inter.className} flex gap-1 mt-1 px-4 items-center text-lg text-justify`}
+								>
+									One of the most common use cases of `useRef`
+									is accessing DOM elements. Instead of using
+									document.getElementById or other DOM
+									queries, you can use useRef to directly
+									reference an element within your component.
+								</p>
+								<CodePreview code={`${domCode}`} />
+							</div>
 							<p
 								className={`${inter.className} flex gap-1 mt-4 items-center text-xl text-justify`}
 							>
@@ -93,15 +91,15 @@ export default function SetUp() {
 								without triggering unnecessary renders.
 							</p>
 							<CodePreview code={`${prevCode}`} />
+							<WarningNote content="Also, note that `useRef` is not limited to working with DOM elements; it can be used for any mutable value that you want to persist across renders without causing re-renders." />
 						</div>
-						<WarningNote content="Also, note that `useRef` is not limited to working with DOM elements; it can be used for any mutable value that you want to persist across renders without causing re-renders." />
 						<h1
 							className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
 						>
 							Refinement
 						</h1>
 						<p
-							className={`${inter.className} flex gap-1 mt-1 items-center text-lg text-justify`}
+							className={`${inter.className} flex gap-1 mt-1 p-2 items-center text-lg text-justify`}
 						>
 							<span className="border py-1 h-fit text-xs"></span>
 							`useRef` is a powerful hook in React.js that enables

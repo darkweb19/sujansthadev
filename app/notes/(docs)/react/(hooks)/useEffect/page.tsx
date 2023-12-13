@@ -19,39 +19,36 @@ export default function SetUp() {
 				nextLink="/notes/react/useRef"
 				prevLink="/notes/react/useState"
 			/>
-			<div className="w-full flex justify-around h-fit p-2">
-				<div className="flex pl-4 sm:pl-1  flex-col justify-evenly">
+			<div className="border w-full">
+				<div>
 					<h1
 						className={`${lilitaFont.className} text-4xl text-gray-700`}
 					>
 						useEffect Hook
 					</h1>
-					<div className="border p-3 w-11/12 h-fit ">
+					<div className="p-2 pl-4 sm:pr-10">
 						<h1
 							className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
 						>
-							What are useEffect Hook?
+							What are useEffect Hooks in React?
 						</h1>
 						<p
-							className={`${inter.className} flex gap-1 text-lg text-justify`}
+							className={`${inter.className} flex justify-center  text-justify px-1`}
 						>
 							<span className="border py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
 							</span>
 							The Effect Hook lets you perform side effects in
-							function components:
-						</p>
-						<p
-							className={`${inter.className} pl-7  text-lg text-justify`}
-						>
-							Data fetching, setting up a subscription, and
-							manually changing the DOM in React components are
-							all examples of side effects. Whether or not
-							you&apos;re used to calling these operations “side
-							effects” {`(or just “effects”)`}, you&apos;ve likely
+							function components: Data fetching, setting up a
+							subscription, and manually changing the DOM in React
+							components are all examples of side effects. Whether
+							or not you're used to calling these operations “side
+							effects” (or just “effects”), you've likely
 							performed them in your components before.
 						</p>
-						<CodePreview code={`${useEffectCode}`} />
+						<div className="px-3">
+							<CodePreview code={`${useEffectCode}`} />
+						</div>
 					</div>
 				</div>
 			</div>
