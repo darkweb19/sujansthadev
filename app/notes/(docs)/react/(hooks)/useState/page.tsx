@@ -24,7 +24,7 @@ export default function SetUp() {
 					<h1
 						className={`${lilitaFont.className} text-4xl text-gray-700`}
 					>
-						useEffect Hook
+						useState Hook
 					</h1>
 					<div className="border pl-4 pt-1 w-full sm:w-11/12  h-fit ">
 						<h1
