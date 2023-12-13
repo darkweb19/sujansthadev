@@ -1,4 +1,3 @@
-import Navbar from "@/components/Notes/Navbar";
 import {
 	Lilita_One,
 	Inter,

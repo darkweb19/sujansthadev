@@ -16,7 +16,9 @@ export async function generateMetadata(): Promise<Metadata> {
 	};
 }
 
-export default function ReactPage() {
+export default async function ReactPage() {
+	await new Promise((resolve) => setTimeout(resolve, 3000));
+
 	return (
 		<div className="flex flex-col gap-1">
 			<TopNavButtons
