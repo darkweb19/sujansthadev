@@ -58,7 +58,7 @@ export default function Conversions() {
 				</h1>
 
 				<div className="">
-					<div className="border border-slate-500 flex gap-2 p-3 rounded-lg flex-wrap">
+					<div className="border border-slate-500 flex gap-2 p-3 rounded-lg flex-wrap justify-center sm:justify-start">
 						<div className=" flex gap-1 items-center">
 							<span className="text-red-600 ">
 								<FaCircle />
@@ -148,6 +148,7 @@ export default function Conversions() {
 						</Button>
 					)}
 
+					{/* when rgb values are invalid  */}
 					{error && (
 						<>
 							<DangerNote content="Values Must be from 0 to 255 !!!" />
@@ -161,6 +162,7 @@ export default function Conversions() {
 						</>
 					)}
 
+					{/* this is for reset  */}
 					{hex != null && (
 						<Button
 							className={`${inter.className} font-medium `}
@@ -171,6 +173,7 @@ export default function Conversions() {
 						</Button>
 					)}
 
+					{/* this is for copying  */}
 					<div
 						className={`border border-slate-400 flex items-center gap-3  p-3 rounded-lg bg-white ${
 							hex == null && "hidden"
@@ -187,6 +190,7 @@ export default function Conversions() {
 						)}
 					</div>
 
+					{/* this is preview  */}
 					{hex && (
 						<div
 							className="h-16 w-36 sm:w-24 rounded-xl p-2 m-1"

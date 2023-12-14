@@ -26,6 +26,7 @@ const menuItems = [
 	{ title: "/Home", link: "/" },
 	{ title: "/Blog", link: "#" },
 	{ title: "/Notes", link: "/notes" },
+	{ title: "/Convert", link: "/convert" },
 ];
 
 const allReactLinks = [
