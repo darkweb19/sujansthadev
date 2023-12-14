@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { inter, lilitaFont, playpenSans, ubuntu } from "@/app/notes/layout";
+import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
 import SuccessNote from "@/components/Notes/SuccessNote";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import { FaCircle } from "react-icons/fa";
@@ -70,7 +70,7 @@ export default function SetUp() {
 									queries, you can use useRef to directly
 									reference an element within your component.
 								</p>
-								<CodePreview code={`${domCode}`} />
+								<CodePreview code={`${domCode}`} lines={[3]} />
 							</div>
 							<p
 								className={`${inter.className} flex gap-1 mt-4 items-center text-xl text-justify`}
@@ -90,7 +90,10 @@ export default function SetUp() {
 								when you need to keep track of previous values
 								without triggering unnecessary renders.
 							</p>
-							<CodePreview code={`${prevCode}`} />
+							<CodePreview
+								code={`${prevCode}`}
+								lines={[5, 6, 9, 10]}
+							/>
 							<WarningNote content="Also, note that `useRef` is not limited to working with DOM elements; it can be used for any mutable value that you want to persist across renders without causing re-renders." />
 						</div>
 						<h1

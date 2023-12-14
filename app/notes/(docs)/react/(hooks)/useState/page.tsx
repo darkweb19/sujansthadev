@@ -7,8 +7,9 @@ import { initializeCode, readStateCode, updateStateCode } from "./code";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: "How to Set Up React | React JS",
-		description: "Notes of React js including some snippets",
+		title: "What is useState hook | React JS",
+		description:
+			"How to manipulate useState hook , provided some code snippet to walkthrough.",
 	};
 }
 
@@ -68,7 +69,7 @@ export default function SetUp() {
 							</span>
 							You can initialize state like this:
 						</p>
-						<CodePreview code={`${initializeCode}`} />
+						<CodePreview code={`${initializeCode}`} lines={[3]} />
 						<p
 							className={`${inter.className} flex gap-1 pl-6 text-lg mt-2 text-justify`}
 						>
@@ -94,7 +95,7 @@ export default function SetUp() {
 							We can read and display the value that are present
 							in the states :
 						</p>
-						<CodePreview code={`${readStateCode}`} />
+						<CodePreview code={`${readStateCode}`} lines={[4]} />
 						<p
 							className={`${inter.className} flex gap-1 pl-6 text-lg mt-2 text-justify`}
 						>
@@ -119,7 +120,7 @@ export default function SetUp() {
 							update state, in this case: setCount. State can be
 							updated like this:
 						</p>
-						<CodePreview code={`${updateStateCode}`} />
+						<CodePreview code={`${updateStateCode}`} lines={[4]} />
 						<p
 							className={`${inter.className} flex gap-1 text-lg pl-6 mt-2 text-justify`}
 						>

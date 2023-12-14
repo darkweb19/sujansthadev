@@ -1,4 +1,4 @@
-import { lilitaFont, ubuntu, inter } from "@/app/notes/layout";
+import { ubuntu, inter } from "@/app/notes/layout";
 import CodePreview from "@/components/Notes/CodePreview";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import WarningNote from "@/components/Notes/WarninNote";
