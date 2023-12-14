@@ -63,6 +63,7 @@ export default function SetUp() {
 									code={`${`import { createContext } from "react";
 							
 const StateContext = createContext()`}`}
+									lines={[3]}
 								/>
 							</div>
 							<h2
@@ -78,7 +79,10 @@ const StateContext = createContext()`}`}
 								context available.
 							</p>
 							<div className="pl-2">
-								<CodePreview code={`${providerCode}`} />
+								<CodePreview
+									code={`${providerCode}`}
+									lines={[2, 4]}
+								/>
 							</div>
 							<h2
 								className={`${ubuntu.className} mt-2 text-2xl font-medium text-slate-black`}
@@ -94,8 +98,8 @@ const StateContext = createContext()`}`}
 							</p>
 							<div className="pl-2">
 								<CodePreview
-									wraplines={true}
 									code={`${consumeCode}`}
+									lines={[5]}
 								/>
 							</div>
 							<h3

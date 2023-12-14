@@ -7,8 +7,9 @@ import CodePreview from "@/components/Notes/CodePreview";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: "How to Set Up React | React JS",
-		description: "Notes of React js including some snippets",
+		title: "What is useEffect hook | React JS",
+		description:
+			"how to use useEffect hook in react , and some code snippets to understand the basics of the useEffect hook in reactjs.",
 	};
 }
 
@@ -47,7 +48,10 @@ export default function SetUp() {
 							likely performed them in your components before.
 						</p>
 						<div className="px-3">
-							<CodePreview code={`${useEffectCode}`} />
+							<CodePreview
+								code={`${useEffectCode}`}
+								lines={[5, 6, 7, 8, 9]}
+							/>
 						</div>
 					</div>
 				</div>

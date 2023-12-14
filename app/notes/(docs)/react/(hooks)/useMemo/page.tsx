@@ -95,7 +95,7 @@ export default function SetUp() {
 									. The memoized value is only recalculated
 									when the completedTasks array changes. This
 									ensures that the calculation is optimized
-									and doesn't occur unnecessarily on each
+									and doesn&apos;t occur unnecessarily on each
 									render, improving the performance of the
 									component.
 								</div>
