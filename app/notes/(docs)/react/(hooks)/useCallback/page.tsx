@@ -10,8 +10,9 @@ import SuccessNote from "@/components/Notes/SuccessNote";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: "How to Set Up React | React JS",
-		description: "Notes of React js including some snippets",
+		title: "What are useCallback hooks? | React JS",
+		description:
+			"Clear and concise definition of useCallback hook and how it works. Also some code snippets are provided.",
 	};
 }
 
