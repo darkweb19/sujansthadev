@@ -20,8 +20,8 @@ export default function SetUp() {
 	return (
 		<div className="flex flex-col gap-1">
 			<TopNavButtons
-				nextLink="/notes/react/useRef"
-				prevLink="/notes/react/useState"
+				nextLink="/notes/react/useMemo"
+				prevLink="/notes/react/useContext"
 			/>
 			<div className="border w-full">
 				<div>
@@ -137,8 +137,8 @@ export default function SetUp() {
 			</div>
 
 			<TopNavButtons
-				nextLink="/notes/react/useRef"
-				prevLink="/notes/react/useState"
+				nextLink="/notes/react/useMemo"
+				prevLink="/notes/react/useContext"
 			/>
 		</div>
 	);
