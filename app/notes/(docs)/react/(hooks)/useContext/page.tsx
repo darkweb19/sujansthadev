@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { inter, lilitaFont, playpenSans, ubuntu } from "@/app/notes/layout";
+import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import CodePreview from "@/components/Notes/CodePreview";
 import { allTiedTogtherCode, consumeCode, providerCode } from "./code";

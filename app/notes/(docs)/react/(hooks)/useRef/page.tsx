@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { inter, lilitaFont, playpenSans, ubuntu } from "@/app/notes/layout";
+import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
 import SuccessNote from "@/components/Notes/SuccessNote";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import { FaCircle } from "react-icons/fa";
