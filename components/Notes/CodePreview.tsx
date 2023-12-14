@@ -6,18 +6,14 @@ import useCopy from "./Hooks/copyText";
 
 interface codePreviewProps {
 	code: string;
-	wraplines?: boolean;
-	added?: number[];
+	lines?: number[];
+	redLines?: number[];
 }
 
-const CodePreview: React.FC<codePreviewProps> = ({
-	code,
-	wraplines,
-	added,
-}) => {
+const CodePreview: React.FC<codePreviewProps> = ({ code, lines, redLines }) => {
 	const { copy, copyToClipboard } = useCopy();
-	const ADDED = added;
-	const REMOVED = [6];
+	const ADDED = lines;
+	const REMOVED = redLines;
 
 	return (
 		<div className="text-xl rounded-lg  h-fit w-full bg-[#171717]">
@@ -44,12 +40,12 @@ const CodePreview: React.FC<codePreviewProps> = ({
 				language="javascript"
 				style={coldarkDark}
 				showLineNumbers
-				wrapLines={wraplines}
+				wrapLines={true}
 				lineProps={(lineNumber) => {
 					let style: React.CSSProperties = { display: "block" };
 					if (ADDED?.includes(lineNumber)) {
 						style.backgroundColor = "#155526";
-					} else if (REMOVED.includes(lineNumber)) {
+					} else if (REMOVED?.includes(lineNumber)) {
 						style.backgroundColor = "#250811";
 					}
 					return { style };
