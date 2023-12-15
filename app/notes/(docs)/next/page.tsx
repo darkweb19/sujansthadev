@@ -3,8 +3,8 @@ import TopNavButtons from "@/components/Notes/TopNavButtons";
 import type { Metadata } from "next";
 import { inter, ubuntu } from "../../layout";
 import { FaCircle } from "react-icons/fa";
-import { Divider } from "@nextui-org/react";
 import Link from "next/link";
+import { TbBrandNextjs } from "react-icons/tb";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -28,6 +28,7 @@ export default function NextPage() {
 				mainDefinition={
 					"Next Js is an open-source react framework for building full-stack web applications. It's designed to build react application with server-side rendering(SSR) and other advanced feature."
 				}
+				logo={<TbBrandNextjs />}
 			>
 				<div>
 					<p className={`${inter.className}  p-2 text-justify `}>

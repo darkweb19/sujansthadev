@@ -6,6 +6,7 @@ interface MainContentProps {
 	contentHeading: string;
 	mainDefinition: string;
 	children: React.ReactNode;
+	logo?: React.ReactNode;
 }
 
 const MainContent: React.FC<MainContentProps> = ({
@@ -13,15 +14,17 @@ const MainContent: React.FC<MainContentProps> = ({
 	contentHeading,
 	mainDefinition,
 	children,
+	logo,
 }) => {
 	return (
 		<div className="border w-full">
 			<div>
-				<h1
-					className={`${lilitaFont.className} text-4xl text-gray-700`}
+				<div
+					className={`${lilitaFont.className} flex items-center gap-2`}
 				>
-					{heading}
-				</h1>
+					<h1 className="text-4xl text-gray-700">{heading}</h1>
+					<span className="text-4xl">{logo}</span>
+				</div>
 				<div className="p-2 pl-4 sm:pr-10">
 					<h1
 						className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
