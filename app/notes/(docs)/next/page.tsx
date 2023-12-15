@@ -5,6 +5,7 @@ import { inter, ubuntu } from "../../layout";
 import { FaCircle } from "react-icons/fa";
 import Link from "next/link";
 import { TbBrandNextjs } from "react-icons/tb";
+import SuccessNote from "@/components/Notes/SuccessNote";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -107,7 +108,7 @@ export default function NextPage() {
 					>
 						Installations
 					</h1>
-					<p className={`${inter.className} p-2 text-justify `}>
+					<p className={`${inter.className} p-1 text-justify `}>
 						To get started, checkout the{"   "}
 						<Link
 							className="text-blue-500"
@@ -117,6 +118,13 @@ export default function NextPage() {
 						</Link>{" "}
 						guide.
 					</p>
+
+					<SuccessNote
+						type="Note"
+						content="This project is also built with Next JS"
+						linktext="GitHub Link"
+						link="https://github.com/darkweb19/sujansthadev/"
+					/>
 				</div>
 			</MainContent>
 
