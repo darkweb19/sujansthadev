@@ -6,6 +6,15 @@ import { Snippet } from "@nextui-org/snippet";
 import DevelopmentList from "./DevelopmentServer";
 import ScriptList from "./ScriptList";
 import InstallationPrompt from "./InstallationPrompt";
+import { Metadata } from "next";
+
+export async function generateMetadata(): Promise<Metadata> {
+	return {
+		title: "Setting Up Next Js.",
+		description:
+			"This Page shows how to set up Nextjs Project Locally using npm (Node Package Manager).",
+	};
+}
 
 export default function nextSetup() {
 	return (
