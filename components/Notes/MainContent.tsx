@@ -31,9 +31,7 @@ const MainContent: React.FC<MainContentProps> = ({
 					>
 						{contentHeading}
 					</h1>
-					<p
-						className={`${inter.className} flex justify-center  text-justify px-1`}
-					>
+					<p className={`${inter.className} flex text-justify px-1`}>
 						<span className="border py-1 h-fit text-xl">
 							<IoIosArrowDroprightCircle />
 						</span>
