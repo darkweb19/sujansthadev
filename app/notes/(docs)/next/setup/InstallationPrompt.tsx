@@ -8,7 +8,7 @@ export default function InstallationPrompt() {
 			<h2
 				className={`${ubuntu.className} text-xl mt-2 font-medium text-slate-black`}
 			>
-				On installation, you'll see the following prompts:
+				On installation, you&apos;ll see the following prompts:
 			</h2>
 			<Snippet className="bg-slate-black mt-1 text-light-white">
 				<span>What is your project named? my-app</span>

@@ -48,7 +48,7 @@ export default function ScriptList() {
 					next lint
 				</Code>
 				{"   "}
-				to set up Next.js' built-in ESLint configuration.
+				to set up Next.js&apos;s built-in ESLint configuration.
 			</li>
 		</ul>
 	);
