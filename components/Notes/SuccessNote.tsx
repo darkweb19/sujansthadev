@@ -22,7 +22,8 @@ export default function SuccessNote({
 				<RiVerifiedBadgeFill />
 			</div>
 			<p className={`${inter.className} `}>
-				<span className="font-bold">{type || "Tip"}</span> : {content}{" "}
+				<span className="font-bold">{type ? type : "Tip"}</span> :{" "}
+				{content}{" "}
 				{link && (
 					<Link
 						className="text-blue-600 text-base font-bold"
