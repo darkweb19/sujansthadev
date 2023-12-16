@@ -4,7 +4,7 @@ import React from "react";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 
 interface SuccessNoteProps {
-	type: "Note" | "Tip";
+	type?: "Note" | "Tip";
 	content: string;
 	link?: string;
 	linktext?: string;
@@ -22,7 +22,7 @@ export default function SuccessNote({
 				<RiVerifiedBadgeFill />
 			</div>
 			<p className={`${inter.className} `}>
-				<span className="font-bold">{type}</span> : {content}{" "}
+				<span className="font-bold">{type || "Tip"}</span> : {content}{" "}
 				{link && (
 					<Link
 						className="text-blue-600 text-base font-bold"
