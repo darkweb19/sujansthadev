@@ -4,8 +4,8 @@ export const nextLinks = [
 		link_title: "Setting up next",
 	},
 	{
-		links: "/notes/next/intro",
-		link_title: "Introduction of next",
+		links: "/notes/next/structure",
+		link_title: "Project Structure",
 	},
 ];
 
