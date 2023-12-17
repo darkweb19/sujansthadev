@@ -1,10 +1,18 @@
 import { playpenSans } from "@/app/notes/layout";
 import MainContent from "@/components/Notes/MainContent";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
-
 import DangerNote from "@/components/Notes/DangerNote";
 import AllTables from "./AllTables";
 import Link from "next/link";
+import { Metadata } from "next/types";
+
+export async function generateMetadata(): Promise<Metadata> {
+	return {
+		title: "Project Structure of Next js Framework.",
+		description:
+			"This Page shows how's nextjs's project files/folder structure ares initialized. It only focuses on latest App Router's File/Folder Structure and its basic usecases.",
+	};
+}
 
 export default function NextStructure() {
 	return (
