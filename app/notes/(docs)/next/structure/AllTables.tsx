@@ -10,7 +10,7 @@ export default function AllTables() {
 			<h1
 				className={`${ubuntu.className} text-2xl mt-2 font-medium text-slate-black`}
 			>
-				Top Level Folders:
+				Top Level Folders
 			</h1>
 
 			<article className="p-0 sm:p-2">
@@ -19,7 +19,7 @@ export default function AllTables() {
 			<h1
 				className={`${ubuntu.className} text-2xl mt-2 font-medium text-slate-black`}
 			>
-				Top Level Files:
+				Top Level Files
 			</h1>
 
 			<article className="p-0 sm:p-2">
@@ -28,7 +28,7 @@ export default function AllTables() {
 			<h1
 				className={`${ubuntu.className} text-2xl mt-2 font-medium text-slate-black`}
 			>
-				Routing Files:
+				Routing Files
 			</h1>
 			<article className="p-0 sm:p-2">
 				<TableRoutingFiles />
