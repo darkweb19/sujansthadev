@@ -1,6 +1,5 @@
-import { playpenSans, ubuntu } from "@/app/notes/layout";
+import { playpenSans } from "@/app/notes/layout";
 import MainContent from "@/components/Notes/MainContent";
-import SuccessNote from "@/components/Notes/SuccessNote";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 
 import DangerNote from "@/components/Notes/DangerNote";
