@@ -2,7 +2,7 @@ import MainContent from "@/components/Notes/MainContent";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import ServerComponents from "./ServerComponents";
 import UsingServerComp from "./UsingServerComp";
-import { inter, playpenSans, ubuntu } from "@/app/notes/layout";
+import { playpenSans } from "@/app/notes/layout";
 import RenderingStrategies from "./RenderingStrategies";
 import Link from "next/link";
 
