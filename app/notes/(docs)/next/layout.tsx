@@ -18,11 +18,11 @@ export default function NextLayout({
 			<article className=" w-full h-full flex border  ">
 				<aside className="h-full w-2/12 border-r-2 border-slate-black py-2 overflow-scroll scroll-smooth hidden md:block">
 					<ScrollShadow className="w-full h-full">
-						<h1 className="text-2xl text-start p-2 font-medium">
+						<h1 className="text-2xl text-start p-2 ">
 							<Link
 								className={`${
 									pathname === mainPageLink.link &&
-									"underline underline-offset-2 duration-200 text-slate-600"
+									"underline underline-offset-2 duration-200 text-slate-600 font-semibold"
 								}`}
 								href={mainPageLink.link}
 							>
@@ -42,7 +42,7 @@ export default function NextLayout({
 										className={`${
 											pathname === item.links &&
 											"underline underline-offset-2 duration-200 text-slate-600"
-										} text-lg `}
+										} text-lg font-semibold`}
 										href={item.links}
 									>
 										{" "}
