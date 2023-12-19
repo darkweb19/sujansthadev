@@ -81,8 +81,8 @@ export default function DataFetchingAll() {
 					Data Caching
 				</h1>
 				<p className={`${inter.className} mt-3 text-justify px-2`}>
-					Caching stores data so it doesn't need to be re-fetched from
-					your data source on every request.
+					Caching stores data so it doesn&apos;t need to be re-fetched
+					from your data source on every request.
 				</p>
 				<p className={`${inter.className} mt-3 mb-4 text-justify px-2`}>
 					By default, Next.js automatically caches the returned values
@@ -99,8 +99,8 @@ export default function DataFetchingAll() {
 					<Code className="bg-slate-black text-slate-white">
 						POST
 					</Code>{" "}
-					method are also automatically cached. Unless it's inside a
-					Route Handler that uses the{" "}
+					method are also automatically cached. Unless it&apos;s
+					inside a Route Handler that uses the{" "}
 					<Code className="bg-slate-black text-slate-white">
 						POST
 					</Code>{" "}
