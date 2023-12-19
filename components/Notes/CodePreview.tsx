@@ -6,11 +6,17 @@ import useCopy from "./Hooks/copyText";
 
 interface codePreviewProps {
 	code: string;
+	file?: string;
 	lines?: number[];
 	redLines?: number[];
 }
 
-const CodePreview: React.FC<codePreviewProps> = ({ code, lines, redLines }) => {
+const CodePreview: React.FC<codePreviewProps> = ({
+	code,
+	lines,
+	redLines,
+	file,
+}) => {
 	const { copy, copyToClipboard } = useCopy();
 	const ADDED = lines;
 	const REMOVED = redLines;
@@ -29,12 +35,17 @@ const CodePreview: React.FC<codePreviewProps> = ({ code, lines, redLines }) => {
 						<FaCircle />
 					</span>
 				</div>
-				<button
-					className="text-light-white text-sm relative right-2"
-					onClick={() => copyToClipboard(code)}
-				>
-					{copy ? "copied" : "copy"}
-				</button>
+				<div className="w-full px-2 flex justify-between items-center">
+					<span className="text-slate-300 text-base ">
+						{file ? `app/${file}.tsx` : "app/page.tsx"}
+					</span>
+					<button
+						className="text-light-white text-sm relative right-2"
+						onClick={() => copyToClipboard(code)}
+					>
+						{copy ? "copied" : "copy"}
+					</button>
+				</div>
 			</div>
 			<SyntaxHighlighter
 				language="javascript"
