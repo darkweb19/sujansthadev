@@ -5,6 +5,15 @@ import TopNavButtons from "@/components/Notes/TopNavButtons";
 import { Code } from "@nextui-org/react";
 import Link from "next/link";
 import { dynamicLinkCode, linkCode, usePathnameCode } from "./Code";
+import { Metadata } from "next/types";
+
+export async function generateMetadata(): Promise<Metadata> {
+	return {
+		title: "Routing : Defining Routes",
+		description:
+			"How to define and organize routes in your Next.js application.",
+	};
+}
 
 export default function Routing() {
 	return (
