@@ -1,11 +1,11 @@
 export const introHtmlLinks = [
 	{
-		links: "/notes/html/setup",
-		link_title: "Setting up html",
-	},
-	{
 		links: "/notes/html/tags",
 		link_title: "Basic Tags",
+	},
+	{
+		links: "/notes/html/attributes",
+		link_title: "Attributes",
 	},
 	{
 		links: "/notes/html/elements",
@@ -41,7 +41,7 @@ export const basicTagsHtml = [
 	},
 	{
 		links: "/notes/html/semantic",
-		link_title: "Image Tag",
+		link_title: "Semantic Tag",
 	},
 ];
 
