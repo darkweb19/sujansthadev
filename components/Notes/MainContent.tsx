@@ -25,7 +25,7 @@ const MainContent: React.FC<MainContentProps> = ({
 					<h1 className="text-4xl text-gray-700">{heading}</h1>
 					<span className="text-4xl">{logo}</span>
 				</div>
-				<div className="p-2 pl-4 sm:pr-10">
+				<div className="p-2 pl-3 sm:pr-10">
 					<h1
 						className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
 					>
