@@ -1,5 +1,5 @@
 import CodePreview from "@/components/Notes/CodePreview";
-import { idCode, titleCode } from "./Code";
+import { idCode, titleCode, heightCode, langCode } from "./Code";
 
 ## HTML Attributes
 
@@ -35,6 +35,19 @@ Example:
 
 In this example, the ID attribute helps to distinguish between two paragraphs by having different values: "html" and "python
 
+## The lang Attribute
+
+You should always include the `lang` attribute inside the `<html>` tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
+
+The following example specifies English as the language:
+
+<CodePreview code={langCode} />
+Country codes can also be added to the language code in the lang attribute. So, the
+first two characters define the language of the HTML page, and the last two characters
+define the country.
+
+The following example specifies English as the language and United States as the country:
+
 ## Class Attribute
 
 The class attribute is used to associate an HTML element with a particular class, typically for styling or JavaScript manipulation. Unlike the ID attribute, the class attribute is not unique, and multiple elements can share the same class.
@@ -50,6 +63,12 @@ Example:
 ## Style Attribute
 
 The style attribute allows for inline styling of HTML elements. It is used in conjunction with CSS properties to directly style individual elements within the HTML code.
+
+## The width and height Attributes
+
+The `<img>` tag should also contain the width and height attributes, which specify the width and height of the image (in pixels):
+
+<CodePreview code={heightCode} />
 
 ## Case Sensitivity
 
