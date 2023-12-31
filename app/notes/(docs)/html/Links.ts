@@ -1,9 +1,5 @@
 export const introHtmlLinks = [
 	{
-		links: "/notes/html/tags",
-		link_title: "Basic Tags",
-	},
-	{
 		links: "/notes/html/attributes",
 		link_title: "Attributes",
 	},
