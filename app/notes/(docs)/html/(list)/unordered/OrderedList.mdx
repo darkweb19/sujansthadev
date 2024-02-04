@@ -1,0 +1,31 @@
+import CodePreview from "@/components/Notes/CodePreview";
+import { ulCode, attrCode } from "./Code";
+
+## Key Characteristics of Unordered Lists
+
+-   No specific sequence is required.
+-   Typically displayed as bullet points.
+-   Defined using the `<ul>` tag.
+-   Individual items use the `<li>` tag.
+
+## Basic Example
+
+<CodePreview code={ulCode} file="index.html" />
+
+## Output
+
+-   Pen
+-   Pencil
+-   Eraser
+
+## Customizing Bullet Points with 'type' Attribute
+
+You can specify the style of bullet points using the type attribute. It supports three values:
+
+-   disc - default bullet style
+-   square
+-   circle
+
+## Example Using Square Bullets:
+
+<CodePreview code={attrCode} file="index.html" />
