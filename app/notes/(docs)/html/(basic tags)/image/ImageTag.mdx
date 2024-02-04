@@ -1,0 +1,28 @@
+import CodePreview from "@/components/Notes/CodePreview";
+import { ImageCode, attrCode, dimCode } from "./Code";
+import WarningNote from "@/components/Notes/WarninNote";
+
+## Basic Syntax
+
+This is how the syntax to embed an image in html looks like:
+
+<CodePreview code={ImageCode} file="index.html" />
+
+## Setting Mandatory Attributes
+
+The "src" and "alt" attributes are essential for the proper functioning of the `<img>` tag.
+
+-   src attribute: Specifies the path to the image file.
+-   alt attribute: Provides a text description for the image.
+
+<CodePreview code={attrCode} file="index.html" />
+
+## Setting Image Dimensions
+
+Although dimensions can be set using the "width" and "height" attributes in the `<img>` tag, modern best practices recommend using CSS for this purpose.
+
+<CodePreview code={dimCode} file="index.html" />
+
+Setting the width and height attributes for images in HTML can have a positive impact on Search Engine Optimization (SEO). Specifying these dimensions in the `<img>` tag allows browsers to allocate the correct amount of space on a web page even before the image is fully loaded. This prevents layout shifts, improving the Cumulative Layout Shift (CLS) score—a key metric in Google's Core Web Vitals. A better CLS score can lead to a higher page ranking in search engine results.
+
+<WarningNote content="Styling dimensions and other properties are now more commonly managed through CSS for better flexibility and maintainability." />

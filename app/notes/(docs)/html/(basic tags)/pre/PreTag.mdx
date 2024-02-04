@@ -1,0 +1,40 @@
+import CodePreview from "@/components/Notes/CodePreview";
+import { preCode, exampleCode } from "./Code";
+
+## Purpose of Pre tag
+
+The `<pre>` tag preserves the original formatting of text, making it an excellent choice for displaying code where spacing and indentation are key.
+
+## Syntax
+
+<CodePreview code={preCode} file="index.html" />
+
+## Key Features
+
+The `<pre>` tag maintains both spaces and line breaks, ensuring that text appears exactly as it was originally formatted.
+
+-   The `<pre>` tag has both an opening tag `<pre>` and a closing tag `</pre>`.
+
+-   Additional attributes can also be added for further customization.
+
+## When to Use the `<pre>` Tag?
+
+The `<pre>`tag is most effective when you want the text to display on your HTML page exactly as it was typed, without any formatting changes. It is especially useful for displaying code snippets or preformatted text from data files.
+
+## For Example
+
+<CodePreview code={exampleCode} file="index.html" />
+
+## Output
+
+A simple Python program to print "Hello, World!"
+
+def main():
+print("Hello, World!")
+
+if **name** == "**main**":
+main()
+
+## Conclusion
+
+In summary, the `<pre>` tag is a versatile tool for preserving the original formatting of text in HTML. Whether you are displaying code snippets or preformatted text, this tag ensures that your content appears exactly as intended.
