@@ -1,0 +1,69 @@
+import CodePreview from "@/components/Notes/CodePreview";
+import {
+	utfCode,
+	isoCode,
+	canvaCode,
+	FontCode,
+	CenterCode,
+	uCode,
+} from "./Code";
+import SuccessNote from "@/components/Notes/SuccessNote";
+
+## Characters Sets
+
+Character sets are an essential concept in HTML, influencing how textual content is displayed and interpreted by the browser. This blog aims to elucidate what character sets are, why they matter, and how to specify them in HTML.
+
+### What is a Character Set?
+
+A character set is a set of symbols and characters that a computer uses to represent text. In HTML, specifying the correct character set ensures that text is displayed properly across different browsers and platforms.
+
+### Why is it Important?
+
+Using the correct character set is crucial for:
+
+### Accurate Rendering: To ensure that browsers correctly display your text.
+
+Multi-language Support: To display text in various languages and alphabets.
+Data Integrity: To make sure the data sent and received remains consistent.
+
+### Using UTF-8
+
+<CodePreview code={utfCode} file="index.html" />
+
+### Using ISO-8859-1
+
+<CodePreview code={isoCode} file="index.html" />
+
+## What is Canvas?
+
+The `<canvas>` element serves as a container for graphics, which can be rendered via scripting. Essentially, it offers a drawing area for visual content.
+
+### Basic Syntax
+
+Here's how you can define a simple `<canvas>` element:
+
+<CodePreview code={canvaCode} file="index.html" />
+
+## What Are Obsolete Tags?
+
+Obsolete tags are HTML elements that are no longer recommended for use. They may lack support in modern browsers and are likely to be phased out entirely in future versions of HTML.
+
+### The `<font>` Tag
+
+Used to specify text color, size, and font.
+
+<CodePreview code={FontCode} file="index.html" />
+
+### The `<center>` Tag
+
+Used to center-align elements.
+
+<CodePreview code={CenterCode} file="index.html" />
+
+### The `<u>` Tag
+
+Used to underline text.
+
+<CodePreview code={uCode} file="index.html" />
+
+<SuccessNote content="Other tags are mentioned in next pages" />

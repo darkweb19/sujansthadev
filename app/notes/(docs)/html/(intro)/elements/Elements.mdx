@@ -1,0 +1,41 @@
+import { h1Code, nestedCode, brCode } from "./Code";
+import CodePreview from "@/components/Notes/CodePreview";
+
+## What is an HTML Element?
+
+An HTML element is a complete set that consists of a start tag (or opening tag), content, and an end tag (or closing tag).
+
+HTML Element = Start Tag + Content + End Tag
+
+For example:
+
+<CodePreview code={h1Code} />
+
+In this example, `<h1>` is the start tag, "This is our first heading" is the content, and
+`</h1>` is the end tag. Together, they form an HTML element.
+
+## What is a Nested HTML Element?
+
+A nested HTML element is an HTML structure where one element is placed inside another element.
+
+The enclosing element is often referred to as the "parent," while the enclosed element is called the "child."
+
+Nested HTML Element = One HTML Element Inside Another HTML Element
+
+For example:
+
+<CodePreview code={nestedCode} />
+
+In this example, the `<b>` element (child) is nested inside the `<h1>` element (parent).
+
+## What is an Empty HTML Element?
+
+An empty HTML element is one that does not have a closing tag or content. These elements are also known as "void elements" or "self-closing elements."
+
+Empty HTML Element = Tags with No Content
+
+For example:
+
+<CodePreview code={brCode} />
+
+This is a break tag, which has no content and no closing tag. `It's` used to insert a line break within text or other inline elements. The `<hr/>`tag, used for horizontal rules, is another example of an empty or void element.

@@ -144,17 +144,15 @@ export default function NavBar() {
 				{/* this is for menu items  */}
 				<NavbarMenu>
 					{menuItems.map((item, index) => (
-						<>
-							<NavbarMenuItem key={`${item}-${index}`}>
-								<Link
-									onClick={() => setMenuOpen(false)}
-									className={`${ubuntu.className} w-full`}
-									href={item.link}
-								>
-									{item.title}
-								</Link>
-							</NavbarMenuItem>
-						</>
+						<NavbarMenuItem key={`${item}-${index}`}>
+							<Link
+								onClick={() => setMenuOpen(false)}
+								className={`${ubuntu.className} w-full`}
+								href={item.link}
+							>
+								{item.title}
+							</Link>
+						</NavbarMenuItem>
 					))}
 
 					{/* for react s */}

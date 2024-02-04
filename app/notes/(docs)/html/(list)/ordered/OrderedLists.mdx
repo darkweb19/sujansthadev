@@ -1,0 +1,30 @@
+import CodePreview from "@/components/Notes/CodePreview";
+import { orderedCode, outputCode, outputCode2, attrCode } from "./Code";
+
+## Basic Example
+
+<CodePreview code={orderedCode} />
+
+## Output
+
+<CodePreview code={outputCode} />
+
+## Setting the 'type' Attribute
+
+The type attribute specifies the style of numbering. You have several options:
+
+-   Uppercase Roman Numerals: Use type="I"
+-   Lowercase Roman Numerals: Use type="i"
+-   Arabic Numerals: Use type="1" (This is the default if the type attribute is not specified)
+-   Lowercase Alphabetical Letters: Use type="a"
+-   Uppercase Alphabetical Letters: Use type="A"
+
+## Setting the 'start' Attribute
+
+The start attribute specifies the starting number for the list.
+
+<CodePreview code={attrCode} file="index.html" />
+
+## Output
+
+<CodePreview code={outputCode2} />
