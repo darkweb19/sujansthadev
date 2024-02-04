@@ -1,0 +1,22 @@
+import CodePreview from "@/components/Notes/CodePreview";
+import { codeTag, preTagCode } from "./Code";
+
+## What is the `<code>`Tag?
+
+The `<code>` tag is a semantic HTML tag `that's` used for displaying code snippets. It can be used both inline and within a block-level element like `<pre>`.
+
+## Syntax
+
+The most straightforward way to use the `<code>`tag is inline for short code snippets:
+
+<CodePreview code={codeTag} />
+
+## Using `<code>` with `<pre>`
+
+For multiline code snippets, `it's` common to combine the `<code>` tag with the `<pre>` tag
+
+<CodePreview code={preTagCode} />
+
+## Conclusion
+
+The `<code>` tag is commonly used to display inline code snippets or short lines of code within text content. If you have a larger block of code, you might want to use the `<pre>` (preformatted text) tag in combination with `<code>` for better formatting.
