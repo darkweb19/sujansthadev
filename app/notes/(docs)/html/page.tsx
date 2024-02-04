@@ -15,7 +15,7 @@ export default function HtmlPage() {
 	return (
 		<div className="flex flex-col gap-1">
 			<TopNavButtons
-				nextLink="/notes/html/setup"
+				nextLink="/notes/html/attributes"
 				prevdisabled
 				prevLink="#"
 			/>
@@ -90,7 +90,7 @@ export default function HtmlPage() {
 			</MainContent>
 
 			<TopNavButtons
-				nextLink="/notes/html/setup"
+				nextLink="/notes/html/attributes"
 				prevdisabled
 				prevLink="#"
 			/>
