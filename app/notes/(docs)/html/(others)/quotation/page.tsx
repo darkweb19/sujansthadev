@@ -6,8 +6,9 @@ export default function QuotationTag() {
 	return (
 		<div className="flex flex-col gap-1">
 			<TopNavButtons
-				nextLink="/notes/html/entities"
-				prevLink="/notes/html/others"
+				nextLink="/notes/html/quotation#"
+				prevLink="/notes/html/entities"
+				nextdisabled
 			/>
 
 			<MainContent
@@ -21,8 +22,9 @@ export default function QuotationTag() {
 			</MainContent>
 
 			<TopNavButtons
-				nextLink="/notes/html/entities"
-				prevLink="/notes/html/others"
+				nextLink="/notes/html/quotation#"
+				prevLink="/notes/html/entities"
+				nextdisabled
 			/>
 		</div>
 	);
