@@ -1,9 +1,14 @@
 import MainContent from "@/components/Notes/MainContent";
 import BasicTagsMdx from "./BasicTags.mdx";
+import TopNavButtons from "@/components/Notes/TopNavButtons";
 
 export default function BasicTags() {
 	return (
 		<div className="flex flex-col gap-1">
+			<TopNavButtons
+				nextLink="/notes/html/heading"
+				prevLink="/notes/html/classes"
+			/>
 			<MainContent
 				heading={"HTML BASIC TAGS"}
 				contentHeading={""}
@@ -13,6 +18,10 @@ export default function BasicTags() {
 			>
 				<BasicTagsMdx />
 			</MainContent>
+			<TopNavButtons
+				nextLink="/notes/html/heading"
+				prevLink="/notes/html/classes"
+			/>
 		</div>
 	);
 }

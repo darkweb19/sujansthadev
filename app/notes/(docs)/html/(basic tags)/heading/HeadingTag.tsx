@@ -6,10 +6,9 @@ export default function HeadingTag() {
 	return (
 		<div className="flex flex-col gap-1">
 			<TopNavButtons
-				nextLink="/notes/html/paragraph"
-				prevLink="/notes/html/basic"
+				nextLink="/notes/html/heading"
+				prevLink="/notes/html/classes"
 			/>
-
 			<MainContent
 				heading={"HEADING TAGS"}
 				contentHeading={""}
@@ -19,11 +18,11 @@ export default function HeadingTag() {
 			>
 				<HeadingTagMdx />
 			</MainContent>
-
 			<TopNavButtons
-				nextLink="/notes/html/paragraph"
-				prevLink="/notes/html/basic"
+				nextLink="/notes/html/heading"
+				prevLink="/notes/html/classes"
 			/>
+			``
 		</div>
 	);
 }
