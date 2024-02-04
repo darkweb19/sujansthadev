@@ -37,7 +37,7 @@ const CodePreview: React.FC<codePreviewProps> = ({
 				</div>
 				<div className="w-full px-2 flex justify-between items-center">
 					<span className="text-slate-300 text-base ">
-						{file ? `app/${file}.tsx` : "app/page.tsx"}
+						{file ? `app/${file}` : "app/page.tsx"}
 					</span>
 					<button
 						className="text-light-white text-sm relative right-2"

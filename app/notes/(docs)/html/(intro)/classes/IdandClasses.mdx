@@ -1,0 +1,28 @@
+import CodePreview from "@/components/Notes/CodePreview";
+import { idCode, classesCode, cssCode } from "./Code";
+
+## What is an ID?
+
+The id attribute is used to uniquely identify a specific HTML element on a page. It is often used for unique styling and JavaScript manipulations.
+
+<CodePreview code={idCode} />
+
+## What are Classes?
+
+The class attribute is used to group multiple HTML elements together. Multiple elements can share the same class, allowing you to apply styles or scripts to multiple elements at once. They are generally used for applying the same styles or behaviors to a group of elements.
+
+<CodePreview code={classesCode} />
+
+## Using IDs and Classes in CSS
+
+Using id and class attributes is common when styling a webpage with CSS or when targeting specific elements with JavaScript. In CSS, you can reference them as follows:
+
+<CodePreview code={cssCode} file="style.css" />
+
+## Differences Between IDs and Classes
+
+Use "id" when you need a unique identifier for a specific element and "class" when you want to apply a style or behavior to multiple elements. Overusing id for styling purposes can make your HTML less maintainable, as it limits reusability and flexibility. Classes are more flexible and promote a modular and scalable approach to styling and scripting in web development.
+
+## Conclusion
+
+Understanding the difference between IDs and Classes is crucial for effective web development. While IDs are for unique elements, classes are for grouping elements.
