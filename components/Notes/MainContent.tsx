@@ -4,7 +4,7 @@ import { IoIosArrowDroprightCircle } from "react-icons/io";
 interface MainContentProps {
 	heading: string;
 	contentHeading: string;
-	mainDefinition: string;
+	mainDefinition?: string;
 	children: React.ReactNode;
 	logo?: React.ReactNode;
 }
@@ -31,14 +31,16 @@ const MainContent: React.FC<MainContentProps> = ({
 					>
 						{contentHeading}
 					</h1>
-					<p
-						className={`${inter.className} flex mt-2 text-justify px-1`}
-					>
-						<span className="border py-1 h-fit text-xl">
-							<IoIosArrowDroprightCircle />
-						</span>
-						{mainDefinition}
-					</p>
+					{mainDefinition && (
+						<p
+							className={`${inter.className} flex mt-2 text-justify px-1`}
+						>
+							<span className="border py-1 h-fit text-xl">
+								<IoIosArrowDroprightCircle />
+							</span>
+							{mainDefinition}
+						</p>
+					)}
 					<div>{children}</div>
 				</div>
 			</div>
