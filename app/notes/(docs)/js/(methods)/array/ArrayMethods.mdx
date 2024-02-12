@@ -1,0 +1,58 @@
+import CodePreview from "@/components/Notes/CodePreview";
+import {
+	arrayCode,
+	arrayLengthCode,
+	pushCode,
+	forEachCode,
+	mapCode,
+	filterCode,
+	reduceCode,
+} from "./Code";
+
+## Creating an Array
+
+Using an array literal is the easiest way to create a JavaScript Array.
+
+Syntax :
+
+<CodePreview code={arrayCode} />
+
+## Array Methods
+
+JavaScript provides a number of built-in methods for manipulating arrays. Some of the most commonly used array methods are:
+
+### length
+
+This method returns the number of elements in an array. For example, the following code will return 3:
+
+<CodePreview code={arrayLengthCode} />
+
+### push
+
+This method is used to add an element to the end of an array. For example, the following code will add the element "World" to the end of the array:
+
+<CodePreview code={pushCode} />
+
+### forEach()
+
+forEach() function in js helps to loop through the array without creating a new array . It takes a call back function as arguments.
+
+<CodePreview code={forEachCode} />
+
+### map():
+
+map() function returns the new array of same length. It takes a call back function as arguments.
+
+<CodePreview code={mapCode} />
+
+### filter()
+
+.filter() function returns the the new array but can be of different length. It also takes call back function as arguments.
+
+<CodePreview code={filterCode} />
+
+### reduce()
+
+reduce() function returns a single value by performing a given calculation on its preceding value.
+
+<CodePreview code={reduceCode} />
