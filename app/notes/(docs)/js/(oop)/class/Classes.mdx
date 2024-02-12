@@ -1,0 +1,26 @@
+import CodePreview from "@/components/Notes/CodePreview";
+import { classCode, instanceCode, methodCode } from "./Code";
+
+An OOP, objects are instances of classes, which are templates that define the properties and behavior of the objects. OOP allows for encapsulation of data and behavior, inheritance of properties and methods, and polymorphism, which allows objects to take on different forms depending on their context. OOP is widely used in modern programming languages such as Java, Python, and C++.
+
+### Class
+
+A template or blueprint for creating objects that defines the properties and methods that all objects of that class will have.The class body is defined within curly braces {} and contains the properties and methods of the class.
+
+For example
+
+<CodePreview code={classCode} />
+
+The constructor method is a special method that is called when a new object is created from the class. It is used to initialize the properties of the object. In this example, the constructor takes in two parameters name and age and assigns them to the object's properties.
+
+You can create a new object using the new keyword and passing in any required arguments to the constructor. For example:
+
+<CodePreview code={instanceCode} />
+
+You can also add methods to a class by defining them within the class body. For example, you could add a method called greet() that returns a greeting message:
+
+<CodePreview code={methodCode} />
+
+## Conclusion
+
+Classes in JavaScript are used to define the blueprint for objects and provide a way to create objects that share the same properties and methods. Classes also provide a way to add methods to the object, making it easy to create reusable code. Understanding how to use classes in JavaScript is essential for creating robust and maintainable code.

@@ -1,0 +1,16 @@
+import CodePreview from "@/components/Notes/CodePreview";
+import { constCode, instanceCode } from "./Code";
+
+A constructor is a special method that gets called when an object is instantiated from a class. It is responsible for initializing the object's properties or performing any setup that is necessary for the object to function correctly.
+
+In JavaScript, you can create classes using either constructor functions or ES6 class syntax. Here's an example using the ES6 class syntax:
+
+<CodePreview code={constCode} />
+
+In this example, Person is a class, and constructor(name, age) is the constructor method.
+
+To create a new object using the constructor function, you use the new keyword followed by the function name and any required parameters:
+
+<CodePreview code={instanceCode} />
+
+The this keyword inside the constructor function refers to the current object being created. The this keyword is used to assign the properties passed in as arguments to the new object being created.
