@@ -1,0 +1,40 @@
+import CodePreview from "@/components/Notes/CodePreview";
+import { variableCode, functionCode, errorCode, warningCode } from "./Code";
+import WarningNote from "@/components/Notes/WarninNote";
+
+**As js is an interpreted language , functions and variables are defined on top during the compilation phase . This means that we can use functions and variables before they are declared in the code.**
+
+Hoisting is a behavior in JavaScript where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the code is executed. This allows you to use variables and functions before they are declared in the code. However, it's important to note that only the declarations are hoisted, not the initializations.
+
+## Variable Hoisting:
+
+<CodePreview code={variableCode} file="script.js" />
+
+In the example above, the variable **x** is hoisted to the top of its scope, but
+the initialization **(var x = 5;)** remains in its original position. So, when you try
+to log the value of **x** before its declaration, it outputs **undefined**.
+
+## Function Hoisting:
+
+<CodePreview code={functionCode} file="script.js" />
+
+In this example, the entire function **foo** is hoisted to the top of its scope, including both the declaration and the function body. Therefore, you can call the function before its actual position in the code.
+
+### Hoisting with let and const:
+
+Unlike **var**, **let** and **const** declarations are hoisted but not initialized. This is often referred to as the **"temporal dead zone."** If you try to access the value of a **let** or **const** variable before its declaration, it will result in a **ReferenceError**.
+
+<CodePreview code={errorCode} file="script.js" />
+
+<WarningNote
+	content="Function Expressions:
+Function expressions are not hoisted in the same way as function declarations. Only the variable declaration is hoisted, not the function definition."
+/>
+
+<CodePreview code={warningCode} file="script.js" />
+
+In this case, the variable sayHello is hoisted, but its value is undefined at the point of the function call. This results in a TypeError since undefined is not a function.
+
+## Conclusion
+
+Understanding hoisting is essential for writing predictable and error-free JavaScript code. It's recommended to declare variables and functions at the beginning of their scope to avoid confusion and unexpected behavior.

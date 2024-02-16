@@ -1,0 +1,59 @@
+import CodePreview from "@/components/Notes/CodePreview";
+import {
+	letCode,
+	functionScopeCode,
+	blockScopeCode,
+	varCode,
+	constCode,
+	diffCode,
+} from "./Code";
+import SuccessNote from "@/components/Notes/SuccessNote";
+
+## var
+
+The "var" keyword is used to declare variables in JavaScript. However, the "var" keyword has some limitations and has been largely replaced by the "let" and "const" keywords in modern JavaScript.
+
+<SuccessNote content="Variables declared with var are in the function scope." />
+
+<CodePreview code={varCode} />
+
+### Function scope
+
+When we define a variable inside a function, we can only access the variable inside the function.
+
+<CodePreview code={functionScopeCode} />
+
+## let
+
+"let" variables are block-scoped, which means that they are only accessible within the block of code in which they are declared. This makes them more predictable and easier to reason about than "var" variables.
+
+<SuccessNote content="Variables declared with let are in the block scope." />
+
+<CodePreview code={letCode} />
+
+### Block Scope
+
+When we define a variable inside a block, we can only access the variable inside that block. We can achieve this with let and const.
+
+<CodePreview code={blockScopeCode} />
+
+## const
+
+The "const" keyword is used to declare variables that cannot be reassigned later."const" variables are also block-scoped and behave similarly to "let" variables in that respect. However, the main difference is that "const" variables must be initialized with a value when they are declared and cannot be reassigned later.
+
+<SuccessNote content="Variables declared with var are in the function scope." />
+
+For example:
+
+<CodePreview code={constCode} />
+
+## Difference between let and var
+
+-   The variables that are declared using let are only available to the block where they are defined
+-   The variables that are declared using var are available throughout the function that they are declared.
+
+<CodePreview code={diffCode} />
+
+## Conclusion
+
+In summary, "var" is an old way of declaring variables that is function-scoped and can be reassigned. "let" is a newer way of declaring variables that is block-scoped and can be reassigned. "const" is a newer way of declaring variables that is block-scoped and cannot be reassigned. In modern JavaScript, it is generally recommended to use "let" and "const" instead of "var," as they provide better scoping and make it easier to write maintainable code.

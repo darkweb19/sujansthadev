@@ -1,0 +1,12 @@
+import CodePreview from "@/components/Notes/CodePreview";
+import { whileLoopCode } from "./Code";
+
+The while loop is used when the number of iterations is not known in advance, and it continues to execute as long as the specified condition is true.
+
+<CodePreview code={whileLoopCode} />
+
+### How this works?
+
+This loop will print the numbers 1 through 5 to the console.
+
+It's important to include a way to update the condition within the loop, otherwise it will become an infinite loop and will run forever. In the example above, the i++ statement increments the value of i by 1 at the end of each iteration, which eventually causes the condition to be false and the loop to exit.

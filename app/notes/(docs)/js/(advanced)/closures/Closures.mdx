@@ -1,0 +1,12 @@
+import CodePreview from "@/components/Notes/CodePreview";
+import { exampleCode } from "./Code";
+
+A closure is created when a function is defined within another function, allowing the inner function to access variables from the outer (enclosing) function's scope even after the outer function has finished executing. This behavior is possible because the inner function "closes over" the variables it references, capturing them in a scope chain.
+
+Here's a simple example to illustrate closures:
+
+<CodePreview code={exampleCode} file="script.js" />
+
+In this example, **innerFunction** is defined inside **outerFunction**, and it has access to **outerVariable**. When **outerFunction** is called and its return value is assigned to **closureExample**, it creates a closure. Even though **outerFunction** has completed execution, **closureExample** can still access and use **outerVariable**.
+
+Closures are useful for creating private variables and maintaining state within functions. They are commonly used in scenarios like creating function factories, implementing data encapsulation, and handling asynchronous code.

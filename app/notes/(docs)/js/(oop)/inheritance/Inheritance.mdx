@@ -1,0 +1,18 @@
+import CodePreview from "@/components/Notes/CodePreview";
+import { inheritanceCode } from "./Code";
+
+Inheritance is a fundamental concept in object-oriented programming (OOP) that allows developers to create a new class that inherits properties and methods from an existing class. In JavaScript, inheritance is achieved by using the prototype property and the Object.create() method.
+
+JavaScript uses a prototype-based inheritance model, which means that objects can inherit properties and methods from other objects. Each object has a prototype property that refers to another object, and properties and methods are inherited by traversing the prototype chain.
+
+For example, consider the following code:
+
+<CodePreview code={inheritanceCode} />
+
+In this example, the Student class inherits properties and methods from the Person class. The Object.create() method is used to create a new object that inherits from the Person.prototype object, and the constructor property is reset to the Student class.
+
+In JavaScript, the inheritance model is a bit different from other languages like Java or C#, where classes inherit from other classes and the subclass has access to the methods and properties of the superclass. In javascript, it's based on the prototype chain, where each object has a prototype property that refers to another object and it inherits properties and methods by traversing the prototype chain.
+
+## Conclusion
+
+Inheritance is a fundamental concept in OOP that allows developers to create a new class that inherits properties and methods from an existing class. In JavaScript, inheritance is achieved by using the prototype property and the Object.create() method. This allows developers to create reusable code and create a more organized and maintainable codebase. Understanding the prototype-based inheritance model in javascript is essential to be able to use inheritance effectively in javascript.
