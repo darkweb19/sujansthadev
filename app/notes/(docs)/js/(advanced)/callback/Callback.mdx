@@ -1,0 +1,25 @@
+import CodePreview from "@/components/Notes/CodePreview";
+import { callbackCode, exampleCode, mapCode } from "./Code";
+
+<i>
+	**A Call Back Functions are the functions which is passed as an argument in
+	another functions.**
+</i>
+
+For Example:
+
+<CodePreview code={callbackCode} />
+
+## Js Built-in Functions using call-back functions
+
+### Event Handlers:
+
+Callbacks are frequently used in event handling. For example, the addEventListener method uses a callback to respond to events:
+
+<CodePreview code={exampleCode} file="script.js" />
+
+### Array Methods
+
+-   map: Creates a new array by applying a callback function to each element in the original array.
+
+<CodePreview code={mapCode} file="script.js" />
