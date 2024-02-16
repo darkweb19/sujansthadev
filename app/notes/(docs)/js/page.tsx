@@ -15,7 +15,7 @@ export default function NextPage() {
 	return (
 		<div className="flex flex-col gap-1">
 			<TopNavButtons
-				nextLink="/notes/js/setup"
+				nextLink="/notes/js/variables"
 				prevdisabled
 				prevLink="#"
 			/>
@@ -32,7 +32,7 @@ export default function NextPage() {
 			</MainContent>
 
 			<TopNavButtons
-				nextLink="/notes/next/setup"
+				nextLink="/notes/next/variables"
 				prevdisabled
 				prevLink="#"
 			/>
