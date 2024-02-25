@@ -25,7 +25,7 @@ export default function HomePage() {
 
 	//for sending mail to me
 	function changeMailIcon() {
-		window.location.href = "mailto:sujansthadev@gmail.com";
+		window.location.href = "mailto:me@sujansthadev.com.np";
 	}
 
 	return (
