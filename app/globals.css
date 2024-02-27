@@ -11,7 +11,7 @@
 @media (prefers-color-scheme: dark) {
 	:root {
 		--foreground-rgb: 255, 255, 255;
-    --black : 0 , 0 , 0
+		--black: 0, 0, 0;
 		--background-start-rgb: 0, 0, 0;
 		--background-end-rgb: 0, 0, 0;
 	}
@@ -19,41 +19,36 @@
 
 /* for no scrollbar  */
 @layer utilities {
-    @variants responsive {
-      /* Hide scrollbar for Chrome, Safari and Opera */
-      .no-scrollbar::-webkit-scrollbar {
-          display: none;
-      }
+	@variants responsive {
+		/* Hide scrollbar for Chrome, Safari and Opera */
+		.no-scrollbar::-webkit-scrollbar {
+			display: none;
+		}
 
-      /* Hide scrollbar for IE, Edge and Firefox */
-      .no-scrollbar {
-          -ms-overflow-style: none;  /* IE and Edge */
-          scrollbar-width: none;  /* Firefox */
-      }
-    }
-  }
+		/* Hide scrollbar for IE, Edge and Firefox */
+		.no-scrollbar {
+			-ms-overflow-style: none; /* IE and Edge */
+			scrollbar-width: none; /* Firefox */
+		}
+	}
+}
 
 body {
-  font-size: large;
+	font-size: large;
 	color: rgb(var(--black));
-  background-color: #EEE4E1;
-  /* background-image: linear-gradient(to left top, #d6d3f4, #e0d4f2, #e9d5ef, #f0d6ec, #f6d8e9, #f5d1e5, #f4cae2, #f3c3de, #e6b2df, #d3a4e4, #b599ea, #8b91f1); */
 
+	/* background-color: #EEE4E1; */
+	/* background-image: linear-gradient(to left top, #d6d3f4, #e0d4f2, #e9d5ef, #f0d6ec, #f6d8e9, #f5d1e5, #f4cae2, #f3c3de, #e6b2df, #d3a4e4, #b599ea, #8b91f1); */
 }
-
 
 .card {
-  position: relative;
-  flex-direction: column;
-  margin-top: 10px;
-  padding:  1rem;
-  border-radius: 16px;
-  background-color: #F7F9FA;
-  /* background-image: linear-gradient(to right, #fcddef, #fbdeee, #fadfee, #f9e1ed, #f8e2ed, #f8e4ed, #f7e5ee, #f7e7ee, #f8eaef, #f8edf1, #f8f1f3, #f8f4f5); */
-  transition: .3s;
+	margin-top: 10px;
+	padding: 1rem;
+	border-radius: 16px;
+	/* background-image: linear-gradient(to right, #fcddef, #fbdeee, #fadfee, #f9e1ed, #f8e2ed, #f8e4ed, #f7e5ee, #f7e7ee, #f8eaef, #f8edf1, #f8f1f3, #f8f4f5); */
 }
 
-.card:hover {
+/* .card:hover {
   transform: translateY(-1rem); 
    
 }
@@ -63,24 +58,27 @@ body {
 
 .card:not(:first-child){
   margin-left: -130px;
+} */
+
+.gmail {
+	transition: all 0.4s;
 }
 
-.gmail{
-
-  transition: all .4s;
+.gmail:hover {
+	cursor: pointer;
+	scale: 1.2;
 }
 
-.gmail:hover{
-  cursor: pointer;
-  scale: 1.2;
-
+.gradient-text {
+	background: -webkit-linear-gradient(
+		0deg,
+		#9538df 22%,
+		#1293af 50%,
+		#af6b12 84%
+	);
+	background-clip: text;
+	color: transparent;
 }
-
- .gradient-text {
-    background: -webkit-linear-gradient(0deg, #9538df 22%, #1293af 50%, #af6b12 84%);
-    background-clip: text;
-    color: transparent;
-  }
 
 .fade-in-section {
 	opacity: 0;

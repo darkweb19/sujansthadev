@@ -41,15 +41,15 @@ export default function HomePage() {
 					</FadeInSection>
 					<FadeInSection delay={500}>
 						<div
-							className={`${ubuntu.className} flex text-center p-2 sm:p-1 text-2xl sm:text-3xl font-semibold text-slate-600`}
+							className={`${ubuntu.className} flex text-center p-2 sm:p-1 text-2xl sm:text-3xl font-semibold dark:text-slate-white light:text-slate-600`}
 						>
 							<Typing />
 						</div>
 					</FadeInSection>
 					<FadeInSection delay={700}>
-						<div className=" p-2  w-4/5 text-slate-800">
+						<div className=" p-2  w-4/5 dark:text-slate-200 light:text-slate-800">
 							<p
-								className={`text-justify font-medium text-base sm:text-lg`}
+								className={`text-justify font-normal text-base sm:text-lg`}
 							>
 								I am a Software Engineer and a student from
 								Nepal. I have a keen interest in Full-Stack

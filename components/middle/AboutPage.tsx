@@ -26,7 +26,7 @@ export default function AboutPage() {
 		<div className="sm:pr-40 w-full flex flex-col sm:flex-col md:flex-col lg:flex-row gap-1 items-start justify-around">
 			<div className="h-3/4 w-full sm:w-5/6 md:w-5/6">
 				<FadeInSection delay={100}>
-					<p className="p-3 sm:p-3 w-full sm:text-lg font-medium text-slate-800 text-base text-justify">
+					<p className="p-3 sm:p-3 w-full sm:text-lg font-normal  dark:text-slate-200 light:text-slate-800 text-base text-justify">
 						I have completed my bootcamp course in the MERN stack
 						from{" "}
 						<a
@@ -48,7 +48,7 @@ export default function AboutPage() {
 						</a>{" "}
 					</p>
 					<div className="w-full px-3 ">
-						<p className="font-medium text-lg sm:font-medium sm:text-xl">
+						<p className="font-normal light:text-slate-200 text-lg sm:font-medium sm:text-xl">
 							Technologies I have been working with&#58;
 						</p>
 						<ul className="text-sm py-1 font-medium sm:text-base sm:font-medium list-none">

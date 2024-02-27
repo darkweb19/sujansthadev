@@ -14,13 +14,15 @@ import {
 	NavbarMenu,
 	NavbarMenuItem,
 } from "@nextui-org/navbar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import {
 	introLink,
 	reactLinksHooks,
 	reactLinks,
 } from "@/app/notes/(docs)/react/Links";
+import { BsBrightnessHighFill, BsMoonFill } from "react-icons/bs";
+import { setDefaultHighWaterMark } from "stream";
 
 const menuItems = [
 	{ title: "/Home", link: "/" },
@@ -37,7 +39,20 @@ const allReactLinks = [
 
 export default function NavBar() {
 	const [isMenuOpen, setMenuOpen] = useState(false);
+	const [theme, setTheme] = useState("dark text-foreground bg-background");
 	const pathname = usePathname();
+
+	const handleTheme = () => {
+		if (theme === "dark text-foreground bg-background") {
+			setTheme("light text-foreground bg-background ");
+		} else {
+			setTheme("dark text-foreground bg-background");
+		}
+	};
+
+	useEffect(() => {
+		document.body.className = theme;
+	}, [theme]);
 
 	return (
 		<Navbar
@@ -139,6 +154,15 @@ export default function NavBar() {
 					<Link href="https://linktr.ee/sujansthadev" target="_blank">
 						<SiLinktree />
 					</Link>
+				</NavbarItem>
+				<NavbarItem className="text-2xl">
+					<button onClick={() => handleTheme()}>
+						{theme === "dark text-foreground bg-background" ? (
+							<BsBrightnessHighFill />
+						) : (
+							<BsMoonFill />
+						)}
+					</button>
 				</NavbarItem>
 
 				{/* this is for menu items  */}
