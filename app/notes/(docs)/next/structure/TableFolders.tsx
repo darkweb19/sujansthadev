@@ -1,4 +1,4 @@
-import { inter } from "@/app/notes/layout";
+import { inter } from "@/app/fonts";
 import { Code } from "@nextui-org/code";
 
 export default function TableFolders() {

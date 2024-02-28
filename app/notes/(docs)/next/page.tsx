@@ -1,11 +1,11 @@
 import MainContent from "@/components/Notes/MainContent";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import type { Metadata } from "next";
-import { inter, ubuntu } from "../../layout";
 import { FaCircle } from "react-icons/fa";
 import Link from "next/link";
 import { TbBrandNextjs } from "react-icons/tb";
 import SuccessNote from "@/components/Notes/SuccessNote";
+import { inter, ubuntu } from "@/app/fonts";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -42,14 +42,14 @@ export default function NextPage() {
 
 					<div className="p-1">
 						<h1
-							className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
+							className={`${ubuntu.className} text-3xl font-medium dark:text-slate-200 light:text-slate-black`}
 						>
 							Main Features
 						</h1>
 						<p
 							className={`${inter.className} flex items-center px-2 gap-1 text-xl text-justify `}
 						>
-							<span className="border py-1 h-fit text-xs">
+							<span className=" py-1 h-fit text-xs">
 								<FaCircle />
 							</span>
 							Routing
@@ -57,7 +57,7 @@ export default function NextPage() {
 						<p
 							className={`${inter.className} flex items-center px-2 gap-1 text-xl text-justify `}
 						>
-							<span className="border py-1 h-fit text-xs">
+							<span className="py-1 h-fit text-xs">
 								<FaCircle />
 							</span>
 							Rendering
@@ -65,7 +65,7 @@ export default function NextPage() {
 						<p
 							className={`${inter.className} flex items-center px-2 gap-1 text-xl text-justify `}
 						>
-							<span className="border py-1 h-fit text-xs">
+							<span className="py-1 h-fit text-xs">
 								<FaCircle />
 							</span>
 							Data-Fetching
@@ -73,7 +73,7 @@ export default function NextPage() {
 						<p
 							className={`${inter.className} flex items-center px-2 gap-1 text-xl text-justify `}
 						>
-							<span className="border py-1 h-fit text-xs">
+							<span className="py-1 h-fit text-xs">
 								<FaCircle />
 							</span>
 							Styling
@@ -81,14 +81,14 @@ export default function NextPage() {
 						<p
 							className={`${inter.className} flex items-center px-2 gap-1 text-xl text-justify `}
 						>
-							<span className="border py-1 h-fit text-xs">
+							<span className="py-1 h-fit text-xs">
 								<FaCircle />
 							</span>
 							Optimizations
 						</p>
 					</div>
 					<h1
-						className={`${ubuntu.className} text-3xl mt-2 font-medium text-slate-black`}
+						className={`${ubuntu.className} text-3xl mt-2 font-medium dark:text-slate-200 light:text-slate-black`}
 					>
 						Learn Next
 					</h1>
@@ -104,7 +104,7 @@ export default function NextPage() {
 						.
 					</p>
 					<h1
-						className={`${ubuntu.className} text-3xl mt-2 font-medium text-slate-black`}
+						className={`${ubuntu.className} text-3xl mt-2 font-medium dark:text-slate-200 light:text-slate-black`}
 					>
 						Installations
 					</h1>

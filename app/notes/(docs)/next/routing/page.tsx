@@ -1,4 +1,3 @@
-import { inter, ubuntu } from "@/app/notes/layout";
 import CodePreview from "@/components/Notes/CodePreview";
 import MainContent from "@/components/Notes/MainContent";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
@@ -6,6 +5,7 @@ import { Code } from "@nextui-org/react";
 import Link from "next/link";
 import { dynamicLinkCode, linkCode, usePathnameCode } from "./Code";
 import { Metadata } from "next/types";
+import { inter, ubuntu } from "@/app/fonts";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -52,7 +52,7 @@ export default function Routing() {
 				<div className="p-2">
 					<h1
 						id="link"
-						className={`${ubuntu.className} text-3xl mt-4 text-gray-700`}
+						className={`${ubuntu.className} text-3xl mt-4 dark:text-slate-200 light:text-gray-700`}
 					>
 						<Link href={"#link"}>{`<Link>`} component</Link>
 					</h1>
@@ -73,7 +73,7 @@ export default function Routing() {
 					<CodePreview lines={[4]} code={linkCode} />
 					<h2
 						id="link"
-						className={`${ubuntu.className} text-2xl mt-4 text-gray-700`}
+						className={`${ubuntu.className} text-2xl mt-4 dark:text-slate-200 light:text-gray-700`}
 					>
 						Examples
 					</h2>
@@ -85,7 +85,7 @@ export default function Routing() {
 					<CodePreview lines={[8]} code={dynamicLinkCode} />
 					<h2
 						id="link"
-						className={`${ubuntu.className} text-2xl mt-4 text-gray-700`}
+						className={`${ubuntu.className} text-2xl mt-4 dark:text-slate-200 light:text-gray-700`}
 					>
 						Checking Active Links
 					</h2>

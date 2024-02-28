@@ -1,7 +1,8 @@
+import { inter, ubuntu } from "@/app/fonts";
 import MainContent from "@/components/Notes/MainContent";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import type { Metadata } from "next";
-import { inter, ubuntu } from "../../layout";
+
 import { FaCircle, FaHtml5 } from "react-icons/fa";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -31,7 +32,7 @@ export default function HtmlPage() {
 				<div>
 					<div className="p-1">
 						<h1
-							className={`${ubuntu.className} mt-5 text-3xl font-medium text-slate-black`}
+							className={`${ubuntu.className} mt-5 py-3 text-3xl font-medium dark:text-slate-200 light:text-slate-black`}
 						>
 							Main Features
 						</h1>
@@ -71,7 +72,7 @@ export default function HtmlPage() {
 						</p>
 					</div>
 					<h1
-						className={`${ubuntu.className} text-3xl mt-4 font-medium text-slate-black`}
+						className={`${ubuntu.className} text-3xl mt-4 font-medium dark:text-slate-200 light:text-slate-black`}
 					>
 						Learn HTML
 					</h1>

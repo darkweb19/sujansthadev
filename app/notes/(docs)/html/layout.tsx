@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { lato } from "../../layout";
+
 import {
 	mainPageLink,
 	introHtmlLinks,
@@ -15,6 +15,7 @@ import { usePathname } from "next/navigation";
 import { ScrollShadow } from "@nextui-org/scroll-shadow";
 import { IoMdArrowDropright } from "react-icons/io";
 import RightAsideTab from "@/components/Notes/RightAsideTabs";
+import { lato } from "@/app/fonts";
 
 export default function HtmlLayout({
 	children,
@@ -50,7 +51,7 @@ export default function HtmlLayout({
 									<Link
 										className={`${
 											pathname === item.links &&
-											"underline underline-offset-2 duration-200 text-slate-600"
+											"underline underline-offset-2 duration-200 text-slate-400"
 										} text-lg font-semibold`}
 										href={item.links}
 									>
@@ -64,7 +65,7 @@ export default function HtmlLayout({
 							<Link
 								className={`${
 									pathname === basicTag.link &&
-									"underline underline-offset-2 duration-200 text-slate-600 font-semibold"
+									"underline underline-offset-2 duration-200 text-slate-400 font-semibold"
 								}`}
 								href={basicTag.link}
 							>
@@ -83,7 +84,7 @@ export default function HtmlLayout({
 									<Link
 										className={`${
 											pathname === item.links &&
-											"underline underline-offset-2 duration-200 text-slate-600"
+											"underline underline-offset-2 duration-200 text-slate-400"
 										} text-lg font-semibold`}
 										href={item.links}
 									>
@@ -97,7 +98,7 @@ export default function HtmlLayout({
 							<Link
 								className={`${
 									pathname === listTag.link &&
-									"underline underline-offset-2 duration-200 text-slate-600 font-semibold"
+									"underline underline-offset-2 duration-200 text-slate-400 font-semibold"
 								}`}
 								href={listTag.link}
 							>
@@ -116,7 +117,7 @@ export default function HtmlLayout({
 									<Link
 										className={`${
 											pathname === item.links &&
-											"underline underline-offset-2 duration-200 text-slate-600"
+											"underline underline-offset-2 duration-200 text-slate-400"
 										} text-lg font-semibold`}
 										href={item.links}
 									>
@@ -130,7 +131,7 @@ export default function HtmlLayout({
 							<Link
 								className={`${
 									pathname === others.link &&
-									"underline underline-offset-2 duration-200 text-slate-600 font-semibold"
+									"underline underline-offset-2 duration-200 text-slate-400 font-semibold"
 								}`}
 								href={others.link}
 							>
@@ -149,7 +150,7 @@ export default function HtmlLayout({
 									<Link
 										className={`${
 											pathname === item.links &&
-											"underline underline-offset-2 duration-200 text-slate-600"
+											"underline underline-offset-2 duration-200 text-slate-400"
 										} text-lg font-semibold`}
 										href={item.links}
 									>

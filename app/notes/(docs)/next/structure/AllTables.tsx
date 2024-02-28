@@ -3,12 +3,13 @@ import TableFiles from "./TableFiles";
 import TableRoutingFiles from "./TableRoutingFiles";
 import TableNestedRoutes from "./TableNestedRoute";
 import TableDynamicRoutes from "./TableDynamicRoutes";
-import { ubuntu } from "@/app/notes/layout";
+import { ubuntu } from "@/app/fonts";
+
 export default function AllTables() {
 	return (
 		<>
 			<h1
-				className={`${ubuntu.className} text-2xl mt-2 font-medium text-slate-black`}
+				className={`${ubuntu.className} text-2xl mt-2 font-medium dark:text-slate-200 py-1 light:text-slate-black`}
 			>
 				Top Level Folders
 			</h1>
@@ -17,7 +18,7 @@ export default function AllTables() {
 				<TableCustom />
 			</article>
 			<h1
-				className={`${ubuntu.className} text-2xl mt-2 font-medium text-slate-black`}
+				className={`${ubuntu.className} text-2xl mt-2 font-medium dark:text-slate-200 py-1 light:text-slate-black`}
 			>
 				Top Level Files
 			</h1>
@@ -26,7 +27,7 @@ export default function AllTables() {
 				<TableFiles />
 			</article>
 			<h1
-				className={`${ubuntu.className} text-2xl mt-2 font-medium text-slate-black`}
+				className={`${ubuntu.className} text-2xl mt-2 font-medium dark:text-slate-200 py-1 light:text-slate-black`}
 			>
 				Routing Files
 			</h1>
@@ -34,7 +35,7 @@ export default function AllTables() {
 				<TableRoutingFiles />
 			</article>
 			<h1
-				className={`${ubuntu.className} text-2xl mt-2 font-medium text-slate-black`}
+				className={`${ubuntu.className} text-2xl mt-2 font-medium dark:text-slate-200 py-1 light:text-slate-black`}
 			>
 				Nested Routes
 			</h1>
@@ -42,7 +43,7 @@ export default function AllTables() {
 				<TableNestedRoutes />
 			</article>
 			<h1
-				className={`${ubuntu.className} text-2xl mt-2 font-medium text-slate-black`}
+				className={`${ubuntu.className} text-2xl mt-2 font-medium dark:text-slate-200 py-1 light:text-slate-black`}
 			>
 				Dynamic Routes
 			</h1>

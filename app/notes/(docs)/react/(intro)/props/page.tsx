@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
+import { inter, lilitaFont, ubuntu } from "@/app/fonts";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import WarningNote from "@/components/Notes/WarninNote";
 import { FaCircle } from "react-icons/fa";
@@ -24,15 +24,15 @@ export default function ReactProps() {
 			<div className="w-full flex justify-around h-fit p-2">
 				<div className="flex flex-col justify-evenly">
 					<h1
-						className={`${lilitaFont.className} text-4xl text-gray-700`}
+						className={`${lilitaFont.className} text-4xl py-2 dark:text-slate-200 ligt:text-gray-700`}
 					>
 						React Props
 					</h1>
-					<div className="border pl-4 sm:pl-1 p-3 w-11/12 h-fit ">
+					<div className=" pl-4 sm:pl-1 p-3 w-11/12 h-fit ">
 						<p
 							className={`${inter.className} flex gap-1 text-lg text-justify`}
 						>
-							<span className="border py-1 h-fit text-xl">
+							<span className=" py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
 							</span>
 							In React, {`"props"`} is short for {`"properties,"`}
@@ -44,7 +44,7 @@ export default function ReactProps() {
 
 						<CodePreview code={`${propsCode}`} />
 						<h1
-							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
+							className={`${ubuntu.className} text-2xl py-2 font-semibold dark:text-slate-200 ligt:text-slate-black mt-4`}
 						>
 							Inside Component
 						</h1>
@@ -53,14 +53,14 @@ export default function ReactProps() {
 						<WarningNote content="Always start component names with a capital letter." />
 
 						<h1
-							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
+							className={`${ubuntu.className} text-2xl py-2 font-semibold dark:text-slate-200 ligt:text-slate-black mt-4`}
 						>
 							Internal React Flow
 						</h1>
 						<p
 							className={`${inter.className} flex gap-1 mt-2 text-lg text-justify`}
 						>
-							<span className="border py-1 h-fit text-sm">
+							<span className=" py-1 h-fit text-sm">
 								<FaCircle />
 							</span>
 							React calls the {`Welcome`} component with
@@ -69,7 +69,7 @@ export default function ReactProps() {
 						<p
 							className={`${inter.className} flex gap-1 mt-2 text-lg text-justify`}
 						>
-							<span className="border py-1 h-fit text-sm">
+							<span className=" py-1 h-fit text-sm">
 								<FaCircle />
 							</span>
 							Our Welcome component returns a{" "}
@@ -79,7 +79,7 @@ export default function ReactProps() {
 						<p
 							className={`${inter.className} flex gap-1 mt-2 text-lg text-justify`}
 						>
-							<span className="border py-1 h-fit text-sm">
+							<span className=" py-1 h-fit text-sm">
 								<FaCircle />
 							</span>
 							React DOM efficiently updates the DOM to match

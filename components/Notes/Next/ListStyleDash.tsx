@@ -1,4 +1,4 @@
-import { inter } from "@/app/notes/layout";
+import { inter } from "@/app/fonts";
 
 interface ListStyleDashProps {
 	lists: Array<string>;

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
+
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import { useEffectCode } from "./code";
 import CodePreview from "@/components/Notes/CodePreview";
+import { inter, lilitaFont, ubuntu } from "@/app/fonts";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -20,23 +21,23 @@ export default function SetUp() {
 				nextLink="/notes/react/useRef"
 				prevLink="/notes/react/useState"
 			/>
-			<div className="border w-full">
+			<div className=" w-full">
 				<div>
 					<h1
-						className={`${lilitaFont.className} text-4xl text-gray-700`}
+						className={`${lilitaFont.className} text-4xl dark:text-slate-200 light:text-gray-700`}
 					>
 						useEffect Hook
 					</h1>
 					<div className="p-2 pl-4 sm:pr-10">
 						<h1
-							className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
+							className={`${ubuntu.className} text-3xl py-2 font-medium dark:text-slate-200 light:text-slate-black`}
 						>
 							What are useEffect Hooks in React?
 						</h1>
 						<p
 							className={`${inter.className} flex justify-center  text-justify px-1`}
 						>
-							<span className="border py-1 h-fit text-xl">
+							<span className=" py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
 							</span>
 							The Effect Hook lets you perform side effects in

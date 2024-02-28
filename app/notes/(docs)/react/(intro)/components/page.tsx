@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
+
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import { FaCircle } from "react-icons/fa";
 import CodePreview from "@/components/Notes/CodePreview";
 import { classCode, functionCode, reuseCode } from "./code";
+import { inter, lilitaFont, ubuntu } from "@/app/fonts";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -20,23 +21,23 @@ export default function ReactComponents() {
 				nextLink="/notes/react/props"
 				prevLink="/notes/react/react-jsx"
 			/>
-			<div className="border w-full">
+			<div className=" w-full">
 				<div>
 					<h1
-						className={`${lilitaFont.className} text-4xl text-gray-700`}
+						className={`${lilitaFont.className} text-4xl dark:text-slate-200 light:text-gray-700`}
 					>
 						React Components
 					</h1>
 					<div className="p-2 pl-4 sm:pr-10">
 						<h1
-							className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
+							className={`${ubuntu.className} text-3xl font-medium dark:text-slate-200 light:text-slate-black`}
 						>
 							Definition
 						</h1>
 						<p
 							className={`${inter.className} flex gap-1 text-lg text-justify`}
 						>
-							<span className="border py-1 h-fit text-xl">
+							<span className=" py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
 							</span>
 							React Components are like a functions that basically
@@ -47,14 +48,14 @@ export default function ReactComponents() {
 						</p>
 
 						<h1
-							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
+							className={`${ubuntu.className} text-2xl font-semibold dark:text-slate-200 light:text-slate-black mt-4`}
 						>
 							Types of Components
 						</h1>
 						<p
 							className={`${inter.className} flex gap-1 mt-2 text-lg text-justify`}
 						>
-							<span className="border py-1 h-fit text-xl">
+							<span className=" py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
 							</span>
 							There are two types of Components in React
@@ -63,7 +64,7 @@ export default function ReactComponents() {
 						<p
 							className={`${inter.className}text-lg flex items-center gap-1 py-1 px-5  text-justify`}
 						>
-							<span className="border py-1 h-fit text-xs">
+							<span className=" py-1 h-fit text-xs">
 								<FaCircle />
 							</span>
 							Function Based Components
@@ -71,20 +72,20 @@ export default function ReactComponents() {
 						<p
 							className={`${inter.className} text-lg relative bottom-2 flex items-center gap-1 px-5  text-justify`}
 						>
-							<span className="border py-1 h-fit text-xs">
+							<span className=" py-1 h-fit text-xs">
 								<FaCircle />
 							</span>
 							Class Based Components
 						</p>
 						<h1
-							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
+							className={`${ubuntu.className} text-2xl font-semibold dark:text-slate-200 light:text-slate-black mt-4`}
 						>
 							Class Based Components
 						</h1>
 						<p
 							className={`${inter.className} flex gap-1 mt-2 text-lg text-justify`}
 						>
-							<span className="border py-1 h-fit text-xl">
+							<span className=" py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
 							</span>
 							Class-based components are a type of React component
@@ -103,14 +104,14 @@ export default function ReactComponents() {
 						<CodePreview code={`${classCode}`} />
 
 						<h1
-							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
+							className={`${ubuntu.className} text-2xl font-semibold dark:text-slate-200 light:text-slate-black mt-4`}
 						>
 							Function Based Components
 						</h1>
 						<p
 							className={`${inter.className} flex gap-1 mt-2 text-lg text-justify`}
 						>
-							<span className="border py-1 h-fit text-xl">
+							<span className=" py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
 							</span>
 							With the introduction of React Hooks, functional
@@ -125,14 +126,14 @@ export default function ReactComponents() {
 						<CodePreview code={`${functionCode}`} />
 
 						<h1
-							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
+							className={`${ubuntu.className} text-2xl font-semibold dark:text-slate-200 light:text-slate-black mt-4`}
 						>
 							Exporting a Component
 						</h1>
 						<p
 							className={`${inter.className} flex gap-1 mt-2 text-lg text-justify`}
 						>
-							<span className="border py-1 h-fit text-xl">
+							<span className=" py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
 							</span>
 							In order to reuse components in different pages , we

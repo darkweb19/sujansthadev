@@ -55,7 +55,7 @@ export default function Creations() {
 
 	return (
 		// card list
-		<div className="h-fit w-full flex p-3">
+		<div className="h-fit w-full flex flex-wrap justify-evenly gap-3 p-3">
 			{/* card  */}
 			{data.map((datas, i) => (
 				<Cards key={i} data={datas} delay={i * 300} />

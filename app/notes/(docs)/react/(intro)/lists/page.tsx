@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
+
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import React from "react";
 import WarningNote from "@/components/Notes/WarninNote";
 import CodePreview from "@/components/Notes/CodePreview";
 import { listCode } from "./code";
+import { inter, lilitaFont } from "@/app/fonts";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -21,10 +22,10 @@ export default function ReactLists() {
 				nextLink="/notes/react/hooks"
 				prevLink="/notes/react/conditionals"
 			/>
-			<div className="border w-full">
+			<div className=" w-full">
 				<div>
 					<h1
-						className={`${lilitaFont.className} text-4xl text-gray-700`}
+						className={`${lilitaFont.className} text-4xl py-3  dark:text-slate-200 light:text-gray-700`}
 					>
 						React List
 					</h1>
@@ -32,7 +33,7 @@ export default function ReactLists() {
 						<p
 							className={`${inter.className} flex gap-1 text-lg text-justify`}
 						>
-							<span className="border py-1 h-fit text-xl">
+							<span className=" py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
 							</span>
 							In React, a list is a way to render multiple

@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
+
 import SuccessNote from "@/components/Notes/SuccessNote";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import { FaCircle } from "react-icons/fa";
 import { Code } from "@nextui-org/code";
 import CodePreview from "@/components/Notes/CodePreview";
 import { ifCode, logicalCode, ternaryCode } from "./code";
+import { inter, lilitaFont, ubuntu } from "@/app/fonts";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -22,10 +23,10 @@ export default function ConditionalPage() {
 				prevLink="/notes/react/props"
 				nextLink="/notes/react/lists"
 			/>
-			<div className="border w-full">
+			<div className=" w-full">
 				<div>
 					<h1
-						className={`${lilitaFont.className} text-4xl text-gray-700`}
+						className={`${lilitaFont.className} text-4xl py-3 dark:text-slate-200 light:text-gray-700`}
 					>
 						React Conditionals
 					</h1>
@@ -33,7 +34,7 @@ export default function ConditionalPage() {
 						<p
 							className={`${inter.className} flex gap-1 text-lg text-justify`}
 						>
-							<span className="border py-1 h-fit text-xl">
+							<span className=" py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
 							</span>
 							In React.js, conditional rendering is a common
@@ -44,28 +45,28 @@ export default function ConditionalPage() {
 						</p>
 
 						<h1
-							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
+							className={`${ubuntu.className} text-2xl font-semibold dark:text-slate-200 light:text-slate-black mt-4`}
 						>
 							Ways to implement conditionals
 						</h1>
 						<p
-							className={`${inter.className}text-xl font-medium flex items-center gap-1 py-1 px-5  text-justify`}
+							className={`${inter.className}text-xl py-2 font-medium flex items-center gap-1  px-5  text-justify`}
 						>
-							<span className="border py-1 h-fit text-xs">
+							<span className=" py-1 h-fit text-xs">
 								<FaCircle />
 							</span>
 							Using IF statements
 						</p>
 						<CodePreview code={`${ifCode}`} />
 						<p
-							className={`${inter.className} flex items-center mt-3 md:mt-3 gap-1 px-5 text-xl font-medium text-justify`}
+							className={`${inter.className} flex py-2 items-center mt-3 md:mt-3 gap-1 px-5 text-xl font-medium text-justify`}
 						>
-							<span className="border py-1 h-fit text-xs">
+							<span className=" py-1 h-fit text-xs">
 								<FaCircle />
 							</span>
 							Using Ternary Operator
 						</p>
-						<div className="flex items-center justify-start relative left-9 ">
+						<div className="flex py-2 items-center justify-start relative left-9 ">
 							<span className="text-lg  ml-2 font-medium">
 								Syntax :
 							</span>
@@ -78,9 +79,9 @@ export default function ConditionalPage() {
 						</div>
 						<CodePreview code={`${ternaryCode}`} />
 						<p
-							className={`${inter.className} flex items-center text-xl font-medium gap-1 py-1 px-5  text-justify`}
+							className={`${inter.className} flex py-2 items-center text-xl font-medium gap-1 px-5  text-justify`}
 						>
-							<span className="border py-1 h-fit text-sm">
+							<span className=" py-1 h-fit text-sm">
 								<FaCircle />
 							</span>
 							Using Logical && Operators

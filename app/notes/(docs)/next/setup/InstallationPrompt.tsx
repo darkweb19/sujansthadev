@@ -1,4 +1,4 @@
-import { inter, ubuntu } from "@/app/notes/layout";
+import { inter, ubuntu } from "@/app/fonts";
 import { Code } from "@nextui-org/code";
 import { Snippet } from "@nextui-org/snippet";
 
@@ -6,7 +6,7 @@ export default function InstallationPrompt() {
 	return (
 		<>
 			<h2
-				className={`${ubuntu.className} text-xl mt-2 font-medium text-slate-black`}
+				className={`${ubuntu.className} text-xl mt-2 font-medium dark:text-slate-200 light:text-slate-black`}
 			>
 				On installation, you&apos;ll see the following prompts:
 			</h2>

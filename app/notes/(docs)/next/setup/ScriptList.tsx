@@ -1,4 +1,4 @@
-import { inter } from "@/app/notes/layout";
+import { inter } from "@/app/fonts";
 import { Code } from "@nextui-org/react";
 
 export default function ScriptList() {

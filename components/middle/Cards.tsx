@@ -17,18 +17,18 @@ export default function Cards({
 	delay: number;
 }) {
 	return (
-		<article className="flex card shadow-5xl w-[250px] h-[300px] sm:w-[280px] sm:h-[350px] ">
+		<article className="flex card dark:border light:bg-slate-50 dark:bg-[#131315] dark:border-slate-500 shadow-5xl w-[250px] h-[300px] sm:w-[280px] sm:h-[350px] ">
 			{/* card header  */}
 			<header className=" h-full w-full flex gap-0 sm:p-2 flex-col items-start ">
 				<FadeInSection delay={delay}>
-					<div className="w-fit h-fit text-neutral-950 text-2xl">
+					<div className="w-fit h-fit dark:text-white light:text-neutral-950 text-2xl">
 						<FiCode />
 					</div>
-					<h1 className="font-semibold py-1 sm:p-1 text-base sm:text-lg">
+					<h1 className="font-semibold dark:text-slate-200 py-1 sm:p-1 text-base sm:text-lg">
 						{data.title}
 					</h1>
 					<div className="py-0 sm:py-2 h-[130px] md:h-[150px]">
-						<p className="font-medium text-justify text-sm text-gray-700 py-1 h-fit w-full sm:text-sm">
+						<p className="font-medium text-justify text-sm dark:text-slate-200 light:text-gray-700 py-1 h-fit w-full sm:text-sm">
 							{data.content}
 						</p>
 					</div>

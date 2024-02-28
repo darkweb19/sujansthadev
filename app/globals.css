@@ -36,32 +36,9 @@
 body {
 	font-size: large;
 	color: rgb(var(--black));
-	/* background-color: #EEE4E1; */
-	background-color: #000000;
 	/* background-image: linear-gradient(to left top, #d6d3f4, #e0d4f2, #e9d5ef, #f0d6ec, #f6d8e9, #f5d1e5, #f4cae2, #f3c3de, #e6b2df, #d3a4e4, #b599ea, #8b91f1); */
 }
 
-.card {
-	position: relative;
-	flex-direction: column;
-	margin-top: 10px;
-	padding: 1rem;
-	border-radius: 16px;
-	background-color: #f7f9fa;
-	/* background-image: linear-gradient(to right, #fcddef, #fbdeee, #fadfee, #f9e1ed, #f8e2ed, #f8e4ed, #f7e5ee, #f7e7ee, #f8eaef, #f8edf1, #f8f1f3, #f8f4f5); */
-	transition: 0.3s;
-}
-
-.card:hover {
-	transform: translateY(-1rem);
-}
-.card:hover ~ .card {
-	transform: translateX(130px);
-}
-
-.card:not(:first-child) {
-	margin-left: -130px;
-}
 
 .gmail {
 	transition: all 0.4s;

@@ -1,10 +1,10 @@
-import { playpenSans } from "@/app/notes/layout";
 import MainContent from "@/components/Notes/MainContent";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import DangerNote from "@/components/Notes/DangerNote";
 import AllTables from "./AllTables";
 import Link from "next/link";
 import { Metadata } from "next/types";
+import { playpenSans } from "@/app/fonts";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
@@ -28,7 +28,7 @@ export default function NextStructure() {
 					"This page provides an overview of the file and folder structure of a Next.js project. It covers top-level files and folders, configuration files, and routing conventions within the app and pages directories."
 				}
 			>
-				<div className="p-0 sm:p-1 border h-fit">
+				<div className="p-0 sm:p-0 h-fit">
 					<p
 						className={`${playpenSans.className} p-2 text-blue-400 `}
 					>

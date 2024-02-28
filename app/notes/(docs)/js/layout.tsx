@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { lato } from "../../layout";
+
 import {
 	BasicsHeading,
 	advance,
@@ -16,6 +16,7 @@ import { ScrollShadow } from "@nextui-org/scroll-shadow";
 import { IoMdArrowDropright } from "react-icons/io";
 import RightAsideTab from "@/components/Notes/RightAsideTabs";
 import { basicTag } from "../html/Links";
+import { lato } from "@/app/fonts";
 
 export default function NextLayout({
 	children,
@@ -32,7 +33,7 @@ export default function NextLayout({
 							<Link
 								className={`${
 									pathname === mainPageLink.link &&
-									"underline underline-offset-2 duration-200 text-slate-600 font-semibold"
+									"underline underline-offset-2 duration-200 dark:text-slate-400 light:text-slate-600 font-semibold"
 								}`}
 								href={mainPageLink.link}
 							>
@@ -62,7 +63,7 @@ export default function NextLayout({
 						</ul>
 						<h1 className="text-2xl text-start p-2 ">
 							<span
-								className={`${" text-slate-600 font-semibold"}`}
+								className={`${" dark:text-slate-200 light:text-slate-600 font-semibold"}`}
 							>
 								Basics
 							</span>
@@ -79,7 +80,7 @@ export default function NextLayout({
 									<Link
 										className={`${
 											pathname === item.links &&
-											"underline underline-offset-2 duration-200 text-slate-600"
+											"underline underline-offset-2 duration-200 dark:text-slate-400 light:text-slate-400"
 										} text-lg font-semibold`}
 										href={item.links}
 									>
@@ -91,7 +92,7 @@ export default function NextLayout({
 						</ul>
 						<h1 className="text-2xl text-start p-2 ">
 							<span
-								className={`${" text-slate-600 font-semibold"}`}
+								className={`${" dark:text-slate-200 light:text-slate-600 font-semibold"}`}
 							>
 								Methods
 							</span>
@@ -120,7 +121,7 @@ export default function NextLayout({
 						</ul>
 						<h1 className="text-2xl text-start p-2 ">
 							<span
-								className={`${" text-slate-600 font-semibold"}`}
+								className={`${" dark:text-slate-200 light:text-slate-600 font-semibold"}`}
 							>
 								OOP
 							</span>
@@ -149,7 +150,7 @@ export default function NextLayout({
 						</ul>
 						<h1 className="text-2xl text-start p-2 ">
 							<span
-								className={`${" text-slate-600 font-semibold"}`}
+								className={`${" dark:text-slate-200 light:text-slate-600 font-semibold"}`}
 							>
 								DOM & BOM
 							</span>
@@ -178,7 +179,7 @@ export default function NextLayout({
 						</ul>
 						<h1 className="text-2xl text-start p-2 ">
 							<span
-								className={`${" text-slate-600 font-semibold"}`}
+								className={`${" dark:text-slate-200 light:text-slate-600 font-semibold"}`}
 							>
 								Advanced
 							</span>

@@ -76,7 +76,7 @@ export default function CardsUi() {
 						className="w-full"
 						onPress={() => redirect("/")}
 					>
-						<CardBody className="overflow-visible p-3 mt-2 flex items-center text-slate-black justify-center text-7xl h-28">
+						<CardBody className="overflow-visible p-3 mt-2 flex items-center dark:text-slate-300 light:text-slate-black justify-center text-7xl h-28">
 							{item.icon}
 						</CardBody>
 						<CardFooter className="text-small justify-between">

@@ -1,4 +1,4 @@
-import { inter } from "@/app/notes/layout";
+import { inter } from "@/app/fonts";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 
 export default function WarningNote({ content }: { content: string }) {

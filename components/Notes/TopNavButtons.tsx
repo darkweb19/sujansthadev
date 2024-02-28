@@ -12,7 +12,7 @@ export default function TopNavButtons({
 	nextdisabled?: boolean;
 }) {
 	return (
-		<div className="border flex px-4 justify-between items-center">
+		<div className="flex px-4 justify-between items-center">
 			<Link
 				className={`${
 					prevdisabled && "bg-[#7397E3]"

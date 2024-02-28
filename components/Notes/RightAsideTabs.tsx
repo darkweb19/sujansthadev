@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { list } from "./Carding";
-import { playpenSans } from "@/app/notes/layout";
+import { playpenSans } from "@/app/fonts";
 import { usePathname } from "next/navigation";
 
 export default function RightAsideTab() {

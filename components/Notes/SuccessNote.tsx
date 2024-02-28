@@ -1,4 +1,4 @@
-import { inter } from "@/app/notes/layout";
+import { inter } from "@/app/fonts";
 import Link from "next/link";
 import React from "react";
 import { RiVerifiedBadgeFill } from "react-icons/ri";

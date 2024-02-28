@@ -1,6 +1,6 @@
 import { Code } from "@nextui-org/react";
 import Link from "next/link";
-import { lilitaFont, inter, ubuntu } from "@/app/notes/layout";
+
 import CodePreview from "@/components/Notes/CodePreview";
 import {
 	cachingCode,
@@ -11,6 +11,7 @@ import {
 } from "./Code";
 import ListStyleDash from "@/components/Notes/Next/ListStyleDash";
 import WarningNote from "@/components/Notes/WarninNote";
+import { inter, ubuntu } from "@/app/fonts";
 export default function DataFetchingAll() {
 	return (
 		<>
@@ -53,7 +54,7 @@ export default function DataFetchingAll() {
 			</div>
 			<div className="px-4">
 				<h1
-					className={`${ubuntu.className} text-3xl mt-5 font-medium text-slate-black`}
+					className={`${ubuntu.className} text-3xl mt-5 py-2 font-medium dark:text-slate-200 light:text-slate-black`}
 				>
 					Data Fetching on the Server with <Code>Fetch</Code>
 				</h1>
@@ -66,7 +67,7 @@ export default function DataFetchingAll() {
 					and in Server Actions.
 				</p>
 				<h2
-					className={`${ubuntu.className} text-2xl mt-3 mb-3 font-medium text-slate-black`}
+					className={`${ubuntu.className} text-2xl mt-3 mb-3 font-medium dark:text-slate-200 light:text-slate-black`}
 				>
 					Example
 				</h2>
@@ -76,7 +77,7 @@ export default function DataFetchingAll() {
 
 			<div>
 				<h1
-					className={`${ubuntu.className} text-3xl mt-5 font-medium text-slate-black`}
+					className={`${ubuntu.className} text-3xl mt-5 py-2 font-medium dark:text-slate-200 light:text-slate-black`}
 				>
 					Data Caching
 				</h1>
@@ -109,7 +110,7 @@ export default function DataFetchingAll() {
 			</div>
 			<div>
 				<h1
-					className={`${ubuntu.className} text-3xl mt-5 font-medium text-slate-black`}
+					className={`${ubuntu.className} text-3xl mt-5 py-2 font-medium dark:text-slate-200 light:text-slate-black`}
 				>
 					Revalidating Data
 				</h1>
@@ -129,7 +130,7 @@ export default function DataFetchingAll() {
 					]}
 				/>
 				<h1
-					className={`${ubuntu.className} text-2xl mt-5 font-medium text-slate-black`}
+					className={`${ubuntu.className} text-2xl mt-5 py-2 font-medium dark:text-slate-200 light:text-slate-black`}
 				>
 					{" "}
 					Time-based Revalidation
@@ -141,7 +142,7 @@ export default function DataFetchingAll() {
 				</p>
 				<CodePreview code={timeRevalidateCode} />
 				<h1
-					className={`${ubuntu.className} text-2xl mt-5 font-medium text-slate-black`}
+					className={`${ubuntu.className} text-2xl mt-5 py-2 font-medium dark:text-slate-200 light:text-slate-black`}
 				>
 					{" "}
 					On-Demand Revalidation
