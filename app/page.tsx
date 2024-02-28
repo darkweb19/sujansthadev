@@ -8,7 +8,7 @@ import { TracingBeam } from "@/components/ui/tracing-beam";
 
 export default function AllContent() {
 	return (
-		<main className="h-fit w-screen px-5  md:pl-10">
+		<main className="h-fit w-screen px-5  md:pl-40">
 			<TracingBeam>
 				<div className=" w-full h-fit ">
 					{/* homepage  */}
