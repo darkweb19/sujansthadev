@@ -26,7 +26,7 @@ export default function AllContent() {
 					{/* personal creations  */}
 					<div id="creations" className=" w-full p-2 mt-10 ">
 						<BorderLined title={"creations"} />
-						<div className="w-full h-fit flex flex-col gap-4 overflow-y-scroll no-scrollbar">
+						<div className="w-full h-fit flex flex-col gap-2">
 							<Creations />
 						</div>
 					</div>

@@ -17,7 +17,7 @@ export default function Cards({
 	delay: number;
 }) {
 	return (
-		<article className="flex card dark:border rounded-lg light:bg-slate-50 dark:bg-[#131315] dark:border-slate-500 shadow-5xl w-[250px] h-[300px] sm:w-[280px] sm:h-[350px] ">
+		<article className="flex card dark:border rounded-lg light:bg-slate-50 p-5 dark:bg-[#131315] dark:border-slate-500 shadow-5xl w-[250px] h-[300px] sm:w-[280px] sm:h-[350px] ">
 			{/* card header  */}
 			<header className=" h-full w-full flex gap-0 sm:p-2 flex-col items-start ">
 				<FadeInSection delay={delay}>
