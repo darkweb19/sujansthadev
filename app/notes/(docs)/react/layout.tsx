@@ -16,7 +16,7 @@ export default function ReactLayout({
 	const pathname = usePathname();
 	return (
 		<section className={`${lato.className} font-medium h-[90vh]`}>
-			<div className=" w-full h-full flex border  ">
+			<div className=" w-full h-full flex">
 				{/* this is left aside  */}
 				<aside className="h-full w-2/12 border-r-1 border-slate-black py-2 overflow-scroll scroll-smooth hidden md:block">
 					<ScrollShadow className="w-full h-full">
@@ -24,7 +24,7 @@ export default function ReactLayout({
 							<Link
 								className={`${
 									pathname === introLink.link &&
-									"underline underline-offset-2 duration-200 text-slate-600"
+									"underline underline-offset-2 duration-200 dark:text-slate-500 light:text-slate-200"
 								} font-semibold ${ubuntu.className}`}
 								href={introLink.link}
 							>
@@ -43,7 +43,7 @@ export default function ReactLayout({
 									<Link
 										className={`${
 											pathname === item.links &&
-											"underline underline-offset-2 duration-200 text-slate-600"
+											"underline underline-offset-2 duration-200  text-slate-400"
 										} text-lg font-semibold`}
 										href={item.links}
 									>
@@ -57,7 +57,7 @@ export default function ReactLayout({
 							<Link
 								className={`${
 									pathname === hookLink.link &&
-									"underline underline-offset-2 duration-200 text-slate-600"
+									"underline underline-offset-2 duration-200 text-slate-400"
 								}  font-semibold ${ubuntu.className}`}
 								href={hookLink.link}
 							>
@@ -76,7 +76,7 @@ export default function ReactLayout({
 									<Link
 										className={`${
 											pathname === item.links &&
-											"underline font-medium underline-offset-2 duration-200 text-slate-600"
+											"underline font-medium underline-offset-2 duration-200 text-slate-400 "
 										} text-lg font-semibold`}
 										href={item.links}
 									>

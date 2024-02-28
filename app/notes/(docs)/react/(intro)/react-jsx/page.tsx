@@ -21,17 +21,17 @@ export default function ReactJSX() {
 				nextLink="/notes/react/components"
 				prevLink="/notes/react/setup"
 			/>
-			<div className="border w-full">
+			<div className="light: w-full">
 				<div className="p-2">
 					<h1
-						className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
+						className={`${ubuntu.className} text-3xl py-1 font-medium light:text-slate-black`}
 					>
 						What is JSX?
 					</h1>
 					<p
 						className={`${inter.className} flex gap-1 text-lg text-justify`}
 					>
-						<span className="border py-1 h-fit text-xl">
+						<span className=" py-1 h-fit text-xl">
 							<IoIosArrowDroprightCircle />
 						</span>
 						JSX stands for JavaScript XML. It is similar in
@@ -48,14 +48,14 @@ export default function ReactJSX() {
 					</p>
 					<CodePreview code={`${elementCode}`} />
 					<h1
-						className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
+						className={`${ubuntu.className} text-2xl py-2 font-semibold dark:text-slate-200 light:text-slate-black mt-4`}
 					>
 						Embedding Expressions in JSX
 					</h1>
 					<p
 						className={`${inter.className} flex gap-1 mt-2 text-lg text-justify`}
 					>
-						<span className="border py-1 h-fit text-xl">
+						<span className=" py-1 h-fit text-xl">
 							<IoIosArrowDroprightCircle />
 						</span>
 						In the example below, we declare a variable called name
@@ -79,14 +79,14 @@ export default function ReactJSX() {
 
 					<WarningNote content="Since JSX is closer to JavaScript than to HTML, React DOM uses camelCase property naming convention instead of HTML attribute names. For example, class becomes className in JSX, and tabindex becomes tabIndex." />
 					<h1
-						className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
+						className={`${ubuntu.className} text-2xl py-2 font-semibold dark:text-slate-200 light:text-slate-black mt-4`}
 					>
 						JSX Prevents Injection Attacks
 					</h1>
 					<p
 						className={`${inter.className} flex gap-1 mt-2 text-lg text-justify`}
 					>
-						<span className="border py-1 h-fit text-xl">
+						<span className=" py-1 h-fit text-xl">
 							<IoIosArrowDroprightCircle />
 						</span>
 						It is safe to embed user input in JSX:
@@ -94,7 +94,7 @@ export default function ReactJSX() {
 					<p
 						className={`${inter.className} flex gap-1 text-lg text-justify`}
 					>
-						<span className="border py-1 h-fit text-xl">
+						<span className=" py-1 h-fit text-xl">
 							<IoIosArrowDroprightCircle />
 						</span>
 						By default, React DOM escapes any values embedded in JSX
@@ -109,7 +109,7 @@ export default function ReactJSX() {
 					<p
 						className={`${inter.className} flex gap-1 text-lg mt-2 text-justify`}
 					>
-						<span className="border py-1 h-fit text-xl">
+						<span className=" py-1 h-fit text-xl">
 							<IoIosArrowDroprightCircle />
 						</span>
 						Then just start up the application with this command:

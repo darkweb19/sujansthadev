@@ -25,23 +25,23 @@ export default function SetUp() {
 				nextdisabled
 				prevLink="/notes/react/useCallback"
 			/>
-			<div className="border w-full">
+			<div className="   w-full">
 				<div>
 					<h1
-						className={`${lilitaFont.className} text-4xl text-gray-700`}
+						className={`${lilitaFont.className} text-4xl py-3 dark:text-slate-200 light:text-gray-700`}
 					>
 						useMemo Hook
 					</h1>
 					<div className="p-1 sm:p-2 sm:pl-4 sm:pr-10">
 						<h1
-							className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
+							className={`${ubuntu.className} text-3xl py-2 font-medium dark:text-slate-200 light:text-slate-black`}
 						>
 							What are useMemo Hooks in React?
 						</h1>
 						<p
 							className={`${inter.className} flex justify-center  text-justify px-1`}
 						>
-							<span className="border py-1 h-fit text-xl">
+							<span className="   py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
 							</span>
 							<div>
@@ -76,7 +76,7 @@ export default function SetUp() {
 								/>
 							</div>
 							<h2
-								className={`${ubuntu.className} mt-2 text-2xl font-medium`}
+								className={`${ubuntu.className} mt-2 py-2 text-2xl font-medium`}
 							>
 								Explanation :
 							</h2>

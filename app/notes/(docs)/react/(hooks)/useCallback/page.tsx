@@ -24,23 +24,23 @@ export default function SetUp() {
 				nextLink="/notes/react/useMemo"
 				prevLink="/notes/react/useContext"
 			/>
-			<div className="border w-full">
+			<div className="  w-full">
 				<div>
 					<h1
-						className={`${lilitaFont.className} text-4xl text-gray-700`}
+						className={`${lilitaFont.className} text-4xl py-3 dark:text-slate-200 light:text-gray-700`}
 					>
 						useCallback Hook
 					</h1>
 					<div className="p-2 pl-1 sm:pl-4 sm:pr-10">
 						<h1
-							className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
+							className={`${ubuntu.className} text-3xl py-2 font-medium dark:text-slate-200 light:text-slate-black`}
 						>
 							What are useCallback Hooks in React?
 						</h1>
 						<p
 							className={`${inter.className} flex justify-center  text-justify px-1`}
 						>
-							<span className="border py-1 h-fit text-xl">
+							<span className=" py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
 							</span>
 							<div>
@@ -57,7 +57,7 @@ export default function SetUp() {
 						<p
 							className={`${inter.className} flex justify-center  text-justify px-1`}
 						>
-							<span className="border py-1 h-fit text-xl">
+							<span className="  py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
 							</span>
 							<div>
@@ -70,14 +70,14 @@ export default function SetUp() {
 						</p>
 						<div className="px-3 py-2">
 							<h2
-								className={`${ubuntu.className} mt-2 text-2xl font-medium`}
+								className={`${ubuntu.className} mt-2 py-2 text-2xl font-medium`}
 							>
 								When to use `useCallback`:
 							</h2>
 							<p
 								className={`${inter.className} flex justify-center gap-1 text-justify px-1`}
 							>
-								<span className="border py-1  h-fit text-sm">
+								<span className="  py-1  h-fit text-sm">
 									<FaCircle />
 								</span>
 								<div>
@@ -91,7 +91,7 @@ export default function SetUp() {
 							<p
 								className={`${inter.className} flex justify-center gap-1 text-justify px-1`}
 							>
-								<span className="border py-1  h-fit text-sm">
+								<span className="  py-1  h-fit text-sm">
 									<FaCircle />
 								</span>
 								<div>
@@ -111,14 +111,14 @@ export default function SetUp() {
 								<CodePreview code={`${callBackCode}`} />
 							</div>
 							<h2
-								className={`${ubuntu.className} mt-2 text-2xl font-medium`}
+								className={`${ubuntu.className} mt-2 py-2 text-2xl font-medium`}
 							>
 								Usage :
 							</h2>
 							<p
 								className={`${inter.className} flex justify-center gap-1 text-justify `}
 							>
-								<span className="border py-1 h-fit text-sm">
+								<span className="  py-1 h-fit text-sm">
 									<FaCircle />
 								</span>
 								<div>

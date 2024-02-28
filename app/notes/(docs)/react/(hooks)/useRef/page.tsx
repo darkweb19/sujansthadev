@@ -23,23 +23,23 @@ export default function SetUp() {
 				nextLink="/notes/react/useContext"
 				prevLink="/notes/react/useEffect"
 			/>
-			<div className="border w-full">
+			<div className=" w-full">
 				<div className="">
 					<h1
-						className={`${lilitaFont.className} text-4xl text-gray-700`}
+						className={`${lilitaFont.className} text-4xl dark:text-slate-200 light:text-gray-700`}
 					>
 						useRef Hook
 					</h1>
 					<div className="p-2 pl-3 sm:pr-10">
 						<h1
-							className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
+							className={`${ubuntu.className} text-3xl py-3 font-medium dark:text-slate-200 light:text-slate-black`}
 						>
 							What are useRef Hooks in React?
 						</h1>
 						<p
 							className={`${inter.className} flex justify-center  text-justify px-1`}
 						>
-							<span className="border py-1 h-fit text-xl">
+							<span className=" py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
 							</span>
 							useRef is a React Hook that lets you reference a
@@ -49,14 +49,14 @@ export default function SetUp() {
 						<SuccessNote content="This means , value changed does not cause a re-render." />
 						<div className="px-3">
 							<h2
-								className={`${ubuntu.className} text-2xl mt-2 font-medium text-slate-black`}
+								className={`${ubuntu.className} text-2xl py-2 mt-2 font-medium dark:text-slate-200 light:text-slate-black`}
 							>
 								The primary use cases for useRef includes:
 							</h2>
 							<p
 								className={`${ubuntu.className} flex mt-2 font-medium gap-1 items-center text-xl text-justify`}
 							>
-								<span className="border py-1 h-fit text-xs">
+								<span className=" py-1 h-fit text-xs">
 									<FaCircle />
 								</span>
 								Accessing DOM elements
@@ -76,7 +76,7 @@ export default function SetUp() {
 							<p
 								className={`${inter.className} flex gap-1 mt-4 items-center text-xl text-justify`}
 							>
-								<span className="border py-1 h-fit text-xs">
+								<span className=" py-1 h-fit text-xs">
 									<FaCircle />
 								</span>
 								Storing previous values
@@ -84,7 +84,7 @@ export default function SetUp() {
 							<p
 								className={`${inter.className} flex gap-1 mt-1 items-center text-lg text-justify`}
 							>
-								<span className="border py-1 h-fit text-xs"></span>
+								<span className=" py-1 h-fit text-xs"></span>
 								You can use useRef to store a value that
 								persists across renders but doesn&apos;t trigger
 								a re-render when updated. This can be useful
@@ -98,14 +98,14 @@ export default function SetUp() {
 							<WarningNote content="Also, note that `useRef` is not limited to working with DOM elements; it can be used for any mutable value that you want to persist across renders without causing re-renders." />
 						</div>
 						<h1
-							className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
+							className={`${ubuntu.className} text-3xl mt-4 py-2 font-medium dark:text-slate-200 light:text-slate-black`}
 						>
 							Refinement
 						</h1>
 						<p
 							className={`${inter.className} flex gap-1 mt-1 p-2 items-center text-lg text-justify`}
 						>
-							<span className="border py-1 h-fit text-xs"></span>
+							<span className=" py-1 h-fit text-xs"></span>
 							`useRef` is a powerful hook in React.js that enables
 							developers to efficiently access and modify DOM
 							elements, preserve values, and manage state without

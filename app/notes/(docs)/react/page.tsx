@@ -24,23 +24,23 @@ export default async function ReactPage() {
 				prevLink="#"
 				prevdisabled={true}
 			/>
-			<div className="border w-full flex justify-around h-fit p-2">
-				<div className="flex flex-col justify-evenly">
+			<div className=" w-full flex justify-around h-fit p-2">
+				<div className="flex flex-col justify-evenly ">
 					<h1
-						className={`${lilitaFont.className} text-4xl text-slate-black`}
+						className={`${lilitaFont.className} text-4xl dark:text-slate-200 light:text-slate-black`}
 					>
 						React Home
 					</h1>
-					<div className="border p-3 w-11/12 h-fit ">
+					<div className="p-3 w-11/12 h-fit ">
 						<h1
-							className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
+							className={`${ubuntu.className} text-3xl font-medium dark:text-slate-200 light:text-slate-black`}
 						>
 							What is React Js?
 						</h1>
 						<p
 							className={`${inter.className} flex gap-1 text-lg text-justify`}
 						>
-							<span className="border py-1 h-fit text-xl">
+							<span className=" py-1 h-fit text-xl">
 								<IoIosArrowDroprightCircle />
 							</span>
 							React is a popular JavaScript library for building
@@ -89,27 +89,27 @@ export default async function ReactPage() {
 			</div>
 			<div className=" h-60 text-center">
 				<h1
-					className={`${lilitaFont.className} text-4xl text-gray-700`}
+					className={`${lilitaFont.className} text-4xl dark:text-slate-200 light:text-gray-700`}
 				>
 					Welcome
 				</h1>
 				<h2
-					className={`${playpenSans.className} text-2xl  text-gray-700 `}
+					className={`${playpenSans.className} text-2xl  dark:text-slate-200 light:text-gray-700 `}
 				>
 					to the{" "}
 				</h2>
 				<h1
-					className={`${lilitaFont.className} text-4xl text-gray-700 `}
+					className={`${lilitaFont.className} text-4xl dark:text-slate-200 light:text-gray-700 `}
 				>
 					{" "}
 					REACT
 				</h1>
 				<h2
-					className={`${playpenSans.className} text-2xl text-gray-700 `}
+					className={`${playpenSans.className} text-2xl dark:text-slate-200 light:text-gray-700 `}
 				>
 					Community{" "}
 				</h2>
-				<div className="border h-fit w-full text-9xl text-[#139CC7] flex justify-center">
+				<div className="h-fit w-full text-9xl text-[#139CC7] flex justify-center">
 					<FaReact />
 				</div>
 			</div>

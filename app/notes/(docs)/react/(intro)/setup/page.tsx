@@ -22,13 +22,13 @@ export default function SetUp() {
 			<div className="w-full flex justify-around h-fit p-2">
 				<div className="flex flex-col pl-4 sm:pl-1 justify-evenly">
 					<h1
-						className={`${lilitaFont.className} text-4xl text-gray-700`}
+						className={`${lilitaFont.className} text-4xl dark:text-slate-200 light:text-gray-700`}
 					>
 						React Setup
 					</h1>
-					<div className="border p-3 w-11/12 h-fit ">
+					<div className=" p-3 w-11/12 h-fit ">
 						<h1
-							className={`${ubuntu.className} text-3xl font-medium text-slate-black`}
+							className={`${ubuntu.className} text-3xl font-medium dark:text-slate-200 light:text-slate-black`}
 						>
 							Setting up React
 						</h1>
@@ -50,7 +50,7 @@ export default function SetUp() {
 							npx create-react-app@latest my-react-app
 						</Snippet>
 						<h1
-							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
+							className={`${ubuntu.className} text-2xl font-semibold dark:text-slate-200 light:text-slate-black mt-4`}
 						>
 							Creating in current directory
 						</h1>
@@ -78,7 +78,7 @@ export default function SetUp() {
 						</p>
 						<SuccessNote content="When choosing folder name, make sure there are no spaces or capital letters because of npm naming restrictions." />
 						<h1
-							className={`${ubuntu.className} text-2xl font-semibold text-slate-black mt-4`}
+							className={`${ubuntu.className} text-2xl font-semibold dark:text-slate-200 light:text-slate-black mt-4`}
 						>
 							Development Server
 						</h1>

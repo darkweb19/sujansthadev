@@ -16,12 +16,12 @@ export default function Notes() {
 		<div className="h-fit w-full scroll-smooth">
 			<div className="mt-20 h-80 flex flex-col justify-center items-center">
 				<h1
-					className={`${lilitaFont.className} text-4xl text-gray-700 font-normal`}
+					className={`${lilitaFont.className} text-4xl dark:text-slate-200 light:text-gray-700 font-normal`}
 				>
 					Memorizing snippets
 				</h1>
 				<h2
-					className={`${playpenSans.className} text-2xl  text-light-green  font-medium`}
+					className={`${playpenSans.className} text-2xl dark:text-light-green light:text-light-green  font-medium`}
 				>
 					can be tedious while learning to{" "}
 					<span
@@ -52,7 +52,7 @@ export default function Notes() {
 				className="flex flex-col mt-6 items-center justify-center h-3/6 p-2"
 			>
 				<h1
-					className={`${ubuntu.className} text-3xl text-gray-700 text-center font-medium`}
+					className={`${ubuntu.className} text-3xl dark:text-slate-200 light:text-gray-700 text-center font-medium`}
 				>
 					Explore Programming Languages
 				</h1>
