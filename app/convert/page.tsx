@@ -54,7 +54,9 @@ export default function Conversions() {
 	return (
 		<main className="h-[87dvh] w-full sm:h-[82dvh]  flex justify-center items-center">
 			<div className="border rounded-md shadow-2xl bg-slate-white p-2 sm:p-5 ">
-				<h1 className={`${lilitaFont.className} text-4xl text-center`}>
+				<h1
+					className={`${lilitaFont.className} text-4xl text-center text-slate-700 `}
+				>
 					RBG to HEX
 				</h1>
 
@@ -180,7 +182,9 @@ export default function Conversions() {
 							hex == null && "hidden"
 						}`}
 					>
-						<p className={`${inter.className} font-medium text-xl`}>
+						<p
+							className={`${inter.className} font-medium text-xl  dark:text-slate-800`}
+						>
 							{" "}
 							{hex}{" "}
 						</p>
