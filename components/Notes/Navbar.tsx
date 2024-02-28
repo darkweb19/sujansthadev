@@ -52,7 +52,7 @@ export default function NavBar() {
 
 	useEffect(() => {
 		if (typeof window !== "undefined") {
-			// document.body.className = theme;
+			document.body.className = theme;
 		}
 	}, [theme]);
 
