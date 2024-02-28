@@ -4,7 +4,7 @@ import AboutPage from "@/components/middle/AboutPage";
 import BorderLined from "@/components/middle/BorderLined";
 import Creations from "@/components/middle/Creations";
 import Academics from "@/components/middle/Academics";
-import { TracingBeam } from "@/components/ui/tracing-beam";
+// import { TracingBeam } from "@/components/ui/tracing-beam";
 
 export default function AllContent() {
 	return (
