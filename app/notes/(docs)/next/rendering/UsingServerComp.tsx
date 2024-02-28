@@ -5,7 +5,7 @@ export default function UsingServerComp() {
 	return (
 		<div className="p-0 sm:px-2">
 			<h1
-				className={`${ubuntu.className} text-3xl mt-3 font-medium text-slate-black`}
+				className={`${ubuntu.className} text-3xl mt-3 py-2 font-medium  dark:text-slate-200 light:text-slate-black`}
 			>
 				Using Server Components
 			</h1>
@@ -16,7 +16,7 @@ export default function UsingServerComp() {
 				needed, see Client Components.
 			</p>
 			<h1
-				className={`${ubuntu.className} text-2xl mt-3 font-medium text-slate-black`}
+				className={`${ubuntu.className} text-2xl mt-3 py-2s font-medium dark:text-slate-200 light:text-slate-black`}
 			>
 				Benefits of Server Rendering
 			</h1>

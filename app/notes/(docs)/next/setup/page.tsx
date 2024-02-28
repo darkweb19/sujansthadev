@@ -30,9 +30,9 @@ export default function nextSetup() {
 					"To install Next.js, you'll first need to have Node.js and npm (Node Package Manager) installed on your machine. "
 				}
 			>
-				<div className="p-0 sm:p-1 border h-fit">
+				<div className="p-0 sm:p-1  h-fit">
 					<h1
-						className={`${ubuntu.className} text-2xl mt-2 font-medium text-slate-black`}
+						className={`${ubuntu.className} text-2xl mt-2 font-medium dark:text-slate-200 light:text-slate-black`}
 					>
 						Create a Next.js App
 					</h1>
@@ -45,14 +45,14 @@ export default function nextSetup() {
 						<InstallationPrompt />
 
 						<h1
-							className={`${ubuntu.className} text-2xl mt-3 font-medium text-slate-black`}
+							className={`${ubuntu.className} text-2xl mt-3 font-medium dark:text-slate-200 light:text-slate-black`}
 						>
 							Scripts :
 						</h1>
 						<ScriptList />
 
 						<h1
-							className={`${ubuntu.className} text-2xl mt-4 font-medium text-slate-black`}
+							className={`${ubuntu.className} text-2xl mt-4 font-medium dark:text-slate-200 light:text-slate-black`}
 						>
 							Run Development Server
 						</h1>

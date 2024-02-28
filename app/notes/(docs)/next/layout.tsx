@@ -16,7 +16,7 @@ export default function NextLayout({
 	const pathname = usePathname();
 	return (
 		<section className={`${lato.className} font-medium h-[90vh]`}>
-			<article className=" w-full h-full flex border  ">
+			<article className=" w-full h-full flex ">
 				<aside className="h-full w-2/12 border-r-2 border-slate-black py-2 overflow-scroll scroll-smooth hidden md:block">
 					<ScrollShadow className="w-full h-full">
 						<h1 className="text-2xl text-start p-2 ">
@@ -42,7 +42,7 @@ export default function NextLayout({
 									<Link
 										className={`${
 											pathname === item.links &&
-											"underline underline-offset-2 duration-200 text-slate-600"
+											"underline underline-offset-2 duration-200 text-slate-500"
 										} text-lg font-semibold`}
 										href={item.links}
 									>
@@ -51,7 +51,7 @@ export default function NextLayout({
 									</Link>
 								</li>
 							))}
-							<div className="border h-80"></div>
+							<div className=" h-80"></div>
 						</ul>
 					</ScrollShadow>
 				</aside>

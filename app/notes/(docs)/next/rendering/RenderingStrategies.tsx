@@ -4,7 +4,9 @@ export default function RenderingStrategies() {
 	return (
 		<div className="p-0 mt-2 sm:px-2">
 			<article>
-				<h1 className={`${ubuntu.className} text-3xl text-gray-700`}>
+				<h1
+					className={`${ubuntu.className} text-3xl py-2 dark:text-slate-200 light:text-gray-700`}
+				>
 					Server Rendering Strategies
 				</h1>
 				<p className={`${inter.className} py-2 text-justify px-3`}>
@@ -12,7 +14,7 @@ export default function RenderingStrategies() {
 				</p>
 				<h2
 					id="static"
-					className={`${ubuntu.className} mt-2 ml-2 text-2xl text-gray-700`}
+					className={`${ubuntu.className} mt-2 ml-2 text-2xl dark:text-slate-200 light:text-gray-700`}
 				>
 					Static Rendering (Default)
 				</h2>
@@ -33,7 +35,7 @@ export default function RenderingStrategies() {
 			<article>
 				<h2
 					id="static"
-					className={`${ubuntu.className} mt-2 ml-2 text-2xl text-gray-700`}
+					className={`${ubuntu.className} mt-2 ml-2 text-2xl py-2 dark:text-slate-200 light:text-gray-700`}
 				>
 					Dynamic Rendering
 				</h2>
@@ -52,7 +54,7 @@ export default function RenderingStrategies() {
 			<article>
 				<h2
 					id="static"
-					className={`${ubuntu.className} mt-2 ml-2 text-2xl text-gray-700`}
+					className={`${ubuntu.className} mt-2 ml-2 text-2xl py-2 dark:text-slate-200 light:text-gray-700`}
 				>
 					Streaming
 				</h2>

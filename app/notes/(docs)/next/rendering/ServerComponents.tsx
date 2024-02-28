@@ -5,7 +5,7 @@ export default function ServerComponents() {
 	return (
 		<div className="p-0 sm:px-2">
 			<h1
-				className={`${ubuntu.className} text-3xl mt-3 font-medium text-slate-black`}
+				className={`${ubuntu.className} text-3xl mt-3 py-2 font-medium dark:text-slate-200 light:text-slate-black`}
 			>
 				Server Components
 			</h1>
