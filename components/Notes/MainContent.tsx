@@ -1,4 +1,4 @@
-import { lilitaFont, ubuntu, inter } from "@/app/notes/layout";
+import { lilitaFont, ubuntu, inter } from "@/app/fonts";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 
 interface MainContentProps {

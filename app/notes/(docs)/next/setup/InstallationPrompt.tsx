@@ -1,4 +1,4 @@
-import { inter, ubuntu } from "@/app/notes/layout";
+import { inter, ubuntu } from "@/app/fonts";
 import { Code } from "@nextui-org/code";
 import { Snippet } from "@nextui-org/snippet";
 

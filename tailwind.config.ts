@@ -23,7 +23,7 @@ const config: Config = {
 				"5xl": "rgba(0, 0, 0, 0.45) -1rem 15px 20px -20px",
 			},
 			colors: {
-				custom: "#EEE4E1",
+				// custom: "#EEE4E1",
 				"slate-black": "#333333",
 				"slate-white": "#F2F2F2",
 				"light-white": "#EEEEEE",
@@ -43,7 +43,7 @@ const config: Config = {
 				},
 				dark: {
 					colors: {
-						background: "#000000",
+						background: "#0A0A0A",
 					}, // dark theme colors
 				},
 			},

@@ -1,6 +1,6 @@
 import { Button } from "@nextui-org/button";
 import { Divider } from "@nextui-org/divider";
-import { lilitaFont, playpenSans, ubuntu } from "./layout";
+import { lilitaFont, playpenSans, ubuntu } from "@/app/fonts";
 import Link from "next/link";
 import CardsUi from "@/components/Notes/Carding";
 import type { Metadata } from "next";

@@ -1,4 +1,4 @@
-import { ubuntu, inter } from "@/app/notes/layout";
+import { inter, ubuntu } from "@/app/fonts";
 
 export default function RenderingStrategies() {
 	return (

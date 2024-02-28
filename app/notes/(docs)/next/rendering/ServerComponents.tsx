@@ -1,4 +1,4 @@
-import { inter, ubuntu } from "@/app/notes/layout";
+import { inter, ubuntu } from "@/app/fonts";
 import ListStyleDash from "@/components/Notes/Next/ListStyleDash";
 
 export default function ServerComponents() {

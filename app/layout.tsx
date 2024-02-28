@@ -1,3 +1,4 @@
+"use client";
 import NavBar from "@/components/Notes/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
@@ -8,14 +9,14 @@ import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-	title: {
-		template: "%s ",
-		default: "Sujan Shrestha",
-	},
-	description: "A passionate full-stack web developer from Nepal.",
-	metadataBase: new URL("https://sujansthadev.com.np"),
-};
+// export const metadata: Metadata = {
+// 	title: {
+// 		template: "%s ",
+// 		default: "Sujan Shrestha",
+// 	},
+// 	description: "A passionate full-stack web developer from Nepal.",
+// 	metadataBase: new URL("https://sujansthadev.com.np"),
+// };
 
 export default function RootLayout({
 	children,

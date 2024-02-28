@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
+
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import { FaCircle } from "react-icons/fa";
 import CodePreview from "@/components/Notes/CodePreview";
 import { Code } from "@nextui-org/react";
 import { callBackCode, usageCode } from "./code";
 import SuccessNote from "@/components/Notes/SuccessNote";
+import { inter, lilitaFont, ubuntu } from "@/app/fonts";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {

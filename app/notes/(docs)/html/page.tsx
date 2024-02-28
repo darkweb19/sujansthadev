@@ -1,7 +1,8 @@
+import { inter, ubuntu } from "@/app/fonts";
 import MainContent from "@/components/Notes/MainContent";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import type { Metadata } from "next";
-import { inter, ubuntu } from "../../layout";
+
 import { FaCircle, FaHtml5 } from "react-icons/fa";
 
 export async function generateMetadata(): Promise<Metadata> {

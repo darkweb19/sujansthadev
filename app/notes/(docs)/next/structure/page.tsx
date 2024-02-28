@@ -1,10 +1,10 @@
-import { playpenSans } from "@/app/notes/layout";
 import MainContent from "@/components/Notes/MainContent";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import DangerNote from "@/components/Notes/DangerNote";
 import AllTables from "./AllTables";
 import Link from "next/link";
 import { Metadata } from "next/types";
+import { playpenSans } from "@/app/fonts";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {

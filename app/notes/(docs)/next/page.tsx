@@ -1,11 +1,11 @@
 import MainContent from "@/components/Notes/MainContent";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import type { Metadata } from "next";
-import { inter, ubuntu } from "../../layout";
 import { FaCircle } from "react-icons/fa";
 import Link from "next/link";
 import { TbBrandNextjs } from "react-icons/tb";
 import SuccessNote from "@/components/Notes/SuccessNote";
+import { inter, ubuntu } from "@/app/fonts";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {

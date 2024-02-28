@@ -1,10 +1,11 @@
 "use client";
 import { Button } from "@nextui-org/react";
 import { useState } from "react";
-import { inter, lilitaFont, playpenSans } from "../notes/layout";
+
 import useCopy from "@/components/Notes/Hooks/copyText";
 import { FaCircle } from "react-icons/fa";
 import DangerNote from "@/components/Notes/DangerNote";
+import { inter, lilitaFont, playpenSans } from "../fonts";
 
 export default function Conversions() {
 	const [red, setRed] = useState<number>(255);

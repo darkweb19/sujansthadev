@@ -1,4 +1,4 @@
-import { ubuntu } from "@/app/notes/layout";
+import { ubuntu } from "@/app/fonts";
 
 export default function BorderLined({ title }: { title: string }) {
 	return (

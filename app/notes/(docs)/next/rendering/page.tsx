@@ -2,10 +2,11 @@ import MainContent from "@/components/Notes/MainContent";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import ServerComponents from "./ServerComponents";
 import UsingServerComp from "./UsingServerComp";
-import { playpenSans } from "@/app/notes/layout";
+
 import RenderingStrategies from "./RenderingStrategies";
 import Link from "next/link";
 import { Metadata } from "next/types";
+import { playpenSans } from "@/app/fonts";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {

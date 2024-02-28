@@ -1,11 +1,12 @@
 "use client";
 import Link from "next/link";
-import { lato, ubuntu } from "../../layout";
+
 import { reactLinks, introLink, reactLinksHooks, hookLink } from "./Links";
 import { usePathname } from "next/navigation";
 import { ScrollShadow } from "@nextui-org/scroll-shadow";
 import { IoMdArrowDropright } from "react-icons/io";
 import RightAsideTab from "@/components/Notes/RightAsideTabs";
+import { lato, ubuntu } from "@/app/fonts";
 
 export default function ReactLayout({
 	children,

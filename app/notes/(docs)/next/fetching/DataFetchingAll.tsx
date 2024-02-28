@@ -1,6 +1,6 @@
 import { Code } from "@nextui-org/react";
 import Link from "next/link";
-import { lilitaFont, inter, ubuntu } from "@/app/notes/layout";
+
 import CodePreview from "@/components/Notes/CodePreview";
 import {
 	cachingCode,
@@ -11,6 +11,7 @@ import {
 } from "./Code";
 import ListStyleDash from "@/components/Notes/Next/ListStyleDash";
 import WarningNote from "@/components/Notes/WarninNote";
+import { inter, ubuntu } from "@/app/fonts";
 export default function DataFetchingAll() {
 	return (
 		<>

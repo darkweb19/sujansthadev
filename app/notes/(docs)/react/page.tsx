@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { inter, lilitaFont, ubuntu, playpenSans } from "../../layout";
+import { inter, lilitaFont, ubuntu, playpenSans } from "@/app/fonts";
 import Image from "next/image";
 import react from "@/public/assets/reactImage.png";
 import { FaReact } from "react-icons/fa";

@@ -1,4 +1,4 @@
-import { inter } from "@/app/notes/layout";
+import { inter } from "@/app/fonts";
 import { FaCircleExclamation } from "react-icons/fa6";
 
 export default function DangerNote({ content }: { content: string }) {

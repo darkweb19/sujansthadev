@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
+
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import { FaCircle } from "react-icons/fa";
 import WarningNote from "@/components/Notes/WarninNote";
 import Link from "next/link";
+import { inter, lilitaFont, ubuntu } from "@/app/fonts";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {

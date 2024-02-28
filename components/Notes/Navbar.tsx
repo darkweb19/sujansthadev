@@ -2,7 +2,7 @@
 import Image from "next/image";
 import mine from "../../public/assets/logo.png";
 import Link from "next/link";
-import { ubuntu } from "@/app/notes/layout";
+
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiLinktree } from "react-icons/si";
 import {
@@ -22,7 +22,7 @@ import {
 	reactLinks,
 } from "@/app/notes/(docs)/react/Links";
 import { BsBrightnessHighFill, BsMoonFill } from "react-icons/bs";
-import { setDefaultHighWaterMark } from "stream";
+import { ubuntu } from "@/app/fonts";
 
 const menuItems = [
 	{ title: "/Home", link: "/" },
@@ -51,7 +51,9 @@ export default function NavBar() {
 	};
 
 	useEffect(() => {
-		document.body.className = theme;
+		if (typeof window !== "undefined") {
+			// document.body.className = theme;
+		}
 	}, [theme]);
 
 	return (

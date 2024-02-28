@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { inter, lilitaFont, ubuntu } from "@/app/notes/layout";
+import { inter, lilitaFont, ubuntu } from "@/app/fonts";
 import { Snippet } from "@nextui-org/snippet";
 import SuccessNote from "@/components/Notes/SuccessNote";
 import TopNavButtons from "@/components/Notes/TopNavButtons";

@@ -1,4 +1,5 @@
-import { playpenSans } from "@/app/notes/layout";
+import { playpenSans } from "../fonts";
+
 export default function Blog() {
 	return (
 		<main

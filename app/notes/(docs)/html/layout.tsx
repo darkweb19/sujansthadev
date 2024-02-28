@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { lato } from "../../layout";
+
 import {
 	mainPageLink,
 	introHtmlLinks,
@@ -15,6 +15,7 @@ import { usePathname } from "next/navigation";
 import { ScrollShadow } from "@nextui-org/scroll-shadow";
 import { IoMdArrowDropright } from "react-icons/io";
 import RightAsideTab from "@/components/Notes/RightAsideTabs";
+import { lato } from "@/app/fonts";
 
 export default function HtmlLayout({
 	children,

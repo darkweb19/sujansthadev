@@ -3,7 +3,8 @@ import TableFiles from "./TableFiles";
 import TableRoutingFiles from "./TableRoutingFiles";
 import TableNestedRoutes from "./TableNestedRoute";
 import TableDynamicRoutes from "./TableDynamicRoutes";
-import { ubuntu } from "@/app/notes/layout";
+import { ubuntu } from "@/app/fonts";
+
 export default function AllTables() {
 	return (
 		<>

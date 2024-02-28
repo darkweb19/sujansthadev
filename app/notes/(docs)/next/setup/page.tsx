@@ -1,4 +1,3 @@
-import { ubuntu } from "@/app/notes/layout";
 import MainContent from "@/components/Notes/MainContent";
 import SuccessNote from "@/components/Notes/SuccessNote";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
@@ -7,6 +6,7 @@ import DevelopmentList from "./DevelopmentServer";
 import ScriptList from "./ScriptList";
 import InstallationPrompt from "./InstallationPrompt";
 import { Metadata } from "next";
+import { ubuntu } from "@/app/fonts";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {

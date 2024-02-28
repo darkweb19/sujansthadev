@@ -1,4 +1,4 @@
-import { ubuntu, inter } from "@/app/notes/layout";
+import { ubuntu, inter } from "@/app/fonts";
 import CodePreview from "@/components/Notes/CodePreview";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
 import WarningNote from "@/components/Notes/WarninNote";

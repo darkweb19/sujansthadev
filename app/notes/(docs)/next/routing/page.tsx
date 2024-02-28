@@ -1,4 +1,3 @@
-import { inter, ubuntu } from "@/app/notes/layout";
 import CodePreview from "@/components/Notes/CodePreview";
 import MainContent from "@/components/Notes/MainContent";
 import TopNavButtons from "@/components/Notes/TopNavButtons";
@@ -6,6 +5,7 @@ import { Code } from "@nextui-org/react";
 import Link from "next/link";
 import { dynamicLinkCode, linkCode, usePathnameCode } from "./Code";
 import { Metadata } from "next/types";
+import { inter, ubuntu } from "@/app/fonts";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {

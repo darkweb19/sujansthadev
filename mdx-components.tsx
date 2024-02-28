@@ -1,5 +1,5 @@
 import type { MDXComponents } from "mdx/types";
-import { inter, lilitaFont, ubuntu } from "./app/notes/layout";
+import { inter, lilitaFont, ubuntu } from "@/app/fonts";
 import { FaCircle } from "react-icons/fa";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
