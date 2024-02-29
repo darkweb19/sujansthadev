@@ -1,3 +1,4 @@
+import { HoverEffect } from "../ui/card-hover-effect";
 import Cards from "./Cards";
 
 export default function Creations() {
@@ -57,9 +58,10 @@ export default function Creations() {
 		// card list
 		<div className="h-fit w-full flex flex-wrap justify-evenly gap-3 p-3">
 			{/* card  */}
-			{data.map((datas, i) => (
-				<Cards key={i} data={datas} delay={i * 300} />
-			))}
+			{/* {data.map((datas, i) => (
+				// <Cards key={i} data={datas} delay={i * 300} />
+				))} */}
+			<HoverEffect items={data} delay={100} />
 		</div>
 	);
 }
