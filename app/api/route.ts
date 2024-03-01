@@ -3,13 +3,13 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(req: NextRequest) {
 	try {
-		// await prisma.user.create({
-		// 	data: {
-		// 		name: "Sujan Shrestha",
-		// 		email: "sujansthadev@gmail.com",
-		// 		messages: {},
-		// 	},
-		// });
+		await prisma.user.create({
+			data: {
+				name: "Sujan Shrestha",
+				email: "sujansthadev@gmail.com",
+				messages: {},
+			},
+		});
 
 		// await prisma.message.create({
 		// 	data: {
