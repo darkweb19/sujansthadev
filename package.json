@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npx prisma generate && next build ",
     "start": "next start",
     "lint": "next lint"
   },
@@ -22,6 +22,7 @@
     "next": "^14.0.1",
     "react": "^18",
     "react-dom": "^18",
+    "react-hot-toast": "^2.4.1",
     "tailwind-merge": "^2.2.1",
     "typewriter-effect": "^2.21.0"
   },

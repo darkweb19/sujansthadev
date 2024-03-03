@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import Copyrights from "@/components/middle/Copyright";
 import { Divider } from "@nextui-org/react";
 import { Analytics } from "@vercel/analytics/react";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +31,7 @@ export default function RootLayout({
 				<Analytics />
 				<Divider className="my-2" />
 				<Copyrights />
+				<Toaster position="bottom-right" />
 			</body>
 		</html>
 	);

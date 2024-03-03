@@ -5,6 +5,7 @@ import BorderLined from "@/components/middle/BorderLined";
 import Creations from "@/components/middle/Creations";
 import Academics from "@/components/middle/Academics";
 import { TracingBeam } from "@/components/ui/tracing-beam";
+import FormMessage from "@/components/middle/FormMessage";
 
 export default function AllContent() {
 	return (
@@ -38,6 +39,10 @@ export default function AllContent() {
 					>
 						<BorderLined title="academics" />
 						<Academics />
+					</div>
+					<div className="w-full p-1 mt-10 sm:p-2 h-fit">
+						<BorderLined title="Message" />
+						<FormMessage />
 					</div>
 				</div>
 			</TracingBeam>
