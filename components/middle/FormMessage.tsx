@@ -16,7 +16,6 @@ const prodApiUrl = process.env.NEXT_PUBLIC_API_URL_PROD;
 
 const apiUrl = process.env.NODE_ENV === "development" ? devApiUrl : prodApiUrl;
 const URL = `${apiUrl}/api/user-message`;
-console.log(URL);
 
 export default function FormMessage() {
 	const initialFormData: FormData = {
@@ -122,18 +121,13 @@ export default function FormMessage() {
 					value={formData.message}
 					label="Message"
 					name="message"
-					labelPlacement="outside"
+					labelPlacement="inside"
 					placeholder="Enter your message"
-					className="max-w-5xl"
+					className="max-w-xl"
 					onChange={handleChange}
 				/>
 				<span className="w-full flex justify-center p-1">
-					<Button
-						type="submit"
-						// onClick={handleSubmit}
-						isLoading={loading}
-						color="default"
-					>
+					<Button type="submit" isLoading={loading} color="default">
 						Submit
 					</Button>
 				</span>
