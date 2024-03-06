@@ -4,6 +4,16 @@ import Cards from "./Cards";
 export default function Creations() {
 	const data = [
 		{
+			title: "Finance Wanabee",
+			content:
+				"A Finance Management system that basically keeps track of your expenses and provide basic functionality for managing your finances.",
+			techStack: ["Next", "Prisma", "PostgreSQL", "TypeScript"],
+			links: {
+				github: "https://github.com/darkweb19/finance-wanabee",
+				share: "https://finance-wanabee.vercel.app/",
+			},
+		},
+		{
 			title: "ChatGpt Web App",
 			content:
 				"A ChatGPT Clone App repository! This is a simplified version of the ChatGPT application  with a GPT-3.5 powered chatbot.",
