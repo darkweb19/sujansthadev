@@ -6,7 +6,9 @@ import { useState } from "react";
 import { BsGithub } from "react-icons/bs";
 import { MdIosShare } from "react-icons/md";
 import { FiCode } from "react-icons/fi";
+import Image from "next/image";
 import FadeInSection from "../middle/FadeInSection";
+import browser from "@/public/assets/code.png";
 
 export const HoverEffect = ({
 	items,
@@ -60,7 +62,8 @@ export const HoverEffect = ({
 					<Card>
 						<FadeInSection delay={delay * (idx + 5)}>
 							<div className="w-fit h-fit dark:text-white light:text-neutral-950 text-2xl">
-								<FiCode />
+								{/* <FiCode /> */}
+								<Image src={browser} alt="icon" height={"30"} />
 							</div>
 							<CardTitle>{item.title}</CardTitle>
 							<CardDescription className="py-0 sm:py-2 h-[130px] md:h-[150px]">
