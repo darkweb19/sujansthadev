@@ -129,14 +129,14 @@ export default function NavBar() {
 						/notes
 					</Link>
 				</NavbarItem>
-				<NavbarItem>
+				{/* <NavbarItem>
 					<Link
 						className={`${ubuntu.className} text-lg`}
 						href="/convert"
 					>
 						/convert
 					</Link>
-				</NavbarItem>
+				</NavbarItem> */}
 			</NavbarContent>
 			<NavbarContent justify="end">
 				<NavbarItem className="lg:flex text-2xl">
