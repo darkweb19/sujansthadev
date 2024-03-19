@@ -15,7 +15,8 @@ const devApiUrl = process.env.NEXT_PUBLIC_API_URL_DEV;
 const prodApiUrl = process.env.NEXT_PUBLIC_API_URL_PROD;
 
 const apiUrl = process.env.NODE_ENV === "development" ? devApiUrl : prodApiUrl;
-const URL = `${apiUrl}/api/user-message`;
+// const URL = `${apiUrl}/api/user-message`;
+const URL = "/api/user-message";
 
 export default function FormMessage() {
 	const initialFormData: FormData = {
