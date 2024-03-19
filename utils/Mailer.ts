@@ -57,7 +57,9 @@ export const sendMail = async ({
 			transport.verify((error, success) => {
 				if (success) {
 					console.log("message send to myslef");
-					return { success: true };
+				}
+				if (error) {
+					console.log("Message could not be send to me");
 				}
 			});
 		} else if (emailType === "user") {
@@ -98,7 +100,9 @@ export const sendMail = async ({
 			transport.verify((error, success) => {
 				if (success) {
 					console.log("message send to the user");
-					return { success: true };
+				}
+				if (error) {
+					console.log("Message could not be send to user");
 				}
 			});
 		}
