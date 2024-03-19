@@ -1,3 +1,4 @@
+import { sendMail } from "@/utils/Mailer";
 import prisma from "@/utils/Prisma";
 import { NextRequest, NextResponse } from "next/server";
 
@@ -19,6 +20,8 @@ export async function POST(req: NextRequest) {
 			},
 		});
 		console.log("sent success");
+		await sendMail({ email, emailType: "me", message, firstname });
+		await sendMail({ email, emailType: "user", message, firstname });
 
 		return NextResponse.json({ success: true });
 	} catch (err: any) {
