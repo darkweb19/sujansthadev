@@ -23,6 +23,11 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 				{props.children}
 			</h3>
 		),
+		h5: (props) => (
+			<h5 className={`${inter.className} mt-5 text-sm font-medium`}>
+				{props.children}{" "}
+			</h5>
+		),
 		p: (props) => (
 			<p className={`${inter.className} mt-1 px-2 text-lg text-justify `}>
 				{props.children}
