@@ -2,6 +2,15 @@ const withMDX = require("@next/mdx")();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+	images: {
+		remotePatterns: [
+			{
+				protocol: "https",
+				hostname: "www.analyticsinsight.net",
+				port: "",
+			},
+		],
+	},
 	// eslint: {
 	// 	ignoreDuringBuilds: true,
 	// },
