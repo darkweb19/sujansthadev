@@ -40,8 +40,8 @@ export default function HomePage() {
 							<p
 								className={`text-justify font-normal text-base sm:text-lg`}
 							>
-								I am a Software Engineer and a student from
-								Nepal. I have a keen interest in Full-Stack
+								I am a Software Engineer and a student living in
+								Canada . I have a keen interest in Full-Stack
 								Development, Artificial Intelligence, IOT and
 								everything in between.
 							</p>
