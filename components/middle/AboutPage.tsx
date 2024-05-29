@@ -36,16 +36,15 @@ export default function AboutPage() {
 							{" "}
 							Deerwalk Institute{" "}
 						</a>{" "}
-						. At the same time , I am pursuing by Bachelor&apos;s
-						degree in Computer Science from St Lawrence College,
-						affiliated to
+						. At the same time , I am pursuing by Diploma degree in
+						Computer System Technician at{" "}
 						<a
-							href="https://tu.edu.np/"
-							className="font-semibold text-blue-500"
+							className="text-blue-500  font-semibold"
+							href="https://loyalistcollege.com/"
 						>
-							{" "}
-							Tribhuwan University.
+							Loyalist College,
 						</a>{" "}
+						Toronto, CA.
 					</p>
 					<div className="w-full px-3 ">
 						<p className="font-normal light:text-slate-200 text-lg sm:font-medium sm:text-xl">
