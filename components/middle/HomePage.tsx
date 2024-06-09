@@ -7,7 +7,6 @@ import { Playpen_Sans } from "next/font/google";
 import { Lilita_One } from "next/font/google";
 import { Button } from "@nextui-org/button";
 import Link from "next/link";
-
 export const ubuntu = Playpen_Sans({ subsets: ["latin"] });
 export const lilitaFont = Lilita_One({ weight: "400", subsets: ["latin"] });
 
@@ -61,7 +60,7 @@ export default function HomePage() {
 							<Button className="relative left-10 font-medium bg-gradient-to-tr from-pink-500 text-slate-white to-yellow-500 shadow-lg">
 								<Link
 									target="_blank"
-									href="https://drive.google.com/file/d/1lFIQCcL82ngtVHgp0W0cmNPnHSJ1smfl/view?usp=sharing"
+									href="https://hefkbmzoqjamoaddfnrb.supabase.co/storage/v1/object/sign/files/CV.pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJmaWxlcy9DVi5wZGYiLCJpYXQiOjE3MTc5NTA3OTQsImV4cCI6MTc0OTQ4Njc5NH0.O2oSAmz19A5a2iz3mCYbuB-xsE3UeqR-G1cxdrqmkow&t=2024-06-09T16%3A33%3A14.309Z"
 								>
 									Download CV
 								</Link>
