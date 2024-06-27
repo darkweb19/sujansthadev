@@ -8,8 +8,8 @@ export default function Creations() {
 				"A Finance Management system that basically keeps track of your expenses and provide basic functionality for managing your finances.",
 			techStack: ["Next", "Prisma", "PostgreSQL", "TypeScript"],
 			links: {
-				github: "https://github.com/darkweb19/finance-wanabee",
-				share: "https://finance-wanabee.vercel.app/",
+				github: "https://github.com/darkweb19/next-auth-scratch",
+				share: "https://next-auth-scratch.vercel.app/",
 			},
 		},
 		{
