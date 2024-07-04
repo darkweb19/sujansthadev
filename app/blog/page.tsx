@@ -1,5 +1,5 @@
 import { Divider } from "@nextui-org/react";
-import { lato } from "../fonts";
+import { bricolage, lato } from "../fonts";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,14 +9,18 @@ export default function Blog() {
 			className={`${lato.className} h-screen gap-3 p-3 text-xl items-center`}
 		>
 			<div className="p-2 text-center mt-10 md:mt-28">
-				<h1 className="text-4xl md:text-5xl">Welcome to my Blog</h1>
-				<p className="text-center text-lg mt-3">
-					- I discuss my personal thoughts on various topics.
+				<h1
+					className={`${bricolage.className} text-4xl font-thin md:text-5xl`}
+				>
+					Some of my Writings
+				</h1>
+				<p className="text-center text-lg mt-3 italic">
+					- I share my personal thoughts on tech.
 				</p>
 			</div>
 			<Divider className="mt-10" />
-			<h1 className="mt-5 md:p-2 text-2xl md:text-3xl text-center">
-				Popular Blogs
+			<h1 className="mt-5 md:p-2 text-2xl md:text-4xl text-center">
+				Recent
 			</h1>
 			<div className="flex justify-center mt-4">
 				<div className="w-full md:w-fit p-1 md:p-3">

@@ -5,9 +5,15 @@ import {
 	Playpen_Sans,
 	Ubuntu,
 	Rubik,
+	Bricolage_Grotesque,
 } from "next/font/google";
 
 export const rubik = Rubik({ subsets: ["latin"] });
+
+export const bricolage = Bricolage_Grotesque({
+	subsets: ["latin"],
+	weight: ["200", "300", "400", "600", "700"],
+});
 
 export const lato = Lato({
 	subsets: ["latin"],
