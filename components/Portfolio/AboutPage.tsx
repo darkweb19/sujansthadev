@@ -1,6 +1,6 @@
 import Image from "next/image";
 import mine from "@/opengraph-image.jpeg";
-import FadeInSection from "./FadeInSection";
+
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import {
 	TbBrandTypescript,
@@ -11,6 +11,7 @@ import {
 } from "react-icons/tb";
 import { SiReact } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
+import FadeInSection from "./FadeInSection";
 
 export default function AboutPage() {
 	const tech = [

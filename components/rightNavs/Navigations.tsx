@@ -1,4 +1,4 @@
-import FadeInSection from "@/components/middle/FadeInSection";
+import FadeInSection from "@/components/Portfolio/FadeInSection";
 import Link from "next/link";
 
 export default function Navigations() {

@@ -2,7 +2,7 @@ import NavBar from "@/components/Notes/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Copyrights from "@/components/middle/Copyright";
+import Copyrights from "@/components/Portfolio/Copyright";
 import { Divider } from "@nextui-org/react";
 import { Analytics } from "@vercel/analytics/react";
 import { Toaster } from "react-hot-toast";

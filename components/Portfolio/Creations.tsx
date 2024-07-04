@@ -9,7 +9,7 @@ export default function Creations() {
 			techStack: ["Next", "Prisma", "PostgreSQL", "TypeScript"],
 			links: {
 				github: "https://github.com/darkweb19/next-auth-scratch",
-				share: "https://next-auth-scratch.vercel.app/",
+				share: "https://finance.sujansthadev.com.np/",
 			},
 		},
 		{

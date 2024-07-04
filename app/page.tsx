@@ -1,11 +1,11 @@
 "use client";
-import HomePage from "@/components/middle/HomePage";
-import AboutPage from "@/components/middle/AboutPage";
-import BorderLined from "@/components/middle/BorderLined";
-import Creations from "@/components/middle/Creations";
-import Academics from "@/components/middle/Academics";
+import HomePage from "@/components/Portfolio/HomePage";
+import AboutPage from "@/components/Portfolio/AboutPage";
+import BorderLined from "@/components/Portfolio/BorderLined";
+import Creations from "@/components/Portfolio/Creations";
+import Academics from "@/components/Portfolio/Academics";
 import { TracingBeam } from "@/components/ui/tracing-beam";
-import FormMessage from "@/components/middle/FormMessage";
+import FormMessage from "@/components/Portfolio/FormMessage";
 
 export default function AllContent() {
 	return (

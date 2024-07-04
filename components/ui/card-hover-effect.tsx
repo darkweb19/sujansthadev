@@ -7,7 +7,7 @@ import { BsGithub } from "react-icons/bs";
 import { MdIosShare } from "react-icons/md";
 import { FiCode } from "react-icons/fi";
 import Image from "next/image";
-import FadeInSection from "../middle/FadeInSection";
+import FadeInSection from "../Portfolio/FadeInSection";
 import browser from "@/public/assets/code.png";
 
 export const HoverEffect = ({
