@@ -19,37 +19,40 @@ export default function HomePage() {
 	return (
 		<div className="flex items-center justify-center w-full h-screen ">
 			<div className="flex flex-col justify-start items-center sm:items-start h-fit">
-				<div className="w-[96%] md:w-3/5 flex flex-col justify-center items-start">
+				<div className="w-[96%] md:w-4/5 flex flex-col justify-center items-start">
 					<FadeInSection delay={200}>
 						<p
-							className={`${lilitaFont.className} text-3xl  p-1 sm:text-5xl gradient-text`}
+							className={`${lilitaFont.className} text-6xl p-1 sm:text-5xl gradient-text`}
 						>
 							HELLO WORLD
 						</p>
 					</FadeInSection>
 					<FadeInSection delay={500}>
 						<div
-							className={`${ubuntu.className} flex text-center p-2 sm:p-1 text-2xl sm:text-3xl font-semibold dark:text-slate-white light:text-slate-600`}
+							style={{ letterSpacing: "2px" }}
+							className={`${ubuntu.className} text-shadow sm:mt-4 flex text-center p-2 sm:p-1 text-2xl sm:text-5xl font-semibold dark:text-slate-white light:text-slate-600`}
 						>
 							<Typing />
 						</div>
 					</FadeInSection>
 					<FadeInSection delay={700}>
-						<div className=" p-2  w-4/5 dark:text-slate-200 light:text-slate-800">
+						<div className="text-shadow p-2  w-[100%] sm:mt-3  dark:text-slate-200 light:text-slate-800">
 							<p
-								className={`text-justify font-normal text-base sm:text-lg`}
+								style={{ letterSpacing: "1px" }}
+								className={` font-normal text-base sm:text-4xl`}
 							>
-								I am a Software Engineer and a student living in
-								Canada . I have a keen interest in Full-Stack
-								Development, Artificial Intelligence, IOT and
-								everything in between.
+								I am a Software Engineer and passionate about
+								creating beautiful products that{" "}
+								<span className="text-shadow2 empowercss">
+									Empower People.
+								</span>
 							</p>
 						</div>
 					</FadeInSection>
 
 					{/* gmail animation  */}
 					<FadeInSection delay={900}>
-						<div className="h-fit flex items-center">
+						<div className="h-fit flex md:mt-6 items-center">
 							<div className="gmail w-[15%] sm:w-[11%]">
 								<Lottie
 									animationData={gmailData}

@@ -44,6 +44,7 @@ const config: Config = {
 				dark: {
 					colors: {
 						background: "#0A0A0A",
+						// background: "#141414",
 					}, // dark theme colors
 				},
 			},

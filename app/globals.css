@@ -6,6 +6,7 @@
 	--foreground-rgb: 0, 0, 0;
 	--background-start-rgb: 214, 219, 220;
 	--background-end-rgb: 255, 255, 255;
+	--on-background: #f2f2f2;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,7 +40,6 @@ body {
 	/* background-image: linear-gradient(to left top, #d6d3f4, #e0d4f2, #e9d5ef, #f0d6ec, #f6d8e9, #f5d1e5, #f4cae2, #f3c3de, #e6b2df, #d3a4e4, #b599ea, #8b91f1); */
 }
 
-
 .gmail {
 	transition: all 0.4s;
 }
@@ -71,4 +71,29 @@ body {
 	opacity: 1;
 	transform: none;
 	visibility: visible;
+}
+
+.text-shadow {
+	/* text-shadow: 0 4px 10px #0057ff33, 0 -4px 10px #ff5a0026, 0 0 30px #fff3; */
+	text-shadow: 0 5px 10px #0057ff26, 0 -5px 10px #ff5a001a,
+		0 -5px 25px #ffffff4d;
+}
+
+.text-shadow2 {
+	text-shadow: 0 4px 6px #0057ff26, 0 -4px 6px #ff5a001a, 0 0 20px #ffffff40;
+	-webkit-text-fill-color: transparent;
+	letter-spacing: 2px;
+	-webkit-background-clip: text;
+	background-clip: text;
+	font-family: Gloock, sans-serif;
+	font-style: italic;
+	font-weight: 800;
+}
+
+.empowercss {
+	background-image: linear-gradient(
+		to bottom,
+		var(--on-background) 50%,
+		#f2f2f233
+	);
 }
