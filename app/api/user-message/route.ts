@@ -11,14 +11,19 @@ export async function POST(req: NextRequest) {
 			throw new Error("All fields are required.");
 		}
 
-		const user = await prisma.user.create({
-			data: {
-				firstname: firstname,
-				lastname: lastname,
-				email: email,
-				message: message,
-			},
-		});
+		try {
+			const user = await prisma.user.create({
+				data: {
+					firstname: firstname,
+					lastname: lastname,
+					email: email,
+					message: message,
+				},
+			});
+		} catch (error) {
+			console.log("Error connecting to the database.", error);
+		}
+
 		console.log("sent success");
 		await sendMail({ email, emailType: "me", message, firstname });
 		await sendMail({ email, emailType: "user", message, firstname });
