@@ -1,6 +1,7 @@
 import { sendMail } from "@/utils/Mailer";
 import prisma from "@/utils/Prisma";
 import { NextRequest, NextResponse } from "next/server";
+import { GeminiApi } from "./GeminiApi";
 
 export async function POST(req: NextRequest) {
 	try {
@@ -25,10 +26,21 @@ export async function POST(req: NextRequest) {
 		}
 
 		console.log("sent success");
-		await sendMail({ email, emailType: "me", message, firstname });
-		await sendMail({ email, emailType: "user", message, firstname });
+		const gemini_message = await GeminiApi(message, firstname);
 
-		return NextResponse.json({ success: true });
+		await sendMail({ email, emailType: "user", message, firstname });
+		await sendMail({
+			email,
+			emailType: "me",
+			message,
+			firstname,
+			gemini_reply: gemini_message,
+		});
+
+		return NextResponse.json({
+			success: true,
+			gemini_message: gemini_message,
+		});
 	} catch (err: any) {
 		console.log(err.message);
 		return NextResponse.json({ success: false, error: err.message });
