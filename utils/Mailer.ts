@@ -5,11 +5,13 @@ export const sendMail = async ({
 	email,
 	emailType,
 	firstname,
+	gemini_reply,
 	message,
 }: {
 	email: string;
 	emailType: "me" | "user";
 	firstname: string;
+	gemini_reply?: string;
 	message: string;
 }) => {
 	try {
@@ -31,7 +33,7 @@ export const sendMail = async ({
 			var mailing = {
 				from: "Sujan Shrestha <me@sujansthadev.com.np>",
 				to: "sujanstha3220@gmail.com",
-				subject: "Someone Send you a message!!!",
+				subject: "Someone Send you a message Sujan!!!",
 				html: `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,6 +46,7 @@ export const sendMail = async ({
 <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
     <h1 style="text-align: center; color: #333333;">Some one send you a message! Please check the message  : </h1>
     <p> ${firstname} says : ${message} </p> 
+	<p> Gemini Said : ${gemini_reply} </p>
     
     <p style="color: #666666;">Best regards,<br><a href="https://sujansthadev.com.np" style="color: #4CAF50;">Sujan Shrestha</a></p>
 </div>
