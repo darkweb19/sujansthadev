@@ -17,8 +17,8 @@ export const projects: PersonalProjects[] = [
 			"Explore my frontend project in a visually appealing way, helping me to getting started with E-commerce.",
 		techStack: ["TypeScript"],
 		links: {
-			github: "https://github.com/darkweb19/react-portfolio",
-			share: "https://darkweb19.github.io/react-portfolio/",
+			github: "https://github.com/darkweb19/Optics-Lens-Frontend",
+			share: "https://opticlens.sujansthadev.com.np/",
 		},
 	},
 	{
