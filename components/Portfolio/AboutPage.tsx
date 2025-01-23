@@ -1,28 +1,10 @@
 import Image from "next/image";
 import mine from "@/opengraph-image.jpeg";
-
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-import {
-	TbBrandTypescript,
-	TbBrandNextjs,
-	TbBrandNodejs,
-	TbBrandMongodb,
-	TbBrandGraphql,
-} from "react-icons/tb";
-import { SiReact } from "react-icons/si";
-import { BiLogoPostgresql } from "react-icons/bi";
 import FadeInSection from "./FadeInSection";
+import { techStacks as tech } from "@/data/TechStacks";
 
 export default function AboutPage() {
-	const tech = [
-		{ name: "Next JS ", icons: <TbBrandNextjs /> },
-		{ name: "TypeScript", icons: <TbBrandTypescript /> },
-		{ name: "React Js ", icons: <SiReact /> },
-		{ name: "Node", icons: <TbBrandNodejs /> },
-		{ name: "MongoDb", icons: <TbBrandMongodb /> },
-		{ name: "Graphql", icons: <TbBrandGraphql /> },
-		{ name: "PostgreSQL", icons: <BiLogoPostgresql /> },
-	];
 	return (
 		<div className="sm:pr-20 w-full flex flex-col sm:flex-col md:flex-col lg:flex-row gap-1 items-start justify-around">
 			<div className="h-3/4 w-full md:w-[100%]">
