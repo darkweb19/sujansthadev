@@ -5,22 +5,17 @@ import Link from "next/link";
 import { useState } from "react";
 import { BsGithub } from "react-icons/bs";
 import { MdIosShare } from "react-icons/md";
-import { FiCode } from "react-icons/fi";
 import Image from "next/image";
 import FadeInSection from "../Portfolio/FadeInSection";
 import browser from "@/public/assets/code.png";
+import { PersonalProjects } from "@/types/PersonalProjects";
 
 export const HoverEffect = ({
 	items,
 	delay,
 	className,
 }: {
-	items: {
-		title: string;
-		content: string;
-		techStack: string[];
-		links: { github: string; share: string };
-	}[];
+	items: PersonalProjects[];
 	delay: number;
 	className?: string;
 }) => {
@@ -66,7 +61,7 @@ export const HoverEffect = ({
 								<Image src={browser} alt="icon" height={"30"} />
 							</div>
 							<CardTitle>{item.title}</CardTitle>
-							<CardDescription className="py-0 sm:py-2 h-[130px] md:h-[150px]">
+							<CardDescription className="py-0 sm:py-1 h-[130px] md:h-[150px]">
 								{item.content}
 							</CardDescription>
 							<div className="w-full h-fit py-1">
