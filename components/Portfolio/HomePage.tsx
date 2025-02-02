@@ -64,7 +64,7 @@ export default function HomePage() {
 								<Link
 									target="_blank"
 									href={
-										"https://sujansthadev-resume2.s3.us-east-1.amazonaws.com/Sujan+Shresth+dev.pdf"
+										"https://sujansthadev-resume2.s3.us-east-1.amazonaws.com/Sujan+Shrestha+dev.pdf"
 									}
 								>
 									Download CV
