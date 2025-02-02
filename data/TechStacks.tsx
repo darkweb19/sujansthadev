@@ -8,7 +8,7 @@ import {
 } from "react-icons/tb";
 import { SiReact } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { FaAws, FaDocker, FaGithub } from "react-icons/fa";
+import { FaAws, FaDocker, FaGithub, FaLinux } from "react-icons/fa";
 
 export const techStacks: TechStack[] = [
 	{ name: "Next JS ", icons: <TbBrandNextjs /> },
@@ -19,6 +19,7 @@ export const techStacks: TechStack[] = [
 	{ name: "NodeJs", icons: <TbBrandNodejs /> },
 	{ name: "PostgreSQL", icons: <BiLogoPostgresql /> },
 	{ name: "GitHub", icons: <FaGithub /> },
+	{ name: "Linux", icons: <FaLinux /> },
 	{ name: "MongoDb", icons: <TbBrandMongodb /> },
 	{ name: "Graphql", icons: <TbBrandGraphql /> },
 ];
