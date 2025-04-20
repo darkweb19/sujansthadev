@@ -49,7 +49,7 @@ export default function FormMessage() {
 
 			if (res.success) {
 				setFormData(initialFormData);
-				toast("Thanks for Sending me Hi!", {
+				toast(res.gemini_message, {
 					icon: "👏",
 					style: {
 						borderRadius: "10px",

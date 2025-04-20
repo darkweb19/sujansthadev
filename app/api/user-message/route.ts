@@ -1,6 +1,7 @@
 import { sendMail } from "@/utils/Mailer";
 import prisma from "@/utils/Prisma";
 import { NextRequest, NextResponse } from "next/server";
+import { GeminiApi } from "./GeminiApi";
 
 export async function POST(req: NextRequest) {
 	try {
@@ -11,19 +12,35 @@ export async function POST(req: NextRequest) {
 			throw new Error("All fields are required.");
 		}
 
-		const user = await prisma.user.create({
-			data: {
-				firstname: firstname,
-				lastname: lastname,
-				email: email,
-				message: message,
-			},
-		});
-		console.log("sent success");
-		await sendMail({ email, emailType: "me", message, firstname });
-		await sendMail({ email, emailType: "user", message, firstname });
+		try {
+			const user = await prisma.user.create({
+				data: {
+					firstname: firstname,
+					lastname: lastname,
+					email: email,
+					message: message,
+				},
+			});
+		} catch (error) {
+			console.log("Error connecting to the database.", error);
+		}
 
-		return NextResponse.json({ success: true });
+		console.log("sent success");
+		const gemini_message = await GeminiApi(message, firstname);
+
+		await sendMail({ email, emailType: "user", message, firstname });
+		await sendMail({
+			email,
+			emailType: "me",
+			message,
+			firstname,
+			gemini_reply: gemini_message,
+		});
+
+		return NextResponse.json({
+			success: true,
+			gemini_message: gemini_message,
+		});
 	} catch (err: any) {
 		console.log(err.message);
 		return NextResponse.json({ success: false, error: err.message });

@@ -63,7 +63,9 @@ export default function HomePage() {
 							<Button className="relative left-10 font-medium bg-gradient-to-tr from-pink-500 text-slate-white to-yellow-500 shadow-lg">
 								<Link
 									target="_blank"
-									href="https://hefkbmzoqjamoaddfnrb.supabase.co/storage/v1/object/sign/files/SUJAN_SHRESTHA_DEV.pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJmaWxlcy9TVUpBTl9TSFJFU1RIQV9ERVYucGRmIiwiaWF0IjoxNzIxMTQzNjc5LCJleHAiOjE4NDcyODc2Nzl9.IQ8czZevgPh77G_BYmy_oOym95Bk2yjLjmlCTUkXLKY&t=2024-07-16T15%3A27%3A59.200Z"
+									href={
+										"https://sujansthadev-resume2.s3.us-east-1.amazonaws.com/Sujan+Shrestha+dev.pdf"
+									}
 								>
 									Download CV
 								</Link>
