@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
 	};
 }
 
-export default function NextPage() {
+export default function JsPage() {
 	return (
 		<div className="flex flex-col gap-1">
 			<TopNavButtons
